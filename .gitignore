@@ -1,0 +1,32 @@
+# ============================================================
+# Scale OS — repo PÚBLICO
+# Estrategia WHITELIST: se ignora TODO por defecto y se habilita
+# explícitamente solo lo que es framework genérico.
+#
+# Este directorio es también el workspace de construcción (_build/),
+# que tiene datos privados. _build/ NO está en el whitelist y no
+# puede entrar. Si alguna vez hace falta agregar algo, agregalo
+# archivo por archivo y corré antes el escáner de secretos.
+# ============================================================
+
+# 1) Ignorar todo por defecto
+/*
+
+# 2) Metadatos del repo
+!/.gitignore
+!/README.md
+
+# 3) El skill instalable, autocontenido
+!/skills/
+!/skills/scale-os/
+!/skills/scale-os/SKILL.md
+!/skills/scale-os/referencias/
+!/skills/scale-os/plantillas/
+
+# ============================================================
+# Excluido a propósito (JAMÁS versionar acá):
+#   _build/                  workspace de construcción. Tiene IDs, nombres y números reales
+#   cualquier .env, token, clave
+#   cualquier dato de una empresa concreta
+# Antes de publicar: python3 _build/scan-secretos.py .
+# ============================================================
