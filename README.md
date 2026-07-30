@@ -49,12 +49,12 @@ Están explicadas con ejemplos en
 **Copiá esta línea y pegásela a Claude Code:**
 
 > Instalá Scale OS desde este repo y guiame para armar el sistema de mi negocio paso a paso:
-> https://github.com/USUARIO/scale-os
+> https://github.com/francotadeoh/scale-os
 
 Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por vez. Podés contestarle
 **por audio** si te resulta más cómodo. No hace falta que edites archivos ni que escribas comandos.
 
-> 💡 **Atajo técnico** (opcional): `npx skills add USUARIO/scale-os` y después decile a Claude
+> 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/scale-os` y después decile a Claude
 > *"armá el Scale OS de mi negocio"*.
 
 ### Qué necesitás
