@@ -61,12 +61,12 @@ completo está en
 **Copiá esta línea y pegásela a Claude Code:**
 
 > Instalá Scale OS desde este repo y guiame para armar el sistema de mi negocio paso a paso:
-> https://github.com/francotadeoh/scale-os
+> https://github.com/francotadeoh/Scale-OS
 
 Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por vez. Podés contestarle
 **por audio** si te resulta más cómodo. No hace falta que edites archivos ni que escribas comandos.
 
-> 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/scale-os` y después decile a Claude
+> 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/Scale-OS` y después decile a Claude
 > *"armá el Scale OS de mi negocio"*.
 
 ### Qué necesitás
@@ -89,6 +89,23 @@ Es **un solo sistema** con dos profundidades. El onboarding te pregunta y elige 
 Si dudás, empezá en PyME. Subir de perfil después es una conversación, no una reinstalación.
 
 ---
+
+## El método viene adentro
+
+Scale OS no es solo la estructura: **trae los skills del método y te va diciendo cuál usar en cada
+momento.** No te los tira todos juntos el primer día.
+
+| Skill | Cuándo entra |
+|---|---|
+| **Auditor de procesos** | en la auditoría, para saber dónde estás parado de verdad |
+| **Arquitecto de información** | solo si tu información está tan desordenada que no se puede sistematizar encima |
+| **Sistematizador de procesos** | al escribir cada proceso, para sacarlo de tu cabeza |
+| **Orquestador de skills** | cuando cerraste tu primer objetivo, para que empieces a **construir los tuyos** |
+
+Ese último es el que cierra el círculo. Hasta ahí usaste herramientas que ya existían; a partir de
+ahí construís las propias, para lo que tu negocio necesita y nadie más, y las enganchás a tus
+objetivos y a tus loops. Ese es el momento en que el sistema deja de ser algo que te instalaron y
+pasa a ser tuyo.
 
 ## Qué te queda instalado
 

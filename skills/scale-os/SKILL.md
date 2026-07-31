@@ -61,11 +61,33 @@ que ya son fuente de verdad de algo.
 Escribí `~/.claude/scale-os/negocio.md` con lo que juntaste, **en las palabras de la persona**, no
 traducido a lenguaje de consultor.
 
+## Los skills del método, y cuándo entra cada uno
+
+Vienen instalados junto con este. **No los tires todos juntos:** cada uno entra en su momento, y
+tirarlos antes de tiempo es la forma más rápida de que la persona se pierda.
+
+| Skill | Cuándo lo activás | Para qué |
+|---|---|---|
+| `auditor-de-procesos-pyme` | **Paso 2**, la auditoría | Diagnostica dónde está parado el negocio y qué depende de que el dueño esté |
+| `arquitecto-de-informacion` | Después del paso 2, **solo si hace falta** | Ordena la información antes de sistematizar. Si ya está ordenada, se saltea |
+| `sistematizador-de-procesos` | **Paso 3**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
+| `orquestador-de-skills` | Después del primer objetivo cerrado | Enseña a la persona a **construir sus propios skills** y a engancharlos en sus objetivos y loops |
+
+**La regla de oro del acompañamiento: uno por vez, y el siguiente recién cuando el anterior dejó algo
+terminado.** La persona no está haciendo un curso, está instalando un sistema.
+
+**El orquestador es el que cierra el círculo.** Hasta ahí la persona usó skills que ya existían; a
+partir de ahí construye los propios para lo que su negocio necesita y nadie más. Ese es el momento en
+que Scale OS deja de ser algo que le instalaron y pasa a ser algo suyo. Cuando construya uno, se
+anota en el catálogo de procesos con su forma (skill, rutina o agente) y se engancha al objetivo que
+lo necesitaba.
+
 ## Paso 2 · Auditoría
 
 **No se saltea. Sin auditoría los objetivos salen inventados.**
 
-Con lo del paso 1, armá `~/.claude/scale-os/diagnostico.md` que responda tres cosas:
+**Activá `auditor-de-procesos-pyme` acá.** Es el skill que hace este paso; no lo reemplaces por tu
+propio criterio. Con lo que devuelva, armá `~/.claude/scale-os/diagnostico.md` que responda tres cosas:
 
 1. **Qué procesos existen hoy**, aunque no estén escritos. Sacalos de la respuesta 3 y 4.
 2. **Cuáles dependen de que la persona esté.** Esos son el cuello.
@@ -88,6 +110,10 @@ Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en 
 
 Regla que resuelve casi todo: **si lo dispara el calendario es rutina; si lo dispara una persona es
 skill; si lo hace una persona es archivo; si necesita criterio propio sostenido es agente.**
+
+**Para escribir cada proceso, activá `sistematizador-de-procesos`.** Si al hacerlo aparece que la
+información del negocio está desordenada y no se puede sistematizar encima, pasá antes por
+`arquitecto-de-informacion`. Si ya está ordenada, salteálo.
 
 **Dónde escribir el mapa:** si el paso 1 encontró una fuente de verdad externa, el catálogo de
 procesos **vive ahí**, no en el disco. En disco queda, como mucho, una copia derivada con fecha de
@@ -134,6 +160,11 @@ Si `negocio.md` ya existe, no reinstales. Leé `README.md`, `frenos.md` y `estad
 seguí desde donde quedó.
 
 **Al cargar un objetivo nuevo:** paso 5. Siempre las cuatro partes.
+
+**Cuando el primer objetivo cierre:** activá `orquestador-de-skills`. Es el momento de que la persona
+empiece a construir sus propios skills para lo que su negocio necesita, en vez de usar solo los que
+vinieron. Cada skill propio que construya se anota en el catálogo con su forma y se engancha al
+objetivo o al loop que lo pedía.
 
 **Al cerrar un objetivo:** corré la verificación que estaba escrita. Después el control negativo. Si
 el control negativo **no falla**, pará: el instrumento no discrimina y hay que arreglarlo antes de
