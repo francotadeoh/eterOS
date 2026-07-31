@@ -6,7 +6,7 @@ Esta es la regla 3 (*un solo dueño por dato*) aplicada a la decisión más impo
 ## El reparto
 
 Si tu negocio ya vive en una herramienta de gestión (Notion, Airtable, una planilla, un CRM), **esa
-herramienta es la fuente de verdad y no se discute**. Scale OS no la reemplaza: la ejecuta.
+herramienta es la fuente de verdad y no se discute**. eterOS no la reemplaza: la ejecuta.
 
 | | **La fuente de verdad** | **El brazo ejecutor** |
 |---|---|---|
@@ -18,7 +18,7 @@ herramienta es la fuente de verdad y no se discute**. Scale OS no la reemplaza: 
 
 **Por qué así y no al revés.** Tu equipo trabaja en la herramienta, no en tu disco. Un sistema que
 guarda el estado del negocio en archivos locales deja al equipo afuera y te vuelve, otra vez, el
-único que sabe qué pasa. Eso es exactamente el problema que Scale OS viene a resolver.
+único que sabe qué pasa. Eso es exactamente el problema que eterOS viene a resolver.
 
 ## Las tres reglas del reparto
 

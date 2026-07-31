@@ -1,10 +1,13 @@
-# 🧩 Scale OS
+# 🧩 eterOS
 
 Un sistema operativo para tu negocio, adentro de Claude Code.
 
 Le contás cómo funciona tu empresa, te hace una auditoría, y a partir de ahí trabaja con
 **objetivos** en vez de con pedidos sueltos. Vos decís a dónde querés llegar; el sistema itera hasta
 llegar, y **frena solo** en lo que no puede decidir por vos.
+
+**A dónde va:** un equipo chico que rinde como uno gigante, y que sigue funcionando cuando vos no
+estás.
 
 ---
 
@@ -17,7 +20,7 @@ Y hay un problema peor, más difícil de ver: **sin un criterio escrito antes de
 define al final, para justificar lo que ya se hizo.** Un resultado que corrió sin errores parece
 correcto aunque esté mal.
 
-Scale OS es la estructura mínima que arregla las dos cosas.
+eterOS es la estructura mínima que arregla las dos cosas.
 
 ## La secuencia
 
@@ -40,19 +43,38 @@ Todo lo demás es andamio. Estas tres son el sistema:
 3. **Un solo dueño por dato.** Nada se copia. Dos copias de un dato son dos verdades.
 
 Están explicadas con ejemplos en
-[`referencias/las-tres-reglas.md`](skills/scale-os/referencias/las-tres-reglas.md).
+[`referencias/las-tres-reglas.md`](skills/eteros/referencias/las-tres-reglas.md).
+
+## Los cuatro principios
+
+Las tres reglas dicen **cómo se trabaja**. Estos cuatro dicen **a dónde va el negocio**. Una regla
+se cumple o no en cada objetivo; un principio se acerca o se aleja con los meses.
+
+1. **Agencia total.** Cada persona opera con la capacidad de un equipo entero, porque tiene agentes
+   que ejecutan por ella y contexto que no tiene que pedirle a nadie.
+2. **Dependencia cero.** Entre personas y entre áreas. Si alguien se toma dos semanas, lo que se
+   frena es una dependencia, y cada dependencia es un proceso que vive en una cabeza.
+3. **Sistema de mejora continua.** Una capa transversal lee lo que pasa en toda la organización a
+   través de la fuente de verdad y de las herramientas conectadas, y levanta la mano sola.
+4. **Negocios minimalistas y descentralizados.** La menor cantidad de piezas que hace el trabajo, y
+   sin el dueño ni los líderes en el medio de la operación.
+
+El chequeo de fondo, el que engloba a los cuatro: **si el dueño se toma un mes, ¿qué se rompe?**
+
+Están desarrollados en
+[`referencias/los-cuatro-principios.md`](skills/eteros/referencias/los-cuatro-principios.md).
 
 ## Si tu negocio ya vive en una herramienta
 
-**Scale OS no la reemplaza: la ejecuta.** Si tu equipo ya trabaja en Notion, en Airtable, en una
+**eterOS no la reemplaza: la ejecuta.** Si tu equipo ya trabaja en Notion, en Airtable, en una
 planilla o en un CRM, esa herramienta sigue siendo la fuente de verdad de clientes, ventas, procesos
-y documentos. Scale OS es el brazo ejecutor: conecta, corre rutinas y automatiza lo que la
+y documentos. eterOS es el brazo ejecutor: conecta, corre rutinas y automatiza lo que la
 herramienta no puede.
 
 Esto importa más de lo que parece. Un sistema que guarda el estado del negocio en archivos de tu
 computadora deja al equipo afuera y te vuelve, otra vez, el único que sabe qué pasa. El reparto
 completo está en
-[`referencias/fuente-de-verdad.md`](skills/scale-os/referencias/fuente-de-verdad.md).
+[`referencias/fuente-de-verdad.md`](skills/eteros/referencias/fuente-de-verdad.md).
 
 ---
 
@@ -60,14 +82,14 @@ completo está en
 
 **Copiá esta línea y pegásela a Claude Code:**
 
-> Instalá Scale OS desde este repo y guiame para armar el sistema de mi negocio paso a paso:
-> https://github.com/francotadeoh/Scale-OS
+> Instalá eterOS desde este repo y guiame para armar el sistema de mi negocio paso a paso:
+> https://github.com/francotadeoh/eterOS
 
 Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por vez. Podés contestarle
 **por audio** si te resulta más cómodo. No hace falta que edites archivos ni que escribas comandos.
 
-> 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/Scale-OS` y después decile a Claude
-> *"armá el Scale OS de mi negocio"*.
+> 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/eterOS` y después decile a Claude
+> *"armá el eterOS de mi negocio"*.
 
 ### Qué necesitás
 
@@ -92,7 +114,7 @@ Si dudás, empezá en PyME. Subir de perfil después es una conversación, no un
 
 ## El método viene adentro
 
-Scale OS no es solo la estructura: **trae los skills del método y te va diciendo cuál usar en cada
+eterOS no es solo la estructura: **trae los skills del método y te va diciendo cuál usar en cada
 momento.** No te los tira todos juntos el primer día.
 
 | Skill | Cuándo entra |
@@ -110,7 +132,7 @@ pasa a ser tuyo.
 ## Qué te queda instalado
 
 ```
-~/.claude/scale-os/
+~/.claude/eteros/
 ├─ README.md        el punto de entrada
 ├─ frenos.md        lo que el sistema NUNCA hace sin tu OK. Dueño único
 ├─ negocio.md       tu empresa, en las palabras del onboarding
@@ -139,7 +161,7 @@ borrar algo. El onboarding te deja armar tu propia lista, y esa lista tiene **un
 
 ## Privacidad
 
-Todo vive en **tu máquina**, en `~/.claude/scale-os/`. Este repositorio es el instalador: no recibe
+Todo vive en **tu máquina**, en `~/.claude/eteros/`. Este repositorio es el instalador: no recibe
 ni un dato tuyo. Si conectás herramientas externas, sus claves quedan en tu equipo.
 
 ---

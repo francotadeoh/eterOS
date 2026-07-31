@@ -1,6 +1,6 @@
 # Las tres reglas
 
-Scale OS tiene muchas carpetas, pero **el sistema son tres reglas**. Todo lo demás es andamio: puede
+eterOS tiene muchas carpetas, pero **el sistema son tres reglas**. Todo lo demás es andamio: puede
 quedarse, pero no es lo que hace la diferencia.
 
 Estas tres sobrevivieron a un filtro concreto: cada pieza del sistema se corrió también **sin** el
@@ -21,12 +21,12 @@ Un resultado que dice *"esto no coincide, no sé por qué"* es un **fallo**, no 
 
 **Por qué aporta, medido.** Se tomó un cálculo con un error adentro y se lo juzgó con dos criterios:
 
-| | criterio de sentido común<br>*"¿corrió y dio números?"* | criterio de Scale OS<br>*"¿toda diferencia tiene causa?"* |
+| | criterio de sentido común<br>*"¿corrió y dio números?"* | criterio de eterOS<br>*"¿toda diferencia tiene causa?"* |
 |---|---|---|
 | cálculo con el error | ✅ **pasa** | ❌ **falla** |
 | cálculo corregido | ✅ pasa | ✅ pasa |
 
-El criterio de sentido común **aprueba los dos**. No distingue. El de Scale OS rechaza el malo. Esa
+El criterio de sentido común **aprueba los dos**. No distingue. El de eterOS rechaza el malo. Esa
 es la definición de aportar: **rechazar un resultado que cualquiera daría por bueno**.
 
 ## 2 · Toda comprobación se corre también contra el escenario malo, y tiene que fallar ahí

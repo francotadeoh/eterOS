@@ -25,7 +25,7 @@ Lo que hace **él solo**, no lo que hace el negocio.
 
 En cuál de esas herramientas está lo que el equipo mira para saber cómo va el negocio.
 
-**Si hay una, Scale OS no la reemplaza: la ejecuta.** Ella es dueña del estado del negocio (clientes,
+**Si hay una, eterOS no la reemplaza: la ejecuta.** Ella es dueña del estado del negocio (clientes,
 ventas, procesos, documentos) y el disco es dueño de los objetivos y del criterio. Ver
 `referencias/fuente-de-verdad.md`.
 

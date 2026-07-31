@@ -1,4 +1,4 @@
-# Scale OS — <nombre del negocio>
+# eterOS — <nombre del negocio>
 
 > Esto **no** es documentación. Es el estado vivo del sistema. Si lo que dice acá no coincide con lo
 > que pasa de verdad, gana la realidad y el archivo está viejo.
@@ -19,7 +19,7 @@ Sin auditoría, los objetivos salen inventados. Ese orden no se saltea.
 ## Estructura
 
 ```
-~/.claude/scale-os/
+~/.claude/eteros/
 ├─ README.md        este archivo
 ├─ frenos.md        lo que nunca se hace sin OK. DUEÑO ÚNICO: no se copia a los objetivos
 ├─ negocio.md       la empresa, en las palabras del dueño
@@ -42,5 +42,5 @@ Sin las cuatro **no es un objetivo, es un deseo**. El sistema lo rechaza.
 ## Estado
 
 ```bash
-python3 -c "import json;d=json.load(open('$HOME/.claude/scale-os/estado/goals.json'));[print(g['id'],g['estado'],'-',g['nombre']) for g in d['goals']]"
+python3 -c "import json;d=json.load(open('$HOME/.claude/eteros/estado/goals.json'));[print(g['id'],g['estado'],'-',g['nombre']) for g in d['goals']]"
 ```

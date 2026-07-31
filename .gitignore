@@ -1,5 +1,5 @@
 # ============================================================
-# Scale OS — repo PÚBLICO
+# eterOS — repo PÚBLICO
 # Estrategia WHITELIST: se ignora TODO por defecto y se habilita
 # explícitamente solo lo que es framework genérico.
 #
@@ -18,10 +18,10 @@
 
 # 3) El skill instalable, autocontenido
 !/skills/
-!/skills/scale-os/
-!/skills/scale-os/SKILL.md
-!/skills/scale-os/referencias/
-!/skills/scale-os/plantillas/
+!/skills/eteros/
+!/skills/eteros/SKILL.md
+!/skills/eteros/referencias/
+!/skills/eteros/plantillas/
 
 # ============================================================
 # Excluido a propósito (JAMÁS versionar acá):
