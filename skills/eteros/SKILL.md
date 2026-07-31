@@ -163,11 +163,21 @@ Un objetivo sin las cuatro partes **no es un objetivo, es un deseo**. Rechazalo 
 1. **Listo cuando** — verificable. Si dos personas pueden discutir si está listo, está mal escrita.
 2. **Reglas que aplican** — punteros a donde ya están escritas. No copies.
 3. **Frenos propios** — solo los de este objetivo. El resto se hereda.
-4. **Verificación en vivo** — el comando o la consulta que se **corre**. Escrita **ahora**, antes de
-   arrancar. Y su **control negativo**: contra qué escenario malo tiene que fallar.
+4. **Verificación en vivo** — algo que se **corre**, escrito **ahora**, antes de arrancar. Y su
+   **control negativo**: contra qué escenario malo tiene que fallar.
 
-Si no se te ocurre cómo verificar algo, **eso es la señal de que el objetivo está mal planteado**.
-No lo dejes pasar con un "revisar que esté bien".
+**Acá es donde más se traba, y casi siempre por culpa tuya, no de la persona.** Si le pedís un
+comando, un dueño de PyME no tiene ninguno y el objetivo se muere ahí. Una verificación no es un
+comando: es cualquier cosa que se haga en vez de opinarse, que pueda fallar, y cuyo resultado dos
+personas no puedan discutir. Abrir una página a las 9 y ver si el número está cumple las tres.
+
+**Leé `referencias/verificaciones.md` antes de este paso.** Trae los cuatro moldes que cubren casi
+todo (el número aparece solo · la pieza aparece sola · salió sin vos · el cero), cada uno con su
+control negativo en la misma clave: apagalo y mirá que se rompa.
+
+Si aun así no sale ninguna, **eso es la señal de que el objetivo está mal planteado**. No lo dejes
+pasar con un "revisar que esté bien". Pero antes de rechazárselo, ofrecé los cuatro moldes: rechazar
+el objetivo de alguien que ya está trabado es la forma más rápida de perderlo.
 
 ## Paso 6 · Cerrar la instalación
 

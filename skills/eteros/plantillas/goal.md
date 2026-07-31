@@ -40,16 +40,26 @@ este objetivo, si tiene alguno.
 
 ## Verificación en vivo
 
-**El comando o la consulta que se corre.** Escrito acá **antes** de arrancar, no después. Leer un
-resultado no es verificarlo.
+**Lo que se corre.** Escrito acá **antes** de arrancar, no después. Leer un resultado no es
+verificarlo.
+
+No tiene por qué ser un comando. Sirve igual *"abrir tal página a las 9 y ver si el número del día
+está, sin que lo haya puesto yo"*, siempre que se haga en vez de opinarse, pueda fallar, y dos
+personas no puedan discutir el resultado. Los cuatro moldes están en `referencias/verificaciones.md`.
 
 ```
-# el comando exacto
+# el comando exacto, si lo hay
 ```
+
+o, si no lo hay:
+
+> **Qué se hace:** …
+> **Dónde se mira:** …
+> **Qué tiene que verse para estar listo:** …
 
 **Control negativo:** contra qué versión vieja o qué escenario malo tiene que **fallar** esta
-verificación. Si pasa en los dos casos, el instrumento está desafinado y hay que arreglarlo antes de
-creerle al resultado bueno.
+verificación. Sin terminal, casi siempre es el mismo: **apagalo y mirá que se rompa.** Si pasa en los
+dos casos, el instrumento está desafinado y hay que arreglarlo antes de creerle al resultado bueno.
 
 > Si no se te ocurre cómo verificar esto, esa es la señal de que el objetivo está mal planteado.
 > No lo dejes pasar con un "revisar que esté bien".
