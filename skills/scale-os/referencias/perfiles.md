@@ -6,7 +6,7 @@ se abren a la vez. No cambian las tres reglas, ni la estructura, ni los frenos.
 | | **PyME** | **Empresa / avanzado** |
 |---|---|---|
 | Señal | 1 a 15 personas. El dueño es el cuello de botella | más de 15, o ya hay procesos escritos y roles |
-| Onboarding | 6 preguntas | 6 + quién decide qué, dónde está escrito cada proceso, qué sistemas ya son fuente de verdad de algo |
+| Onboarding | 7 preguntas | 7 + quién decide qué, dónde está escrito cada proceso, qué sistemas ya son fuente de verdad de algo |
 | Objetivos a la vez | **uno** | varios |
 | Loops | recién cuando el primer objetivo cerró | desde el arranque |
 | Primer entregable | la auditoría y un objetivo andando | la auditoría, el catálogo de procesos y los loops |

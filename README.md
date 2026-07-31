@@ -42,6 +42,18 @@ Todo lo demás es andamio. Estas tres son el sistema:
 Están explicadas con ejemplos en
 [`referencias/las-tres-reglas.md`](skills/scale-os/referencias/las-tres-reglas.md).
 
+## Si tu negocio ya vive en una herramienta
+
+**Scale OS no la reemplaza: la ejecuta.** Si tu equipo ya trabaja en Notion, en Airtable, en una
+planilla o en un CRM, esa herramienta sigue siendo la fuente de verdad de clientes, ventas, procesos
+y documentos. Scale OS es el brazo ejecutor: conecta, corre rutinas y automatiza lo que la
+herramienta no puede.
+
+Esto importa más de lo que parece. Un sistema que guarda el estado del negocio en archivos de tu
+computadora deja al equipo afuera y te vuelve, otra vez, el único que sabe qué pasa. El reparto
+completo está en
+[`referencias/fuente-de-verdad.md`](skills/scale-os/referencias/fuente-de-verdad.md).
+
 ---
 
 ## 🚀 Instalación
@@ -70,7 +82,7 @@ Es **un solo sistema** con dos profundidades. El onboarding te pregunta y elige 
 | | **PyME** | **Empresa / avanzado** |
 |---|---|---|
 | Para quién | dueño que es el cuello de botella de su propio negocio | equipo con procesos ya escritos |
-| Onboarding | corto, sin jerga | completo, con inventario de sistemas |
+| Onboarding | 7 preguntas, sin jerga | completo, con inventario de sistemas |
 | Objetivos a la vez | **uno** | varios, con loops encima |
 | Primer entregable | la auditoría y un objetivo andando | la auditoría, el catálogo de procesos y los loops |
 

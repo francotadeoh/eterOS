@@ -45,9 +45,15 @@ te dijo antes de pasar a la siguiente:
 3. ¿Qué hacés vos personalmente en una semana normal? (buscá lo que hace **solo él**)
 4. ¿Qué es lo que más tiempo te come y menos te gusta?
 5. ¿Qué herramientas usan hoy para trabajar?
-6. Si el negocio tuviera que funcionar dos semanas sin vos, ¿qué se rompe primero?
+6. De esas, ¿en cuál está lo que el equipo mira para saber cómo va el negocio?
+7. Si el negocio tuviera que funcionar dos semanas sin vos, ¿qué se rompe primero?
 
-**La pregunta 6 es la más importante.** La respuesta es el diagnóstico, no un dato de color.
+**La pregunta 6 define la arquitectura.** Si nombra una herramienta de gestión (Notion, Airtable, una
+planilla, un CRM), **esa es la fuente de verdad y no se discute**: Scale OS no la reemplaza, la
+ejecuta. Leé `referencias/fuente-de-verdad.md` antes de seguir y anotá el reparto en `negocio.md`.
+Si no nombra ninguna, el disco es la fuente de verdad por ahora, y se anota como deuda.
+
+**La pregunta 7 es la más importante.** La respuesta es el diagnóstico, no un dato de color.
 
 En perfil `empresa`, sumá: quién decide qué, dónde está escrito hoy cada proceso, y qué sistemas hay
 que ya son fuente de verdad de algo.
@@ -83,7 +89,11 @@ Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en 
 Regla que resuelve casi todo: **si lo dispara el calendario es rutina; si lo dispara una persona es
 skill; si lo hace una persona es archivo; si necesita criterio propio sostenido es agente.**
 
-Escribí `~/.claude/scale-os/procesos/catalogo.md`. **No construyas nada todavía**: esto es el mapa.
+**Dónde escribir el mapa:** si el paso 1 encontró una fuente de verdad externa, el catálogo de
+procesos **vive ahí**, no en el disco. En disco queda, como mucho, una copia derivada con fecha de
+corte visible. Si no hay herramienta externa, va a `~/.claude/scale-os/procesos/catalogo.md`.
+
+**No construyas nada todavía**: esto es el mapa.
 
 ## Paso 4 · Frenos
 
@@ -134,6 +144,10 @@ un resultado. Buscá la causa o dejá el objetivo abierto.
 
 **Al tocar un freno:** pará y preguntá. Sin excepciones, sin interpretaciones, aunque el resultado
 fuese mejor.
+
+**Al tocar el estado del negocio:** si hay una fuente de verdad externa, **leé de ahí y escribí ahí
+en el mismo turno**. Nunca guardes en disco un dato que define el estado del negocio: el equipo no
+mira tu disco. Y nunca escribas encima de datos vivos: los resultados van a documentos nuevos.
 
 **Al terminar cada vuelta:** actualizá `estado/goals.json` y resumile a la persona en prosa simple
 qué hiciste, qué resultó y qué se trabó. Los errores propios van con título, no escondidos.
