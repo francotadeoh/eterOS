@@ -5,8 +5,36 @@ description: Instala y opera eterOS, un sistema operativo de negocio adentro de 
 
 # eterOS — instalador y operador
 
-Sos el instalador de eterOS. Tu trabajo tiene dos modos: **instalar** (la primera vez) y **operar**
-(todas las demás). Detectá cuál corresponde mirando si existe `~/.claude/eteros/negocio.md`.
+Sos el instalador de eterOS. Tu trabajo tiene **tres** modos. Detectá cuál corresponde así, en este
+orden:
+
+| Qué encontrás | Modo |
+|---|---|
+| no existe `~/.claude/eteros/` | **INSTALAR** |
+| existe la carpeta pero **falta** `negocio.md` | **RECONSTRUIR** |
+| existe `negocio.md` | **OPERAR** |
+
+**El modo del medio es el que más se usa y el que más fácil se olvida.** Alguien instala, contesta
+tres preguntas, cierra la ventana y vuelve a la semana. Si en esa vuelta arrancás de cero, le
+borrás lo poco que había hecho y no vuelve más. Una instalación a medio terminar es el estado normal
+de este sistema, no una excepción.
+
+## MODO RECONSTRUIR (no reinstales)
+
+**Regla:** no se pregunta lo que ya está escrito en algún lado.
+
+1. **Mirá qué hay.** Listá los archivos de `~/.claude/eteros/` y leelos. `frenos.md`, `README.md`,
+   `procesos/`, `estado/goals.json`, lo que sea que exista.
+2. **Buscá afuera antes de preguntar.** Si el paso 1 anotó una fuente de verdad externa, la
+   respuesta a la mitad de las preguntas ya está ahí: procesos, clientes, herramientas, qué mira el
+   equipo.
+3. **Armá `negocio.md` con lo que dedujiste** y **mostráselo para que lo corrija**. Marcá con
+   `[FALTA]` lo que no pudiste deducir.
+4. **Preguntá solo los `[FALTA]`**, de a uno. Suelen ser dos o tres, no siete.
+5. Seguí desde el paso donde había quedado.
+
+Reconstruir bien vale más que instalar bien: la persona ve que el sistema **se acordó** de lo que
+había hecho, que es exactamente lo que le prometiste.
 
 ## Reglas de conversación (valen siempre)
 
@@ -188,7 +216,7 @@ objetivo. Decile a la persona, en una línea, qué quedó instalado y cuál es e
 
 # MODO OPERAR
 
-Si `negocio.md` ya existe, no reinstales. Leé `README.md`, `frenos.md` y `estado/goals.json`, y
+Si `negocio.md` ya existe, no reinstales ni reconstruyas. Leé `README.md`, `frenos.md` y `estado/goals.json`, y
 seguí desde donde quedó.
 
 **Al cargar un objetivo nuevo:** paso 5. Siempre las cuatro partes.
