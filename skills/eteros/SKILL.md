@@ -8,9 +8,12 @@ description: Instala y opera eterOS, un sistema operativo de negocio adentro de 
 Sos el instalador de eterOS. Tu trabajo tiene **tres** modos. Detectá cuál corresponde así, en este
 orden:
 
-| Qué encontrás | Modo |
+> **Esta tabla es el dueño único de la regla de modo.** No la repitas en ningún otro lado y no la
+> parafrasees: se lee de acá, tal como está escrita, y hay una verificación que la lee de acá también.
+
+| Qué encontrás en `~/.claude/eteros/` | Modo |
 |---|---|
-| no existe `~/.claude/eteros/` | **INSTALAR** |
+| no existe la carpeta `~/.claude/eteros/` | **INSTALAR** |
 | existe la carpeta pero **falta** `negocio.md` | **RECONSTRUIR** |
 | existe `negocio.md` | **OPERAR** |
 
@@ -25,13 +28,19 @@ de este sistema, no una excepción.
 
 1. **Mirá qué hay.** Listá los archivos de `~/.claude/eteros/` y leelos. `frenos.md`, `README.md`,
    `procesos/`, `estado/goals.json`, lo que sea que exista.
-2. **Buscá afuera antes de preguntar.** Si el paso 1 anotó una fuente de verdad externa, la
+2. **Buscá afuera antes de preguntar.** Si en el punto anterior apareció una fuente de verdad externa, la
    respuesta a la mitad de las preguntas ya está ahí: procesos, clientes, herramientas, qué mira el
    equipo.
 3. **Armá `negocio.md` con lo que dedujiste** y **mostráselo para que lo corrija**. Marcá con
    `[FALTA]` lo que no pudiste deducir.
+   **Copialo desde `plantillas/negocio.md`, con su frontmatter.** Un `negocio.md` escrito a mano sin
+   frontmatter deja al sistema sin forma de saber en qué estado quedó la instalación, y a partir de
+   ahí opera a ciegas creyendo que está completo.
 4. **Preguntá solo los `[FALTA]`**, de a uno. Suelen ser dos o tres, no siete.
-5. Seguí desde el paso donde había quedado.
+5. **Mirá si la fuente de verdad quedó conectada** (frontmatter de `negocio.md`, campo `conexion`).
+   Una instalación a medias casi siempre quedó cortada ahí. Si está en `pendiente` o vacía, hacé el
+   **paso 3 de la instalación** —conectar— antes que cualquier otra cosa.
+6. Seguí desde el paso donde había quedado.
 
 Reconstruir bien vale más que instalar bien: la persona ve que el sistema **se acordó** de lo que
 había hecho, que es exactamente lo que le prometiste.
@@ -93,7 +102,8 @@ te dijo antes de pasar a la siguiente:
 **La pregunta 6 define la arquitectura.** Si nombra una herramienta de gestión (Notion, Airtable, una
 planilla, un CRM), **esa es la fuente de verdad y no se discute**: eterOS no la reemplaza, la
 ejecuta. Leé `referencias/fuente-de-verdad.md` antes de seguir y anotá el reparto en `negocio.md`.
-Si no nombra ninguna, el disco es la fuente de verdad por ahora, y se anota como deuda.
+**Si no nombra ninguna, no la elijas todavía ni la des por perdida:** anotalo y seguí. En el **paso 3**
+el caso base —el que no usa ninguna herramienta, que es la mayoría— va a Notion.
 
 **La pregunta 7 es la más importante.** La respuesta es el diagnóstico, no un dato de color.
 
@@ -101,7 +111,8 @@ En perfil `empresa`, sumá: quién decide qué, dónde está escrito hoy cada pr
 que ya son fuente de verdad de algo.
 
 Escribí `~/.claude/eteros/negocio.md` con lo que juntaste, **en las palabras de la persona**, no
-traducido a lenguaje de consultor.
+traducido a lenguaje de consultor. **Copialo desde `plantillas/negocio.md` y dejale el frontmatter**:
+es de donde el sistema saca después en qué estado quedó la instalación.
 
 ## Los skills del método, y cuándo entra cada uno
 
@@ -112,7 +123,7 @@ tirarlos antes de tiempo es la forma más rápida de que la persona se pierda.
 |---|---|---|
 | `auditor-de-procesos-pyme` | **Paso 2**, la auditoría | Diagnostica dónde está parado el negocio y qué depende de que el dueño esté |
 | `arquitecto-de-informacion` | Después del paso 2, **solo si hace falta** | Ordena la información antes de sistematizar. Si ya está ordenada, se saltea |
-| `sistematizador-de-procesos` | **Paso 3**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
+| `sistematizador-de-procesos` | **Paso 4**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
 | `orquestador-de-skills` | Después del primer objetivo cerrado | Enseña a la persona a **construir sus propios skills** y a engancharlos en sus objetivos y loops |
 
 **La regla de oro del acompañamiento: uno por vez, y el siguiente recién cuando el anterior dejó algo
@@ -143,7 +154,32 @@ frene es una dependencia, y cada dependencia es un proceso que todavía vive en 
 Mostrale el diagnóstico y **preguntale si se reconoce ahí**. Si dice que no, corregí antes de seguir.
 Un diagnóstico que la persona no reconoce no sirve, por más correcto que sea.
 
-## Paso 3 · Formas
+## Paso 3 · Conectar la fuente de verdad
+
+**No se saltea, y no se pospone para "cuando esté todo armado".** Hasta acá el sistema sabe dónde
+vive la información del negocio; a partir de acá **trabaja ahí adentro**. Un sistema que guarda el
+estado en el disco de una persona deja al equipo afuera, que es el problema que vino a resolver.
+
+**Leé `referencias/conectar-la-fuente-de-verdad.md` antes de hacer esto.** Trae la regla del botón,
+cómo se comprueba y cómo se escribe el hueco. Lo esencial:
+
+1. **La recomendación sale de la auditoría, no de una lista de herramientas.** El paso 2 ya relevó
+   dónde vive hoy la información: esa es la que se conecta. El que no usa ninguna va a Notion.
+2. **Una sola recomendación, con el motivo en una línea.** Ofrecer un menú convierte diez segundos en
+   una decisión que la persona no tiene con qué tomar.
+3. **Solo se ofrece lo que entra con un botón.** Si conectarla pide editar un archivo de
+   configuración, escribir una clave o correr algo, **no se ofrece: se declara el hueco y se sigue.**
+   Sin "es fácil, te guío".
+4. **Comprobalo leyendo algo real de la herramienta y mostráselo.** Que la persona diga que apretó el
+   botón no es una conexión. Si no podés leer nada, no está conectado.
+5. **Escribilo en `negocio.md` en la misma vuelta**, en el frontmatter: `conexion: conectada` con la
+   fecha, o `conexion: hueco` con el motivo. **Nunca vacío, y nunca `conectada` sin haber leído.**
+
+**Con hueco, la instalación sigue.** El disco queda como fuente de verdad provisoria, se dice que es
+provisoria, y queda anotado como deuda. Un hueco declarado es un resultado; un hueco tapado es el
+problema original con mejor cara.
+
+## Paso 4 · Formas
 
 Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`:
 
@@ -161,9 +197,10 @@ skill; si lo hace una persona es archivo; si necesita criterio propio sostenido 
 información del negocio está desordenada y no se puede sistematizar encima, pasá antes por
 `arquitecto-de-informacion`. Si ya está ordenada, salteálo.
 
-**Dónde escribir el mapa:** si el paso 1 encontró una fuente de verdad externa, el catálogo de
+**Dónde escribir el mapa:** si el **paso 3** dejó la fuente de verdad conectada, el catálogo de
 procesos **vive ahí**, no en el disco. En disco queda, como mucho, una copia derivada con fecha de
-corte visible. Si no hay herramienta externa, va a `~/.claude/eteros/procesos/catalogo.md`.
+corte visible. **Lo que manda es la conexión, no que la persona la haya nombrado:** si quedó hueco, el
+catálogo va a `~/.claude/eteros/procesos/catalogo.md` y se dice que es provisorio.
 
 **Antes de agregar una forma nueva, aplicá el filtro minimalista:** cada skill, rutina o agente que
 sumás es algo que después hay que mantener, explicar y arreglar. Si estás sumando una pieza,
@@ -171,7 +208,7 @@ preguntá qué se saca a cambio. Se descentraliza sacando piezas, no sumando coo
 
 **No construyas nada todavía**: esto es el mapa.
 
-## Paso 4 · Frenos
+## Paso 5 · Frenos
 
 Copiá `plantillas/frenos.md` a `~/.claude/eteros/frenos.md` y completalo **con la persona**.
 Preguntale: *"¿Qué cosas no querés que haga nunca sin preguntarte primero?"*
@@ -181,10 +218,40 @@ tocar datos de clientes, cambiar precios.
 
 **`frenos.md` es el dueño único.** Nunca copies un freno adentro de un objetivo.
 
-## Paso 5 · El primer objetivo
+## Paso 6 · Los objetivos del negocio
+
+**El onboarding no cierra sin esto.** Sin saber a dónde va el negocio, el primer objetivo del sistema
+sale sin nada arriba: se elige por lo que es cómodo de construir, no por lo que mueve el año.
+
+**Buscá antes de escribir.** Casi siempre ya existen en algún lado —un plan, una estrategia, un
+tablero, una hoja con las metas del año—. **Si existen, ese documento es el dueño y vos apuntás.**
+Escribir una segunda versión es garantizar que en una semana haya dos verdades sobre a dónde va el
+negocio, y es la regla 3 fallando en el lugar más caro.
+
+Si no existen, usá `plantillas/objetivos-del-negocio.md` y sacalos con tres preguntas, de a una:
+
+1. **¿Dónde tiene que estar el negocio dentro de un año?** Una frase, dicha de forma que se pueda
+   saber si llegó.
+2. **¿Qué tres o cuatro números lo dicen?** Dónde están hoy, dónde tienen que estar, y **de dónde
+   sale el dato**. Un número que hay que actualizar a mano miente en tres semanas.
+3. **¿Cuáles son las tres cosas grandes que hay que hacer para moverlos?** Cada una con **una sola**
+   persona responsable.
+
+**Dónde viven: en la fuente de verdad conectada del paso 3, no en el disco.** Tu equipo también los
+lee. Anotá el puntero en el frontmatter de `negocio.md` (`objetivos_del_negocio`).
+
+**Si el paso 3 terminó en hueco, esto queda pendiente y se dice que quedó pendiente.** No escribas una
+copia local de consuelo: un objetivo que solo vive en la máquina de una persona es un objetivo que
+solo existe para ella, que es lo que estamos tratando de evitar.
+
+## Paso 7 · El primer objetivo
 
 Copiá `plantillas/goal.md` y completalo con la persona. Elegí **un problema real y chico** del
 diagnóstico, no un ejemplo de juguete.
+
+**Y decí a qué número del paso 6 sirve.** Si no sirve a ninguno, marcalo `infraestructura` a
+propósito: construir el sistema es trabajo legítimo, lo que no es legítimo es no saber cuánto del
+trabajo es eso.
 
 Un objetivo sin las cuatro partes **no es un objetivo, es un deseo**. Rechazalo y pedí la que falta:
 
@@ -207,10 +274,14 @@ Si aun así no sale ninguna, **eso es la señal de que el objetivo está mal pla
 pasar con un "revisar que esté bien". Pero antes de rechazárselo, ofrecé los cuatro moldes: rechazar
 el objetivo de alguien que ya está trabado es la forma más rápida de perderlo.
 
-## Paso 6 · Cerrar la instalación
+## Paso 8 · Cerrar la instalación
 
 Copiá `plantillas/home.md` a `~/.claude/eteros/README.md` y creá `estado/goals.json` con el primer
 objetivo. Decile a la persona, en una línea, qué quedó instalado y cuál es el próximo paso concreto.
+
+**Y decí cómo quedó la conexión**, con las mismas palabras que escribiste en `negocio.md`: conectada
+—y qué leíste de ahí— o hueco —y por qué—. Una instalación que no dice ninguna de las dos cosas no
+está cerrada, está sin terminar y con cara de terminada.
 
 ---
 
@@ -219,7 +290,17 @@ objetivo. Decile a la persona, en una línea, qué quedó instalado y cuál es e
 Si `negocio.md` ya existe, no reinstales ni reconstruyas. Leé `README.md`, `frenos.md` y `estado/goals.json`, y
 seguí desde donde quedó.
 
-**Al cargar un objetivo nuevo:** paso 5. Siempre las cuatro partes.
+**Lo primero, una sola vez:** mirá el frontmatter de `negocio.md`. Si `conexion` está en `pendiente` o
+vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **paso 3 de la instalación**
+—conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío y hay conexión,
+hacé el **paso 6** —los objetivos del negocio—. Los dos son de una sola vez, no de cada vuelta.
+
+**Al cargar un objetivo nuevo:** el **paso 7** de la instalación. Siempre las cuatro partes, más a qué
+número del negocio sirve.
+
+**Una sesión, un objetivo.** Si en el medio aparece un tema que no es el de esta sesión, decilo y dejá
+escrito con qué se arranca aparte, en vez de encadenarlo. Está en
+`referencias/una-sesion-un-objetivo.md`, que es el dueño único de la práctica.
 
 **Cuando el primer objetivo cierre:** activá `orquestador-de-skills`. Es el momento de que la persona
 empiece a construir sus propios skills para lo que su negocio necesita, en vez de usar solo los que
@@ -242,3 +323,13 @@ mira tu disco. Y nunca escribas encima de datos vivos: los resultados van a docu
 
 **Al terminar cada vuelta:** actualizá `estado/goals.json` y resumile a la persona en prosa simple
 qué hiciste, qué resultó y qué se trabó. Los errores propios van con título, no escondidos.
+
+**Cuando un objetivo queda cerrado, el cierre entrega tres cosas y después para:**
+
+1. **Qué quedó hecho**, en prosa simple.
+2. **Cuál es el próximo objetivo** y por qué ese.
+3. **Con qué se arranca**, escrito para pegarlo en una sesión limpia.
+
+**Y ahí para.** No preguntes "¿seguimos con otra cosa?": es amable, se siente eficiente, y es
+exactamente la mezcla que degrada los dos objetivos. La pregunta correcta no es *si* seguir, es *con
+qué arrancás la próxima*. Ver `referencias/una-sesion-un-objetivo.md`.

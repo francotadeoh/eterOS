@@ -210,6 +210,25 @@ los principales cuellos de botella, y cuál es la oportunidad más grande]
   digital estructurada; la info vive en cabeza + WhatsApp + Excel
   sueltos.
 
+**Qué conectar** (una sola, con el motivo en una línea):
+
+De todas las herramientas de la Fase 1, **cuál es la que el equipo mira
+para saber cómo va el negocio**. Esa es la que hay que conectar, y sale
+de este relevamiento — no de una lista de herramientas disponibles.
+
+| Lo que encontraste | Qué se conecta |
+|---|---|
+| stack presente, una manda claramente | **esa**, aunque no sea la que vos elegirías |
+| stack presente, varias y ninguna manda | la que tenga **lo que el equipo mira**; anotá que hay dispersión |
+| stack ausente | **Notion**, que es el caso base |
+
+Escribilo así en el reporte: **"Conectar: [herramienta]. Motivo: es donde
+hoy vive [qué]."** Una sola recomendación. Un menú de opciones convierte
+diez segundos en una decisión que el participante no tiene con qué tomar.
+
+Esto **no es** proponer que cambie de herramienta. Es decir cuál de las
+que ya usa pasa a ser la fuente de verdad del sistema.
+
 **Próximo paso concreto — ruteo automático:**
 - SI el stack está presente → la semana que viene vas directo a
   **Semana 2 con el skill `sistematizador-de-procesos`**. Ahí convertimos
@@ -270,8 +289,11 @@ Decile al participante:
 - **Validá con el participante antes de avanzar.** Después de cada fase,
   mostrá lo que documentaste y preguntá "¿esto está bien o me falta algo?"
 
-- **No recomiendes herramientas todavía.** Esta auditoría es SOLO para
-  entender y documentar. Las herramientas correctas las definimos en
+- **No recomiendes herramientas NUEVAS.** Esta auditoría es SOLO para
+  entender y documentar. Decir cuál de las que **ya usa** pasa a ser la
+  fuente de verdad no es recomendar una herramienta: es leer el
+  relevamiento. Proponerle adoptar una que hoy no usa, sí lo es, y no va
+  acá. Las herramientas correctas las definimos en
   Semana 2 cuando armemos el skill operativo del proceso prioritario.
   La automatización completa — que ese skill corra solo en la cadencia
   que corresponda — viene en Semana 3 con Claude Tasks. Si el

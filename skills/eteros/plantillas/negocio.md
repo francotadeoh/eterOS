@@ -1,6 +1,10 @@
 ---
 perfil: pyme                 # pyme | empresa
 fuente_de_verdad: disco      # disco | <nombre de la herramienta donde vive el estado del negocio>
+conexion: pendiente          # conectada | hueco | pendiente | no-aplica
+conexion_motivo:             # obligatorio si conexion es "hueco": por qué no entró con un botón
+conexion_comprobada:         # AAAA-MM-DD del día que leíste algo real de la herramienta
+objetivos_del_negocio:       # dónde viven, en la fuente de verdad. Vacío = todavía no se escribieron
 actualizado: AAAA-MM-DD
 ---
 
@@ -31,6 +35,26 @@ ventas, procesos, documentos) y el disco es dueño de los objetivos y del criter
 
 Si no hay ninguna, el disco lo es por ahora. Anotarlo como deuda: un negocio con equipo la va a
 necesitar.
+
+## Cómo quedó la conexión
+
+Una de dos, nunca vacío. Lo mismo que dice el frontmatter, en una frase:
+
+- **Conectada** — y qué leíste de ahí para comprobarlo. *"Leí la base Clientes, 43 filas."*
+- **Hueco** — y por qué no entró con un botón, más qué se hace mientras tanto.
+
+Ver `referencias/conectar-la-fuente-de-verdad.md`. **Decir "conectada" sin haber leído nada de la
+herramienta es el peor estado posible del sistema**: el hueco se ve y se trabaja; la mentira se
+descubre el día que el equipo no encuentra lo que el sistema dijo que guardó.
+
+## A dónde va el negocio
+
+**No se escribe acá.** Los objetivos viven en la fuente de verdad conectada, y en el frontmatter va
+el puntero (`objetivos_del_negocio`). Ver `plantillas/objetivos-del-negocio.md`.
+
+Si la conexión es un hueco, esto queda pendiente y se dice que quedó pendiente. **No se escribe una
+copia local de consuelo:** un objetivo que solo vive en tu máquina es un objetivo que solo existe
+para vos, y es exactamente lo que el sistema vino a evitar.
 
 ## Si el negocio funcionara dos semanas sin él, qué se rompe primero
 
