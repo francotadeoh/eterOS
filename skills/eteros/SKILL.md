@@ -79,8 +79,11 @@ siete cosas.
 Preguntá: **"¿Cuánta gente trabaja hoy en tu negocio, contándote?"**
 
 - **1 a 15** → perfil `pyme`
-- **más de 15**, o si menciona que ya tiene procesos escritos y un equipo con roles → ofrecé el
-  perfil `empresa` y confirmá.
+- **más de 15** → ofrecé el perfil `empresa` y confirmá.
+- **entre 6 y 15, y además ya tiene procesos escritos que alguien usa** → ofrecé `empresa` y confirmá.
+  **Las dos cosas juntas.** Tener roles no alcanza: cualquier negocio de diez personas tiene roles, y
+  con eso solo se manda a perfil `empresa` a alguien que necesita las siete preguntas y un objetivo
+  por vez.
 
 Anotá el perfil. Cambia cuántas preguntas hacés y cuántos objetivos abrís, **no** cambia el sistema.
 
@@ -164,20 +167,36 @@ estado en el disco de una persona deja al equipo afuera, que es el problema que 
 cómo se comprueba y cómo se escribe el hueco. Lo esencial:
 
 1. **La recomendación sale de la auditoría, no de una lista de herramientas.** El paso 2 ya relevó
-   dónde vive hoy la información: esa es la que se conecta. El que no usa ninguna va a Notion.
+   dónde vive hoy la información: esa es la que se conecta. **Usar muchas no es tener una:** si el
+   equipo, para saber cómo va el negocio, se lo pregunta al dueño, no hay ninguna que mande y va a
+   Notion, igual que el que no usa ninguna.
 2. **Una sola recomendación, con el motivo en una línea.** Ofrecer un menú convierte diez segundos en
    una decisión que la persona no tiene con qué tomar.
 3. **Solo se ofrece lo que entra con un botón.** Si conectarla pide editar un archivo de
    configuración, escribir una clave o correr algo, **no se ofrece: se declara el hueco y se sigue.**
    Sin "es fácil, te guío".
-4. **Comprobalo leyendo algo real de la herramienta y mostráselo.** Que la persona diga que apretó el
-   botón no es una conexión. Si no podés leer nada, no está conectado.
-5. **Escribilo en `negocio.md` en la misma vuelta**, en el frontmatter: `conexion: conectada` con la
+4. **Si la persona no quiere dar el acceso, es hueco a la primera y no se insiste.** Con su motivo
+   propio, que no es el del botón. Un límite puesto por la persona se acepta, no se negocia.
+5. **Si hace falta abrir una cuenta, decilo antes** y contalo como costo: es lo único de toda la
+   instalación que no es apretar un botón. Y si es Notion, la primera línea es que es gratis.
+6. **Comprobalo leyendo algo real de la herramienta y mostráselo.** Que la persona diga que apretó el
+   botón no es una conexión. Si no podés leer nada, no está conectado. Y si lo que leíste está vacío
+   o viejo, **está conectado igual y se dice que está vacío**.
+7. **Escribilo en `negocio.md` en la misma vuelta**, en el frontmatter: `conexion: conectada` con la
    fecha, o `conexion: hueco` con el motivo. **Nunca vacío, y nunca `conectada` sin haber leído.**
 
-**Con hueco, la instalación sigue.** El disco queda como fuente de verdad provisoria, se dice que es
-provisoria, y queda anotado como deuda. Un hueco declarado es un resultado; un hueco tapado es el
-problema original con mejor cara.
+**Con hueco, la instalación sigue.** Un hueco declarado es un resultado; un hueco tapado es el problema
+original con mejor cara.
+
+**Y los dos huecos no se tratan igual.** Si el hueco es **de la herramienta** —no entra con un botón—
+ofrecé una vez abrir una al lado **solo para lo del sistema**, sin tocar ni migrar la que ya usan; si
+acepta, se anota en `fuente_del_sistema` con su fecha de comprobada, y `conexion` sigue diciendo hueco
+porque el hueco del negocio no se borra. Si el hueco es **de la persona** —no quiere dar el acceso—
+**no se ofrece nada más en esta sesión**: ofrecerle abrir otra es pedirle otro acceso, y es insistir
+con otro nombre.
+
+Si no hay segunda, el disco queda como fuente de verdad provisoria, se dice que es provisoria, y queda
+anotado como deuda.
 
 ## Paso 4 · Formas
 
@@ -199,8 +218,14 @@ información del negocio está desordenada y no se puede sistematizar encima, pa
 
 **Dónde escribir el mapa:** si el **paso 3** dejó la fuente de verdad conectada, el catálogo de
 procesos **vive ahí**, no en el disco. En disco queda, como mucho, una copia derivada con fecha de
-corte visible. **Lo que manda es la conexión, no que la persona la haya nombrado:** si quedó hueco, el
-catálogo va a `~/.claude/eteros/procesos/catalogo.md` y se dice que es provisorio.
+corte visible. **Lo que manda es la conexión, no que la persona la haya nombrado.**
+
+**Y si quedó hueco pero hay `fuente_del_sistema`, el catálogo va ahí.** Es literalmente para lo que se
+abrió: en el paso 3 le dijiste en voz alta *"un Notion al lado, solo para el mapa de procesos y los
+objetivos"*. Mandarlo al disco después de eso es incumplir en el paso 4 lo que prometiste en el 3.
+
+**Solo con el hueco entero** —sin segunda fuente— el catálogo va a
+`~/.claude/eteros/procesos/catalogo.md` y se dice que es provisorio.
 
 **Antes de agregar una forma nueva, aplicá el filtro minimalista:** cada skill, rutina o agente que
 sumás es algo que después hay que mantener, explicar y arreglar. Si estás sumando una pieza,
@@ -228,21 +253,50 @@ tablero, una hoja con las metas del año—. **Si existen, ese documento es el d
 Escribir una segunda versión es garantizar que en una semana haya dos verdades sobre a dónde va el
 negocio, y es la regla 3 fallando en el lugar más caro.
 
-Si no existen, usá `plantillas/objetivos-del-negocio.md` y sacalos con tres preguntas, de a una:
+**El puntero tiene que ser algo que vos puedas volver a leer.** `objetivos_del_negocio: "el PDF que me
+mandó el contador"` cumple la regla y no sirve para nada: dentro de un mes nadie lo encuentra y el
+sistema no puede mirar contra qué está trabajando. Si el documento existe pero está en un lugar al que
+no llegás —un adjunto, un papel, la cabeza de otro—, pedí que lo pegue en la herramienta conectada y
+apuntá ahí. **Un puntero que no se puede seguir es un objetivo que no existe.**
+
+Si no existen, usá `plantillas/objetivos-del-negocio.md` y sacalos **de a una pregunta por vez**. Son
+tres temas, no tres preguntas: el segundo lleva varias vueltas y se hace de a una, nunca todo junto.
 
 1. **¿Dónde tiene que estar el negocio dentro de un año?** Una frase, dicha de forma que se pueda
    saber si llegó.
-2. **¿Qué tres o cuatro números lo dicen?** Dónde están hoy, dónde tienen que estar, y **de dónde
-   sale el dato**. Un número que hay que actualizar a mano miente en tres semanas.
+2. **Los números que lo dicen, de a uno.** Primero *"¿qué número te diría que llegaste?"*. Con ese
+   número en la mano, y recién ahí: dónde está hoy · dónde tiene que estar · **de dónde sale el
+   dato**. Después el siguiente. Tres o cuatro números alcanzan. Un número que hay que actualizar a
+   mano miente en tres semanas.
 3. **¿Cuáles son las tres cosas grandes que hay que hacer para moverlos?** Cada una con **una sola**
-   persona responsable.
+   persona responsable. Si el negocio es de una o dos personas, la respuesta va a ser *"yo"* tres
+   veces: está bien, anotalo así y no lo fuerces.
+
+**Si la primera respuesta no se puede verificar, no la rechaces: ofrecé el molde.** *"Más ordenado y
+facturar más"* es lo que contesta cualquiera al que le preguntás por el año, y no es una respuesta
+mala: es una respuesta sin forma. Devolvésela armada y que corrija — *"¿Sería algo como: en un año
+facturo X sin que las ventas pasen por mí?"*. **Rechazarle la frase a alguien que ya está trabado es
+la forma más rápida de perderlo**, igual que en el paso 7. Si después de dos vueltas no sale,
+escribila con lo que dijo, marcala como provisoria y seguí.
 
 **Dónde viven: en la fuente de verdad conectada del paso 3, no en el disco.** Tu equipo también los
 lee. Anotá el puntero en el frontmatter de `negocio.md` (`objetivos_del_negocio`).
 
-**Si el paso 3 terminó en hueco, esto queda pendiente y se dice que quedó pendiente.** No escribas una
-copia local de consuelo: un objetivo que solo vive en la máquina de una persona es un objetivo que
-solo existe para ella, que es lo que estamos tratando de evitar.
+**Si el paso 3 terminó en hueco, las preguntas se hacen igual.** Lo que no se hace es guardarlas en el
+disco de eterOS: una copia local de consuelo es un objetivo que solo existe para una persona, que es
+lo que estamos tratando de evitar. Pero no preguntarlas es peor — le quita a la persona lo único que
+vino a buscar, y sin objetivos el paso 7 elige el primero por lo que es cómodo de construir.
+
+Entonces: **preguntá las tres, y dejá el resultado donde esa persona ya escribe** — el documento que
+usa, la planilla del negocio, el mail que se manda a sí misma. Ella es la dueña de dónde. Después
+anotá en `objetivos_del_negocio` **dónde quedaron** y que la conexión está pendiente, así:
+
+```yaml
+objetivos_del_negocio: los escribió en su planilla del negocio · sin conexión, no los puedo leer
+```
+
+Y decíselo en una línea: *"Te los dejo escritos donde vos los mirás. Cuando conectemos, los traigo
+para acá y los va a poder ver tu equipo también."*
 
 ## Paso 7 · El primer objetivo
 
@@ -283,6 +337,11 @@ objetivo. Decile a la persona, en una línea, qué quedó instalado y cuál es e
 —y qué leíste de ahí— o hueco —y por qué—. Una instalación que no dice ninguna de las dos cosas no
 está cerrada, está sin terminar y con cara de terminada.
 
+**Si hay `fuente_del_sistema`, decí las dos**, en ese orden y sin mezclarlas: *"Tu ERP no se pudo
+conectar y quedó anotado. El mapa de procesos y los objetivos quedaron en el Notion que abrimos al
+lado, y ahí sí los ve tu equipo."* Decir solo la buena tapa el hueco; decir solo el hueco le esconde
+lo único que sí quedó andando.
+
 ---
 
 # MODO OPERAR
@@ -292,8 +351,9 @@ seguí desde donde quedó.
 
 **Lo primero, una sola vez:** mirá el frontmatter de `negocio.md`. Si `conexion` está en `pendiente` o
 vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **paso 3 de la instalación**
-—conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío y hay conexión,
-hacé el **paso 6** —los objetivos del negocio—. Los dos son de una sola vez, no de cada vuelta.
+—conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío, hacé el
+**paso 6** —los objetivos del negocio—, **haya conexión o haya hueco**: con hueco se hacen igual y
+quedan donde la persona ya escribe. Los dos son de una sola vez, no de cada vuelta.
 
 **Al cargar un objetivo nuevo:** el **paso 7** de la instalación. Siempre las cuatro partes, más a qué
 número del negocio sirve.
@@ -320,6 +380,11 @@ fuese mejor.
 **Al tocar el estado del negocio:** si hay una fuente de verdad externa, **leé de ahí y escribí ahí
 en el mismo turno**. Nunca guardes en disco un dato que define el estado del negocio: el equipo no
 mira tu disco. Y nunca escribas encima de datos vivos: los resultados van a documentos nuevos.
+
+**Cuál, si hay dos.** Con `conexion: hueco` y `fuente_del_sistema` cargada, el reparto es fijo: lo del
+**negocio** —clientes, ventas, stock— se lee de la del negocio y **no se escribe** (por eso es hueco);
+lo del **sistema** —objetivos, catálogo de procesos, estado de los goals— vive en `fuente_del_sistema`
+y se escribe ahí. Ante la duda, **el disco no es ninguna de las dos.**
 
 **Al terminar cada vuelta:** actualizá `estado/goals.json` y resumile a la persona en prosa simple
 qué hiciste, qué resultó y qué se trabó. Los errores propios van con título, no escondidos.

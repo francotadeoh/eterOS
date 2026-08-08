@@ -4,6 +4,8 @@ fuente_de_verdad: disco      # disco | <nombre de la herramienta donde vive el e
 conexion: pendiente          # conectada | hueco | pendiente | no-aplica
 conexion_motivo:             # obligatorio si conexion es "hueco": por qué no entró con un botón
 conexion_comprobada:         # AAAA-MM-DD del día que leíste algo real de la herramienta
+fuente_del_sistema:          # solo si conexion es "hueco" Y aceptó abrir una al lado. Van los dos o ninguno
+fuente_del_sistema_comprobada:   # AAAA-MM-DD. Se gana igual: leyendo algo real de ahí
 objetivos_del_negocio:       # dónde viven, en la fuente de verdad. Vacío = todavía no se escribieron
 actualizado: AAAA-MM-DD
 ---
@@ -52,9 +54,12 @@ descubre el día que el equipo no encuentra lo que el sistema dijo que guardó.
 **No se escribe acá.** Los objetivos viven en la fuente de verdad conectada, y en el frontmatter va
 el puntero (`objetivos_del_negocio`). Ver `plantillas/objetivos-del-negocio.md`.
 
-Si la conexión es un hueco, esto queda pendiente y se dice que quedó pendiente. **No se escribe una
-copia local de consuelo:** un objetivo que solo vive en tu máquina es un objetivo que solo existe
-para vos, y es exactamente lo que el sistema vino a evitar.
+Si la conexión es un hueco, **las preguntas se hacen igual** y el resultado queda **donde vos ya
+escribís** — tu planilla, tu documento, el mail que te mandás a vos mismo. En el frontmatter va el
+puntero, diciendo que por ahora el sistema no los puede leer.
+
+**Lo que no se hace es la copia local de consuelo:** un objetivo que solo vive en el disco de eterOS
+es un objetivo que solo existe para una persona, y es exactamente lo que el sistema vino a evitar.
 
 ## Si el negocio funcionara dos semanas sin él, qué se rompe primero
 
