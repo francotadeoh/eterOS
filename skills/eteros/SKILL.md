@@ -96,8 +96,8 @@ te dijo antes de pasar a la siguiente:
 
 1. ¿A qué se dedica el negocio y hace cuánto?
 2. ¿Quién le compra y qué problema le resolvés?
-3. ¿Qué hacés vos personalmente en una semana normal? (buscá lo que hace **solo él**)
-4. ¿Qué es lo que más tiempo te come y menos te gusta?
+3. ¿Qué hiciste vos la semana pasada? (buscá lo que hace **solo él**)
+4. De todo eso, ¿qué cosas preferirías no estar haciendo?
 5. ¿Qué herramientas usan hoy para trabajar?
 6. De esas, ¿en cuál está lo que el equipo mira para saber cómo va el negocio?
 7. Si el negocio tuviera que funcionar dos semanas sin vos, ¿qué se rompe primero?
@@ -107,6 +107,12 @@ planilla, un CRM), **esa es la fuente de verdad y no se discute**: eterOS no la 
 ejecuta. Leé `referencias/fuente-de-verdad.md` antes de seguir y anotá el reparto en `negocio.md`.
 **Si no nombra ninguna, no la elijas todavía ni la des por perdida:** anotalo y seguí. En el **paso 3**
 el caso base —el que no usa ninguna herramienta, que es la mayoría— va a Notion.
+
+**La 3 y la 4 van pegadas y en ese orden, y no se reformulan.** La 3 pide **una semana concreta que ya
+pasó**, no una semana típica: "una semana normal" obliga a promediar y devuelve una generalidad. Y la
+4 sale **de la lista que él acaba de dar**, en plural. No le pidas el superlativo —"lo que *más* te
+come"— porque lo obliga a rankear antes de contestar, y lo que vuelve es *"y… todo"*. Enumerar les
+sale; abstraer, no.
 
 **La pregunta 7 es la más importante.** La respuesta es el diagnóstico, no un dato de color.
 
@@ -146,7 +152,11 @@ lo necesitaba.
 propio criterio. Con lo que devuelva, armá `~/.claude/eteros/diagnostico.md` que responda tres cosas:
 
 1. **Qué procesos existen hoy**, aunque no estén escritos. Sacalos de la respuesta 3 y 4.
-2. **Cuáles dependen de que la persona esté.** Esos son el cuello.
+2. **Cuáles dependen de que la persona esté.** Esos son el cuello. **Y partilos en dos, porque no son
+   lo mismo y piden pasos opuestos:** los que **no tienen nada armado** —hay que construirlos— y los
+   que **ya tienen algo armado y él igual los termina haciendo** —esos no hay que construirlos, hay
+   que **entregarlos**—. Si no los separás quedan escritos iguales, y el segundo es el estado más
+   común del que ya lleva un tiempo adentro: la herramienta existe, funciona, y lo acelera a él solo.
 3. **Cuál es el 4%**: lo que solo puede hacer él y que además mueve el negocio. Todo lo demás es
    candidato a delegarse.
 
@@ -154,8 +164,18 @@ Sumá una cuarta, que es la que mide el principio de dependencia cero: **si esta
 semanas, ¿qué se frena?** Aplicalo al dueño y a cada persona del equipo que haya nombrado. Lo que se
 frene es una dependencia, y cada dependencia es un proceso que todavía vive en una cabeza.
 
-Mostrale el diagnóstico y **preguntale si se reconoce ahí**. Si dice que no, corregí antes de seguir.
-Un diagnóstico que la persona no reconoce no sirve, por más correcto que sea.
+**Y de cada proceso que haya quedado arriba, averiguá una cosa más: ¿este ya lo intentó ordenar
+antes?** Un proceso que ya se intentó dos veces no se vuelve a plantear igual: o se parte en algo más
+chico, o se cambia de proceso. Volver a proponerle el mismo arranque al que ya arrancó tres veces es
+la forma más rápida de que lo abandone en el mismo lugar. **Empezar de nuevo le sale más barato que
+retomar**, y sin esta pregunta el diagnóstico no tiene forma de saberlo.
+
+**Devolvéselo contando, no preguntando.** Cuántos procesos hay, cuántos dependen de que esté él,
+cuántas horas suman, cuántos ya tienen algo armado. **Y sin una pregunta al final.** Si algo está mal,
+te va a corregir solo, y esa corrección vale más que un "sí, me reconozco": preguntarle si se
+reconoce invita al sí de cortesía, que es el peor resultado posible —un diagnóstico validado que
+nadie miró—. Si te corrige, corregí antes de seguir. Un diagnóstico que la persona no reconoce no
+sirve, por más correcto que sea.
 
 ## Paso 3 · Conectar la fuente de verdad
 
