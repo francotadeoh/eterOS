@@ -1,6 +1,6 @@
 # Conectar la fuente de verdad
 
-> **Dueño único de esta práctica.** El paso 2.5 del método apunta acá y no copia nada.
+> **Dueño único de esta práctica.** El paso 3 del método apunta acá y no copia nada.
 > Qué es la fuente de verdad y por qué manda ella está en `fuente-de-verdad.md`; acá está
 > **cómo se conecta**, qué pasa cuando no se puede, y cómo se comprueba.
 
@@ -47,6 +47,12 @@ ningún lado.
 
 ## La regla del botón
 
+**Si la herramienta ya está conectada en esta sesión, no se pide ningún botón.** Se comprueba
+leyendo algo real de ahí y se escribe `conexion: conectada` con la fecha. Pedirle que apriete un
+botón que ya apretó es hacerle dudar de algo que funciona, y escribirle `conexion: hueco` a una base
+que estás leyendo es una mentira del sistema sobre sí mismo, con el agravante de que la desmiente la
+pantalla. **Esta regla decide qué se *ofrece*, no qué se hace con lo que ya entró.**
+
 **Solo se ofrece conectar lo que entra con un botón.** Se aprieta, se aprueba en el navegador, y
 listo.
 
@@ -78,9 +84,10 @@ vuelve a ofrecer recién cuando haya visto algo funcionando, en otra sesión.
 1. **Decí cuál y por qué**, en una línea y en las palabras de la persona:
    *"Lo que tu equipo mira para saber cómo va el negocio está en Notion. Vamos a conectarlo para que
    yo trabaje ahí adentro y no en una copia mía."*
-2. **Pedí el botón, una sola vez y sin jerga.** Nombrá la herramienta, no la app desde donde está
-   hablando, ni el protocolo, ni el formato. Si pregunta qué es, la respuesta es *"es el permiso para
-   que yo pueda leer y escribir en tu Notion, igual que cuando conectás dos apps entre sí"*.
+2. **Pedí el botón, una sola vez y sin jerga** —y solo si hace falta pedirlo: **si ya está conectada,
+   saltá directo al punto 3.** Nombrá la herramienta, no la app desde donde está hablando, ni el
+   protocolo, ni el formato. Si pregunta qué es, la respuesta es *"es el permiso para que yo pueda
+   leer y escribir en tu Notion, igual que cuando conectás dos apps entre sí"*.
 3. **Comprobalo vos leyendo algo real de ahí.** Esto no es opcional y es el paso que más se saltea.
 4. **Escribí el resultado en `negocio.md`**, en el frontmatter, en la misma vuelta.
 

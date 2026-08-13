@@ -94,7 +94,9 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 ### Qué necesitás
 
 1. **Claude Code** (la app de escritorio sirve, no hace falta terminal).
-2. Unos **20 a 40 minutos** para la primera vez, según cuánto quieras contarle.
+2. Entre **una hora y media y dos horas y media** para la primera vez. El grueso se lo lleva la
+   auditoría de procesos, que sola declara 45 a 90 minutos según el tamaño del negocio.
+   **No hace falta hacerlo de una sentada:** si cerrás y volvés otro día, retoma donde quedaste.
 3. Nada más. No hay que instalar bases de datos ni contratar servicios.
 
 ### Los dos perfiles

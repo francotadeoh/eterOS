@@ -63,10 +63,12 @@ siguiente. Adaptá el lenguaje al contexto del participante.
 1. **¿A qué se dedica tu empresa y cuántas personas trabajan ahí?**
    (Buscás: rubro, tamaño del equipo, si tiene socios o es unipersonal)
 
-2. **Describime un día típico tuyo de trabajo, desde que arrancás hasta que
-   terminás. ¿Qué hacés concretamente?**
+2. **Contame qué hiciste vos la semana pasada. La semana pasada concreta, no
+   una semana cualquiera.**
    (Buscás: la proporción operativo vs. estratégico. Escuchá si menciona
-   tareas repetitivas, cruces de datos, responder consultas, armar reportes)
+   tareas repetitivas, cruces de datos, responder consultas, armar reportes.
+   Se pide una semana que ya pasó porque pedir la semana promedio obliga a
+   promediar y lo que vuelve es una generalidad: enumerar les sale, abstraer no)
 
 3. **¿Qué herramientas digitales usás hoy? Nombrá todas: WhatsApp, Excel,
    sistema contable, CRM, lo que sea.**
@@ -93,18 +95,28 @@ Generá un resumen ejecutivo breve:
 - Dependencia crítica del fundador: [qué se rompe si se va]
 - Primera observación: [tu lectura rápida del panorama]
 
-Mostralo y preguntá: "¿Esto refleja bien tu situación o me falta algo?"
+Mostralo cerrando con números y seguí. **Sin pregunta de validación.**
 
 ---
 
 ## FASE 2: Mapeo de procesos (20-40 min)
+
+> **Esta auditoría puede arrancar acá, y arranca acá cuando la activa eterOS.** En ese caso ya
+> tenés escrito el panorama —a qué se dedica, quién le compra, qué hizo la semana pasada, qué
+> herramientas usan, qué se rompe si se va dos semanas— porque te lo pasaron en un `negocio.md`.
+> **Leelo y usalo como si fuera tu Fase 1: no la vuelvas a hacer.** Preguntarle de nuevo lo que
+> contó hace veinte minutos es la forma más rápida de que sienta que no lo escuchaste.
+>
+> **De la Fase 1 falta una sola cosa cuando entrás por acá:** la pregunta 5, las horas semanales.
+> Ese número es el "antes" contra el que se mide todo lo demás. Preguntala y seguí.
 
 Objetivo: documentar los 3-5 procesos principales de la empresa y encontrar
 dónde están los cuellos de botella.
 
 ### Identificar los procesos clave
 
-Basándote en las respuestas de la Fase 1, identificá los procesos principales.
+Basándote en el panorama de la Fase 1 —o en el `negocio.md` que te pasaron, si entraste
+por acá—, identificá los procesos principales.
 Casi todas las PYMEs tienen variantes de estos:
 
 - **Proceso de ventas** (desde que llega un lead hasta que se cierra)
@@ -229,14 +241,12 @@ diez segundos en una decisión que el participante no tiene con qué tomar.
 Esto **no es** proponer que cambie de herramienta. Es decir cuál de las
 que ya usa pasa a ser la fuente de verdad del sistema.
 
-**Próximo paso concreto — ruteo automático:**
-- SI el stack está presente → la semana que viene vas directo a
-  **Semana 2 con el skill `sistematizador-de-procesos`**. Ahí convertimos
-  este proceso prioritario en un skill operativo personalizado que vos o
-  tu equipo pueden disparar en el día a día.
-- SI el stack está ausente → la semana que viene arrancás con
-  **Semana 2A usando el skill `arquitecto-de-informacion`** para armar
-  tu Cerebro Digital (Notion + Drive), y después pasás al sistematizador.
+**Próximo paso concreto — ruteo automático.** Es tuyo, no de la persona: no
+se lo recites, decidilo y seguí.
+- SI el stack está presente → lo siguiente es escribir el proceso
+  prioritario, con `sistematizador-de-procesos`.
+- SI el stack está ausente → antes hay que ordenar dónde vive cada cosa, con
+  `arquitecto-de-informacion`, y recién después escribir el proceso.
 
 ## Métricas base (tu "antes")
 - Horas semanales en operativo: [número]
@@ -248,28 +258,24 @@ que ya usa pasa a ser la fuente de verdad del sistema.
 
 ### Cierre de la auditoría
 
-Guardá el reporte final con el nombre canónico:
+**El reporte lo guardás vos.** No le pidas al participante que lo guarde, ni
+que lo titule de una forma exacta, ni que lo suba a ningún lado: la parte
+técnica no es suya, y un handoff que depende de que él acierte un título es un
+handoff roto. Si esto se activó desde eterOS va a
+`~/.claude/eteros/diagnostico.md`; si corre solo, donde ya viva la información
+del negocio.
 
-```
-Auditoría de Procesos — [Empresa] — [YYYY-MM-DD]
-```
+Decile dónde quedó, en una línea, y cerrá contando lo que encontraste con
+números: cuántos procesos hay, cuántos dependen de que esté él, cuántas horas
+suman, cuántos ya tienen algo armado.
 
-Este nombre es importante: el skill de Semana 2 lo busca automáticamente
-en Notion o Drive usando ese patrón. Si el participante lo guarda con
-otro título, el handoff a Semana 2 va a requerir pegar el reporte a mano.
+> "Listo. Te lo dejé escrito. Ahora tenés algo que el 95% de los dueños de
+> empresa no tienen: un mapa real de cómo funciona tu operación. No es teoría
+> — es lo que pasa todos los días en tu negocio, documentado."
 
-Decile al participante:
-
-> "Listo. Ahora tenés algo que el 95% de los dueños de empresa no tienen:
-> un mapa real de cómo funciona tu operación. No es teoría — es lo que
-> pasa todos los días en tu negocio, documentado."
->
-> "Guardá este reporte con el título: 'Auditoría de Procesos —
-> [Empresa] — [fecha de hoy]'. La semana que viene el skill de Semana 2
-> lo va a leer solo desde tu Notion o Drive — así no tenés que volver a
-> contarme todo."
->
-> "Por ahora, el trabajo más importante ya está hecho: tenés claridad."
+**Y no despidas la sesión acá.** Si esto se activó desde eterOS, la auditoría
+es el paso 2 de 8 y lo que sigue es conectar la fuente de verdad: cortá antes
+de esta sección y devolvele el control a eterOS.
 
 ---
 
@@ -286,21 +292,21 @@ Decile al participante:
   decís "proceso", que quede claro que es "la secuencia de cosas que pasan
   desde que X hasta que Y".
 
-- **Validá con el participante antes de avanzar.** Después de cada fase,
-  mostrá lo que documentaste y preguntá "¿esto está bien o me falta algo?"
+- **Cerrá contando, no preguntando.** Después de cada fase mostrá lo que
+  documentaste, con números, y seguí. Preguntarle si se reconoce invita al sí
+  de cortesía, que es el peor resultado posible: un diagnóstico validado que
+  nadie miró. Si algo está mal te va a corregir solo, y esa corrección vale
+  más que un "sí, me reconozco". Si te corrige, corregí antes de seguir.
 
 - **No recomiendes herramientas NUEVAS.** Esta auditoría es SOLO para
   entender y documentar. Decir cuál de las que **ya usa** pasa a ser la
   fuente de verdad no es recomendar una herramienta: es leer el
   relevamiento. Proponerle adoptar una que hoy no usa, sí lo es, y no va
-  acá. Las herramientas correctas las definimos en
-  Semana 2 cuando armemos el skill operativo del proceso prioritario.
-  La automatización completa — que ese skill corra solo en la cadencia
-  que corresponda — viene en Semana 3 con Claude Tasks. Si el
-  participante pregunta "¿qué herramienta uso?", respondé: "Primero
-  terminemos de entender el proceso. La herramienta correcta depende de
-  lo que encontremos acá — y la vamos a elegir juntos la semana que
-  viene."
+  acá. Las herramientas correctas se definen después, cuando se escriba
+  el proceso prioritario. Si el participante pregunta "¿qué herramienta
+  uso?", respondé: "Primero terminemos de entender el proceso. La
+  herramienta correcta depende de lo que encontremos acá — y la vamos a
+  elegir juntos."
 
 - **Celebrá el avance.** Cuando el participante termina la auditoría,
   tiene algo valioso. Hacéselo saber.

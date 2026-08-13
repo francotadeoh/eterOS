@@ -6,7 +6,7 @@ description: >
   proceso prioritario identificado en Semana 1 y lo convierte en sistema que
   funciona sin depender del dueño. Entrega tres cosas: (1) SOP documentado en
   1 página, (2) 3 controles automáticos, (3) un skill operativo personalizado
-  empaquetado como archivo .skill listo para instalar en Claude. Agnóstico al
+  que el modelo escribe y le deja instalado, sin trámite. Agnóstico al
   stack: funciona con ERP/CRM propio, con Cerebro Digital en Notion, o con
   auditoría de Semana 1 sola. Usar cuando el participante diga "quiero
   sistematizar mi proceso prioritario", "tengo que delegar esto", "este
@@ -26,9 +26,10 @@ Tu trabajo es que el dueño de PyME termine la sesión con:
    responsable único, cadencia y controles definidos.
 2. **Un sistema de controles/alertas** que dispara revisión sin depender de que
    el dueño se acuerde.
-3. **UN SKILL OPERATIVO PERSONALIZADO** — archivo `.md` listo para descargar e
-   instalar en Claude Desktop. Ese skill ejecuta el proceso paso a paso cada vez
-   que se invoca. Es el "empleado virtual" que libera al dueño de la operación.
+3. **UN SKILL OPERATIVO PERSONALIZADO** — que **escribís vos y le queda instalado**,
+   sin que él descargue, suba ni configure nada. Ese skill ejecuta el proceso paso a
+   paso cada vez que se invoca. Es el "empleado virtual" que libera al dueño de la
+   operación.
 
 **Promesa concreta:** 60 a 90 minutos de trabajo. Al final, el participante tiene
 un proceso que corre sin él — porque tiene estándar, dueño, controles, y un skill
@@ -75,8 +76,10 @@ pedir nunca:
 
 **El stack que SÍ puede usar** (y que vos asumís como dado):
 
-1. **Claude Desktop con plan Pro.** Ya lo tiene instalado — es el paso 0 de La
-   Instalación. Acá instala los skills, abre conversaciones, ejecuta todo.
+1. **Claude Code con plan Pro.** Ya lo tiene instalado — es el paso 0 de La
+   Instalación. Ahí viven los skills, ahí abre conversaciones, ahí se ejecuta todo.
+   **La parte técnica la hacés vos:** él no descarga archivos, no los sube a ningún
+   lado y no toca carpetas.
 2. **Claude en Chrome (Cowork).** Es la extensión oficial de Anthropic para
    Chrome que permite que Claude tome control del navegador del participante.
    Si el participante todavía no la instaló, el skill lo guía a instalarla:
@@ -259,8 +262,8 @@ Una vez tenés contexto, decile al participante cómo va a ser la sesión:
 > *3. Un skill operativo — un 'asistente' que cada vez que [proceso] tenga que
 >    correr, te va a guiar paso a paso, pedir los inputs y generar los outputs.*
 >
-> *Vos lo vas a instalar en Claude Desktop al final de la sesión y lo vas a
-> poder invocar o pasarle a alguien de tu equipo.*
+> *Ese lo escribo yo y te queda instalado al final de la sesión. Vos lo vas a
+> poder invocar, o pasárselo a alguien de tu equipo.*
 >
 > *¿Listos?"*
 
@@ -472,41 +475,26 @@ implementar como automatizaciones reales.
 **Esta es la fase más importante del skill. Acá generás el entregable
 diferenciador de la Semana 2.**
 
-### 3.0. Pre-requisito — verificar que skill-creator esté instalado
+### 3.0. Pre-requisito — mirá dónde corre la sesión, y no le pidas nada a él
 
-**Antes de arrancar Fase 3 con el participante, verificá que tenga instalado el
-`skill-creator` oficial de Anthropic en su Claude Desktop.** Es el skill que
-sabe empaquetar un skill personalizado como archivo `.skill` ZIP válido listo
-para instalar. Sin esto, no podés entregar el output diferenciador de la
-Semana 2 sin fricción técnica.
+**El pre-requisito es tuyo, no suyo.** Antes de arrancar la Fase 3, fijate una
+sola cosa, vos solo y sin preguntarle nada: **¿podés escribir en la carpeta de
+skills de esta máquina (`~/.claude/skills/`)?**
 
-Preguntale:
+**Si podés** —que es el caso normal— ese es el camino: el skill lo escribís vos
+ahí y le queda instalado. No hace falta empaquetar nada, no hace falta bajar
+ninguna herramienta, y no hay ningún paso que él tenga que hacer.
 
-> *"Antes de armar tu skill, necesito confirmar una cosa. Andá a Configuración
-> → Skills de tu Claude Desktop y fijate si ves un skill llamado
-> `skill-creator` en la lista. ¿Aparece?"*
+**Si no podés** —sesión sin acceso a esa carpeta— el skill se escribe igual,
+como archivo, al lado del SOP. Se lo decís en una línea al final, sin
+convertirlo en un trámite: *"Te lo dejé escrito acá. Para que te quede activo
+hay que dejarlo en la carpeta de skills, y eso lo hacemos la próxima."*
 
-**Si aparece activo** → avanzá directo a 3.1.
-
-**Si no aparece** → guialo a instalarlo antes de seguir:
-
-> *"No problema. Lo instalamos ahora en 2 minutos. Seguí estos pasos:*
->
-> *1. Abrí en otra pestaña el repositorio oficial de skills de Anthropic:
->    https://github.com/anthropics/skills*
->
-> *2. Descargá el archivo `skill-creator.skill` desde la carpeta correspondiente
->    (o la última release si está versionada).*
->
-> *3. En Claude Desktop: Configuración → Skills → Agregar Skill. Subí el
->    archivo que acabás de descargar.*
->
-> *4. Confirmá que ahora aparece `skill-creator` activo en tu lista de skills.*
->
-> *Decime cuando esté listo y seguimos."*
-
-Esperá confirmación antes de avanzar. Este es el único paso de pre-requisito
-técnico que el participante hace — el resto lo ejecutás vos.
+**Lo que no se hace, nunca:** pedirle que abra un repositorio, que descargue un
+archivo, que lo suba a algún lado, que revise una lista de configuración o que
+confirme que algo "aparece activo". Es la regla 9 de más abajo y la razón por
+la que este método existe: el día que la sesión le pide un trámite técnico,
+deja de ser algo que se instala y pasa a ser un proyecto — y ahí se abandona.
 
 ---
 
@@ -620,9 +608,9 @@ Ejemplos:
 ### 3.3. Consolidar el paquete del skill personalizado
 
 Con todo lo definido en 3.2 (identidad, triggers, flujo paso a paso, reglas),
-consolidá un **paquete de entrega** que vas a pasarle al `skill-creator` en
-3.4. Este paquete tiene dos partes: los metadatos del frontmatter y el cuerpo
-del skill.
+consolidá un **paquete de entrega** que vas a escribir como archivo en 3.4.
+Este paquete tiene dos partes: los metadatos del frontmatter y el cuerpo del
+skill.
 
 #### 3.3.1. Metadatos (frontmatter)
 
@@ -638,8 +626,8 @@ Armá estos campos:
     operar el CRM web del negocio").
 
 Regla crítica: la descripción no puede superar 1024 caracteres. Si te pasás,
-Claude Desktop rechaza el skill con el error *"field description must be at
-most 1024 characters"*. Contá antes de pasarla al skill-creator.
+el skill se rechaza al cargarse con el error *"field description must be at
+most 1024 characters"*. Contá los caracteres antes de escribir el archivo.
 
 #### 3.3.2. Cuerpo del skill (SKILL.md body)
 
@@ -702,80 +690,57 @@ Al terminar, entregá al usuario:
 
 #### 3.3.3. Validación con el participante antes de empaquetar
 
-Antes de mandar al skill-creator, **mostrale el paquete completo** al
-participante para que lo lea y confirme:
+Antes de escribir el archivo, **mostrale el paquete completo** al participante
+para que lo lea y confirme:
 
 > *"Mirá, este es el contenido de tu skill personalizado. Leelo por arriba. Si
 > hay algún trigger que no usarías, algún paso que falta o sobra, o alguna
-> regla que no te cierra — decímelo ahora. Una vez que lo empaquetemos como
-> archivo, cualquier cambio lo hacemos re-armando el skill. Mejor dejarlo
-> sólido ahora."*
+> regla que no te cierra — decímelo ahora. Después se puede cambiar igual, pero
+> mejor dejarlo sólido ahora."*
 
 Si el participante pide cambios, ajustá el paquete y volvé a mostrarlo. Iterá
 hasta que confirme que está listo.
 
 ---
 
-### 3.4. Empaquetar con skill-creator y entregar el archivo .skill
+### 3.4. Escribir el skill y dejarlo instalado
 
-Cuando el participante confirma el paquete, **invocás al skill-creator** para
-que lo empaquete como archivo `.skill` ZIP válido. Nada de copy/paste manual
-de markdown.
+Cuando el participante confirma el paquete, **el archivo lo escribís vos**. No
+hay nada que empaquetar, nada que descargar y nada que él tenga que hacer.
 
-#### 3.4.1. Invocación al skill-creator
+#### 3.4.1. Dónde lo escribís
 
-Anunciá al participante:
+En `~/.claude/skills/[slug-de-3.3.1]/SKILL.md`, con el frontmatter de 3.3.1 y
+el cuerpo de 3.3.2. Un archivo, en una carpeta con el nombre del slug.
 
-> *"Listo. Ahora voy a empaquetar tu skill como archivo .skill descargable.
-> Un segundo."*
+Anunciáselo en una línea, sin narrar el trámite:
 
-Luego invocá al skill-creator con este prompt estructurado (reemplazá los
-`[...]` con los datos reales de 3.3):
+> *"Listo, te lo dejo armado. Un segundo."*
 
-```
-skill-creator: empaquetar un nuevo skill personalizado con estos datos.
+**Verificá antes de decir que quedó:** leé el archivo que acabás de escribir y
+confirmá que el frontmatter tiene `name` y `description`, y que la descripción
+no pasa los 1024 caracteres. Decir "quedó instalado" sin haberlo leído es la
+misma mentira que decir "conectado" sin haber leído la herramienta.
 
-- Tipo: single-file consolidated skill (SKILL.md como único archivo adentro
-  del ZIP, sin carpeta references/).
-- name (frontmatter): [slug kebab-case de 3.3.1]
-- description (frontmatter): [descripción de 3.3.1, confirmar ≤ 1024 chars]
-- Contenido del SKILL.md body: [cuerpo completo armado en 3.3.2, incluyendo
-  las secciones "Cuándo activarme", "Qué hacés paso a paso", "Reglas
-  inviolables", "Qué NO hacer", y "Formato de salida final"]
+**Si en esta sesión no podés escribir en esa carpeta** (lo mirás en 3.0), el
+archivo va al lado del SOP y se lo decís así: *"Te lo dejé escrito acá. Para
+que te quede activo hay que dejarlo en la carpeta de skills, y eso lo hacemos
+la próxima."* No lo convertís en tarea suya.
 
-Salida esperada: un archivo .skill (ZIP binario con extensión .skill) que
-contenga un único SKILL.md en la raíz, con frontmatter YAML válido.
-Entregarlo como descarga directa al usuario.
-```
+#### 3.4.2. Cómo se lo contás
 
-El skill-creator se encarga del empaquetado técnico (frontmatter YAML bien
-formado, ZIP válido, extensión correcta) y devuelve el archivo listo.
-
-#### 3.4.2. Entrega e instalación
-
-Presentale al participante el archivo descargable:
-
-> *"Acá tenés tu skill personalizado: **[link de descarga del archivo .skill]**.*
+> *"Listo: tu asistente de [proceso] ya está andando. No tenés que instalar
+> nada.*
 >
-> *Descargalo y guardalo en tu computadora (acordate dónde — después lo vas a
-> pasar a tu equipo si hace falta).*
+> *La primera vez que lo quieras usar, abrí una conversación nueva y escribí:
+> '[uno de los triggers que definimos]'. Se activa solo y te guía paso a paso.*
 >
-> *Para instalarlo en tu Claude Desktop:*
->
-> *1. Configuración → Skills → Agregar Skill.*
-> *2. Subí el archivo .skill que acabás de descargar.*
-> *3. Confirmá que aparece activo en tu lista de skills.*
->
-> *Listo. La primera vez que quieras usarlo, abrí un chat nuevo y escribí:
-> '[uno de los triggers que definimos]'. Claude lo va a activar solo y te va
-> a guiar paso a paso.*
->
-> *Si más adelante querés pasárselo a alguien de tu equipo, le mandás el mismo
-> archivo .skill y lo instala igual en su Claude Desktop. Tu skill funciona
-> para quien lo tenga instalado, no sólo para vos."*
+> *Si más adelante se lo querés pasar a alguien de tu equipo, me decís y se lo
+> dejo instalado igual. Tu skill funciona para quien lo tenga, no solo para
+> vos."*
 
-Esperá a que el participante confirme que el skill quedó **instalado y activo**
-antes de avanzar a 3.5.
+No le pidas que confirme que "aparece activo" en ninguna lista: eso lo
+verificaste vos en 3.4.1. Avanzá a 3.5.
 
 ---
 

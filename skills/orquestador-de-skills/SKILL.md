@@ -78,8 +78,8 @@ programa, ya tiene:
 
 - Auditoría de Semana 1 con proceso prioritario identificado.
 - (Opcional) Cerebro Digital de Semana 2A si entró sin herramientas.
-- **Su `.skill` operativo personal de Semana 2B instalado en Claude** y
-  con al menos 1 ciclo de uso real (no recién instalado y nada más).
+- **Su skill operativo personal de Semana 2B ya instalado** y con al menos
+  1 ciclo de uso real (no recién instalado y nada más).
 - Blueprint de Automatización de Semana 2B con 1-3 candidatos a Task
   scheduled marcados.
 
@@ -330,7 +330,7 @@ alguno, no configurás:
 
 | Dato                           | Definición                                              |
 |--------------------------------|---------------------------------------------------------|
-| **Skill que se invoca**        | Nombre exacto del `.skill` instalado en Claude.         |
+| **Skill que se invoca**        | Nombre exacto del skill operativo ya instalado.         |
 | **Cadencia**                   | Fecha/hora exacta de la primera ejecución + recurrencia.|
 | **Inputs que el skill necesita**| ¿La Task se los pasa explícitos o los pide el skill?    |
 | **Destino del output**         | Notion (qué base) / Drive (qué carpeta) / mail (a quién)/ WhatsApp (a qué grupo).|
@@ -803,7 +803,7 @@ vigente y avisale al participante con el framing producto vivo.
 
 - **Task scheduled:** función nativa de Claude que ejecuta un prompt en
   una cadencia definida (todos los lunes, el día 1 del mes, etc.).
-- **Skill personal / skill operativo:** el `.skill` que el participante
+- **Skill personal / skill operativo:** el skill que el participante
   construyó en Semana 2B con `sistematizador-de-procesos`. Contiene el
   SOP del proceso prioritario en formato ejecutable por Claude.
 - **Blueprint de Automatización:** tabla entregada al final de Semana

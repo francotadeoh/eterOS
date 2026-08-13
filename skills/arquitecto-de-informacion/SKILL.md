@@ -90,8 +90,10 @@ pedir nunca:
 
 **El stack que SÍ puede usar** (y que vos asumís como dado):
 
-1. **Claude Desktop con plan Pro.** Ya lo tiene instalado — es el paso 0 de
-   el método. Acá instala los skills, abre conversaciones, ejecuta todo.
+1. **Claude Code con plan Pro.** Ya lo tiene instalado — es el paso 0 de
+   el método. Ahí viven los skills, ahí abre conversaciones, ahí se ejecuta
+   todo. **La parte técnica la hacés vos:** él no edita archivos ni corre
+   comandos.
 2. **Claude en Chrome (Cowork).** Extensión oficial de Anthropic para Chrome
    que permite que Claude tome control del navegador del participante. Si
    todavía no la instaló, el skill lo guía:
@@ -342,10 +344,12 @@ Decile explícitamente al participante qué track tomás y por qué:
 
 ### Paso 4: Verificar conectores según track
 
-- **Si hace falta Notion:** chequeá si está conectado. Si no, guialo:
-  *"Andá a Claude Desktop → Settings → Connectors. Buscá 'Notion' y hacé
-  click en Connect. Seguí los pasos de autorización. Cuando termine, volvé
-  y me avisás."*
+- **Si hace falta Notion:** chequeá vos si está conectado, leyendo algo real
+  de ahí. Si no lo está, pedí el permiso **una sola vez y sin jerga**: *"Te va
+  a aparecer un permiso para que yo pueda leer y escribir en tu Notion, igual
+  que cuando conectás dos apps entre sí. Aprobalo y seguimos."* No le dictes
+  un recorrido por menús de configuración: si conectarlo pide más que aprobar
+  un permiso, **no se ofrece — se declara el hueco y se sigue.**
 - **Si hace falta Google Drive:** igual flujo.
 - **Si hace falta Claude en Chrome** (para abrir sistemas web sin conector
   MCP): *"Chrome Web Store → buscá 'Claude' → Añadir a Chrome. 30 segundos."*

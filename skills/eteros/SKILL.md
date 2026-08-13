@@ -14,8 +14,14 @@ orden:
 | Qué encontrás en `~/.claude/eteros/` | Modo |
 |---|---|
 | no existe la carpeta `~/.claude/eteros/` | **INSTALAR** |
-| existe la carpeta pero **falta** `negocio.md` | **RECONSTRUIR** |
-| existe `negocio.md` | **OPERAR** |
+| existe la carpeta pero **falta** `estado/goals.json` | **RECONSTRUIR** |
+| existe `estado/goals.json` | **OPERAR** |
+
+**El disparador es `estado/goals.json` y no `negocio.md` a propósito.** `negocio.md` lo escribís al
+final del **paso 1**, cuando faltan siete: si fuera él el que abre OPERAR, el que contestó las siete
+preguntas y cerró la ventana vuelve a la semana y el sistema lo trata como instalado —lo manda a leer
+`frenos.md` y `estado/goals.json`, que no existen— y le arruina la única vuelta que iba a dar.
+`estado/goals.json` lo escribe el **paso 8**: existe cuando la instalación de verdad cerró.
 
 **El modo del medio es el que más se usa y el que más fácil se olvida.** Alguien instala, contesta
 tres preguntas, cierra la ventana y vuelve a la semana. Si en esa vuelta arrancás de cero, le
@@ -31,16 +37,32 @@ de este sistema, no una excepción.
 2. **Buscá afuera antes de preguntar.** Si en el punto anterior apareció una fuente de verdad externa, la
    respuesta a la mitad de las preguntas ya está ahí: procesos, clientes, herramientas, qué mira el
    equipo.
-3. **Armá `negocio.md` con lo que dedujiste** y **mostráselo para que lo corrija**. Marcá con
-   `[FALTA]` lo que no pudiste deducir.
+3. **Si `negocio.md` ya existe, los puntos 3 y 4 ya están hechos: pasá directo al 5.** Reconstruir no
+   es rehacer. Si no existe, **armalo con lo que dedujiste** y **mostráselo para que lo corrija**.
+   Marcá con `[FALTA]` lo que no pudiste deducir.
    **Copialo desde `plantillas/negocio.md`, con su frontmatter.** Un `negocio.md` escrito a mano sin
    frontmatter deja al sistema sin forma de saber en qué estado quedó la instalación, y a partir de
    ahí opera a ciegas creyendo que está completo.
 4. **Preguntá solo los `[FALTA]`**, de a uno. Suelen ser dos o tres, no siete.
-5. **Mirá si la fuente de verdad quedó conectada** (frontmatter de `negocio.md`, campo `conexion`).
-   Una instalación a medias casi siempre quedó cortada ahí. Si está en `pendiente` o vacía, hacé el
-   **paso 3 de la instalación** —conectar— antes que cualquier otra cosa.
-6. Seguí desde el paso donde había quedado.
+5. **Mirá el campo `conexion`** en el frontmatter de `negocio.md`. Una instalación a medias casi
+   siempre quedó cortada ahí, y ese campo es el que decide en el punto 6 si el paso 3 está cerrado
+   o falta.
+6. **Seguí desde el paso donde había quedado, y eso se sabe mirando qué archivos hay.** No se lo
+   preguntes: el que vuelve a la semana no se acuerda, y preguntárselo le muestra que el sistema
+   tampoco. Cada paso deja su rastro:
+
+   | El último que existe | Quedó en |
+   |---|---|
+   | nada, o solo `README.md` | **paso 1** — el onboarding |
+   | `negocio.md` | **paso 2** — la auditoría |
+   | `diagnostico.md` | **el 3 o el 4, y lo decide el campo `conexion`:** en `pendiente` o vacía, el **paso 3**; en `conectada` o `hueco`, el 3 ya está cerrado y va el **paso 4** |
+   | `frenos.md` | **paso 5** — las formas |
+   | `procesos/` o el catálogo en la herramienta | **paso 6** — los objetivos del negocio |
+   | `objetivos_del_negocio` cargado en el frontmatter | **paso 7** — el primer objetivo |
+   | `estado/goals.json` | ya no es RECONSTRUIR: es **OPERAR** |
+
+   Decile en una línea dónde había quedado antes de seguir. Es la frase que le prueba que el
+   sistema se acordó.
 
 Reconstruir bien vale más que instalar bien: la persona ve que el sistema **se acordó** de lo que
 había hecho, que es exactamente lo que le prometiste.
@@ -91,6 +113,12 @@ Anotá el perfil. Cambia cuántas preguntas hacés y cuántos objetivos abrís, 
 
 Leé `referencias/perfiles.md` para saber cuántas preguntas te tocan.
 
+**Buscá antes de preguntar, igual que en RECONSTRUIR.** Si la persona pegó algo —un documento, un
+plan, la descripción de su negocio— o hay una herramienta ya conectada en esta sesión, **leelo
+primero y usá las siete para confirmar, no para relevar de cero**. La regla no es solo del modo
+RECONSTRUIR: preguntarle lo que acaba de escribir arriba es la forma más rápida de que sienta que
+no lo escuchaste.
+
 El objetivo es llenar `plantillas/negocio.md`. Preguntá de a una, en este orden, y parafraseá lo que
 te dijo antes de pasar a la siguiente:
 
@@ -132,7 +160,7 @@ tirarlos antes de tiempo es la forma más rápida de que la persona se pierda.
 |---|---|---|
 | `auditor-de-procesos-pyme` | **Paso 2**, la auditoría | Diagnostica dónde está parado el negocio y qué depende de que el dueño esté |
 | `arquitecto-de-informacion` | Después del paso 2, **solo si hace falta** | Ordena la información antes de sistematizar. Si ya está ordenada, se saltea |
-| `sistematizador-de-procesos` | **Paso 4**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
+| `sistematizador-de-procesos` | **Paso 5**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
 | `orquestador-de-skills` | Después del primer objetivo cerrado | Enseña a la persona a **construir sus propios skills** y a engancharlos en sus objetivos y loops |
 
 **La regla de oro del acompañamiento: uno por vez, y el siguiente recién cuando el anterior dejó algo
@@ -149,7 +177,17 @@ lo necesitaba.
 **No se saltea. Sin auditoría los objetivos salen inventados.**
 
 **Activá `auditor-de-procesos-pyme` acá.** Es el skill que hace este paso; no lo reemplaces por tu
-propio criterio. Con lo que devuelva, armá `~/.claude/eteros/diagnostico.md` que responda tres cosas:
+propio criterio. **Pero no lo largues desde el principio: pasale lo que acabás de escribir en
+`negocio.md` y arrancalo por su Fase 2.** Su Fase 1 vuelve a preguntar casi todo lo que la persona
+te contó hace veinte minutos, y encima con la forma promediada que el paso 1 descarta. De su Fase 1
+falta una sola cosa: **cuántas horas por semana se le van en cosas que debería estar haciendo otro.**
+Preguntá esa, y seguí.
+
+**Corré sus fases 2 y 3, y cortá antes de su sección «Cierre de la auditoría».** Ese cierre despide
+la sesión, y acá recién vamos por el paso 2 de 8. **Este paso termina con una línea que dice que
+sigue el paso 3** —conectar la fuente de verdad—, no con una despedida.
+
+Con lo que devuelva, armá `~/.claude/eteros/diagnostico.md` que responda tres cosas:
 
 1. **Qué procesos existen hoy**, aunque no estén escritos. Sacalos de la respuesta 3 y 4.
 2. **Cuáles dependen de que la persona esté.** Esos son el cuello. **Y partilos en dos, porque no son
@@ -218,7 +256,28 @@ con otro nombre.
 Si no hay segunda, el disco queda como fuente de verdad provisoria, se dice que es provisoria, y queda
 anotado como deuda.
 
-## Paso 4 · Formas
+## Paso 4 · Frenos
+
+**Va acá, y no después, porque el paso que sigue es el primero que escribe en la herramienta que
+mira el equipo.** Hasta este punto todo lo que hiciste fue preguntar y anotar en el disco de la
+persona: no había nada que un freno pudiera frenar. Del paso 5 en adelante sí. Poner los frenos
+después de la primera escritura es escribirlos cuando ya no sirven.
+
+Copiá `plantillas/frenos.md` a `~/.claude/eteros/frenos.md` y completalo **con la persona**.
+Preguntale: *"¿Qué cosas no querés que haga nunca sin preguntarte primero?"*
+
+Si no se le ocurre nada, ofrecé los cuatro de arranque: publicar algo, mandarle un mensaje a alguien,
+tocar datos de clientes, cambiar precios.
+
+**Si ya construyó algo antes de llegar acá** —una automatización, un bot, un flujo que le armó
+alguien—, **preguntá qué hace y a quién toca.** Es la pregunta que nadie le hace: llega con algo
+andando y el sistema arranca como si la máquina estuviera vacía. **Si lo que ya tiene le escribe a
+un cliente, le cambia un precio o le toca datos de gente, frená ahí y hacé los frenos sobre eso
+primero.** Lo que ya está corriendo no espera al paso 5.
+
+**`frenos.md` es el dueño único.** Nunca copies un freno adentro de un objetivo.
+
+## Paso 5 · Formas
 
 Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`:
 
@@ -242,7 +301,7 @@ corte visible. **Lo que manda es la conexión, no que la persona la haya nombrad
 
 **Y si quedó hueco pero hay `fuente_del_sistema`, el catálogo va ahí.** Es literalmente para lo que se
 abrió: en el paso 3 le dijiste en voz alta *"un Notion al lado, solo para el mapa de procesos y los
-objetivos"*. Mandarlo al disco después de eso es incumplir en el paso 4 lo que prometiste en el 3.
+objetivos"*. Mandarlo al disco después de eso es incumplir en el paso 5 lo que prometiste en el 3.
 
 **Solo con el hueco entero** —sin segunda fuente— el catálogo va a
 `~/.claude/eteros/procesos/catalogo.md` y se dice que es provisorio.
@@ -252,16 +311,6 @@ sumás es algo que después hay que mantener, explicar y arreglar. Si estás sum
 preguntá qué se saca a cambio. Se descentraliza sacando piezas, no sumando coordinadores.
 
 **No construyas nada todavía**: esto es el mapa.
-
-## Paso 5 · Frenos
-
-Copiá `plantillas/frenos.md` a `~/.claude/eteros/frenos.md` y completalo **con la persona**.
-Preguntale: *"¿Qué cosas no querés que haga nunca sin preguntarte primero?"*
-
-Si no se le ocurre nada, ofrecé los cuatro de arranque: publicar algo, mandarle un mensaje a alguien,
-tocar datos de clientes, cambiar precios.
-
-**`frenos.md` es el dueño único.** Nunca copies un freno adentro de un objetivo.
 
 ## Paso 6 · Los objetivos del negocio
 
@@ -359,15 +408,21 @@ está cerrada, está sin terminar y con cara de terminada.
 
 **Si hay `fuente_del_sistema`, decí las dos**, en ese orden y sin mezclarlas: *"Tu ERP no se pudo
 conectar y quedó anotado. El mapa de procesos y los objetivos quedaron en el Notion que abrimos al
-lado, y ahí sí los ve tu equipo."* Decir solo la buena tapa el hueco; decir solo el hueco le esconde
-lo único que sí quedó andando.
+lado. Todavía lo ves solo vos: cuando quieras que lo vea tu equipo hay que invitarlos."* Decir solo
+la buena tapa el hueco; decir solo el hueco le esconde lo único que sí quedó andando.
+
+**Y nunca digas "ahí lo ve tu equipo" de una herramienta que abriste en esta sesión.** Un espacio
+creado hace treinta segundos no tiene a nadie adentro: la frase es falsa siempre que se usa, y es
+falsa justo en la promesa que la persona vino a comprar. Un lugar compartido se comparte invitando,
+y eso todavía no pasó.
 
 ---
 
 # MODO OPERAR
 
-Si `negocio.md` ya existe, no reinstales ni reconstruyas. Leé `README.md`, `frenos.md` y `estado/goals.json`, y
-seguí desde donde quedó.
+Si `estado/goals.json` ya existe, no reinstales ni reconstruyas. Leé `README.md`, `frenos.md` y
+`estado/goals.json`, y seguí desde donde quedó. **Los tres existen porque el paso 8 los dejó: si
+alguno falta, esto no era OPERAR y volvés a la tabla de arriba.**
 
 **Lo primero, una sola vez:** mirá el frontmatter de `negocio.md`. Si `conexion` está en `pendiente` o
 vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **paso 3 de la instalación**
