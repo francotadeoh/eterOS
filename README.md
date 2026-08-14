@@ -99,13 +99,18 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 ### Qué necesitás
 
 1. **Claude Code** (la app de escritorio sirve, no hace falta terminal).
-2. Entre **una hora y media y dos horas y media** para la primera vez. El grueso se lo lleva la
+2. **Que la máquina esté lista para que Claude Code trabaje**: en Mac eso suele ser Git y las
+   herramientas de línea de comandos de Apple, y elegir una carpeta de trabajo. Se instala **una
+   sola vez**, te lo va a pedir con tu contraseña, y **no es parte de eterOS**: es lo que necesita
+   la app para funcionar. Lo decimos acá porque si te lo encontrás en el medio parece que el sistema
+   te mintió. Si ya usás Claude Code, esto ya está hecho.
+3. Entre **una hora y media y dos horas y media** para la primera vez. El grueso se lo lleva la
    auditoría de procesos, que sola declara 45 a 90 minutos según el tamaño del negocio.
    **No hace falta hacerlo de una sentada:** si cerrás y volvés otro día, retoma donde quedaste.
-3. **Una cuenta gratis de Notion, solo si hoy no usás ninguna herramienta de gestión.** Es lo único
-   de toda la instalación que hacés vos por fuera de aprobar un permiso, y por eso va dicho acá y no
-   en el medio. Si ya usás Notion, Airtable, una planilla o un CRM, no hace falta: se conecta esa.
-4. Nada más. No hay que instalar bases de datos, escribir comandos ni contratar servicios.
+4. **Una cuenta gratis de Notion, solo si hoy no usás ninguna herramienta de gestión.** Es la única
+   parte del sistema que hacés vos por fuera de aprobar un permiso, y por eso va dicha acá y no en el
+   medio. Si ya usás Notion, Airtable, una planilla o un CRM, no hace falta: se conecta esa.
+5. Nada más. No hay que instalar bases de datos, escribir comandos ni contratar servicios.
 
 ### Los dos perfiles
 

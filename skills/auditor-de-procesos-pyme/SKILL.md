@@ -233,6 +233,7 @@ de este relevamiento — no de una lista de herramientas disponibles.
 | stack presente, una manda claramente | **esa**, aunque no sea la que vos elegirías |
 | stack presente, varias y ninguna manda | la que tenga **lo que el equipo mira**; anotá que hay dispersión |
 | stack ausente | **Notion**, que es el caso base |
+| están migrando de una a otra | la de **destino**; la vieja se anota como saliente |
 
 Escribilo así en el reporte: **"Conectar: [herramienta]. Motivo: es donde
 hoy vive [qué]."** Una sola recomendación. Un menú de opciones convierte

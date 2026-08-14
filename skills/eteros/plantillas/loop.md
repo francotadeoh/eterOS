@@ -5,6 +5,7 @@ estado: propuesto        # propuesto | corriendo | pausado | cerrado
 objetivo: G-000          # un loop sin objetivo gira en falso
 cadencia: <cada cuánto>
 disparador: tiempo       # tiempo | evento:<cuál> | manual
+si_no_corre: <qué se rompe si un día no sale, y QUIÉN se entera>   # obligatorio
 abierto: AAAA-MM-DD
 ---
 
@@ -32,6 +33,18 @@ camino.
 
 - **Cadencia:** …
 - **Disparador de evento** (si aplica): qué cosa observable lo despierta antes de la cadencia.
+
+## Si un día no corre
+
+**Obligatorio, y va en el frontmatter (`si_no_corre`).** Dos cosas: **qué se rompe** si esta vuelta
+no sale, y **quién se entera**.
+
+Una rutina que se apaga no avisa sola: el silencio de algo automático se lee como *"anduvo"*, nadie
+revisa lo que no molesta, y te enterás el día que no te llegó. Si la respuesta honesta a "quién se
+entera" es *nadie*, todavía no está listo para correr solo.
+
+- Si no sale: …
+- Se entera: …
 
 ## Cuándo para
 

@@ -77,6 +77,25 @@ había hecho, que es exactamente lo que le prometiste.
 - **Puede contestarte por audio.** Aceptá respuestas desordenadas y ordenalas vos.
 - **Si no sabe algo, seguí.** Anotá el hueco y avanzá. Un onboarding que se traba en la pregunta 3
   no se termina nunca.
+- **Ofrecé cortar, dos veces: al cerrar el paso 2 y al cerrar el paso 4.** **El sistema ya sabe que
+  se van a la mitad** —está escrito arriba que una instalación a medio terminar es el estado normal—,
+  así que no ofrecerlo no evita que pase: solo evita que vuelva. El que corta habiendo elegido cortar
+  vuelve; el que se cae en el medio, no. **Ofrecerlo sale mucho más barato que recuperarlo.**
+
+  **El orden importa y no es negociable: primero decís qué sigue, después ofrecés cortar.** Nunca al
+  revés, y nunca una sola de las dos. Si ofrecés cortar sin decir qué sigue, es una despedida
+  disfrazada de amabilidad y la persona no vuelve porque no sabe a qué. Si decís qué sigue sin
+  ofrecer cortar, el que ya no da más se cae igual, pero sin que quede escrito dónde:
+
+  > *"Hasta acá tenés el diagnóstico escrito. Lo que sigue es conectar la herramienta donde tu equipo
+  > mira cómo va el negocio. ¿Seguimos ahora o preferís que lo retomemos otro día? Si cortamos,
+  > arranco justo de acá."*
+
+  **Esto no contradice el «no despidas la sesión» del paso 2.** Lo que está prohibido ahí es cerrar
+  como si la instalación hubiera terminado. Ofrecer una pausa diciendo qué falta es lo contrario:
+  deja la puerta abierta con el cartel puesto.
+- **Si dice que sí, cerrá bien.** Decí qué quedó escrito y dónde, y con qué arranca la próxima. Eso
+  es lo que hace que RECONSTRUIR funcione después.
 
 ## A dónde va todo esto
 
@@ -97,6 +116,24 @@ siete cosas.
 # MODO INSTALAR
 
 ## Paso 0 · Elegir profundidad (una sola pregunta)
+
+**Antes de preguntar nada, mirá si la máquina está lista, y decilo vos.** Instalar cuesta *0 comandos
+y 0 archivos editados* **una vez que esto anda** — y eso sigue siendo cierto. Pero llegar hasta acá
+no siempre es gratis, y es de lejos la traba más frecuente del primer día: alguien tipeando una
+instalación con su contraseña de administrador mientras el producto le promete que no hace falta
+ningún comando. Descubrirlo en el medio no se lee como "faltaba esto": se lee como que el sistema
+mintió.
+
+**Se declara como costo, igual que el alta de cuenta, y se declara antes.** Chequealo vos —no se lo
+preguntes— y si falta algo, decilo así, en una línea y sin dramatizar:
+
+> *"Antes de arrancar: en esta computadora falta [Git / las herramientas de línea de comandos /
+> elegir la carpeta donde vamos a trabajar]. Eso se instala una sola vez, te lo va a pedir con tu
+> contraseña, y no es parte del sistema: es lo que necesita la app para funcionar. ¿Lo hacemos ahora
+> o preferís que lo veamos juntos en otro momento?"*
+
+**Si dice que ahora no, es un hueco declarado y la instalación no arranca:** se anota y se ofrece
+retomar. Empezar el onboarding sobre una máquina que no puede guardar nada es peor que no empezar.
 
 Preguntá: **"¿Cuánta gente trabaja hoy en tu negocio, contándote?"**
 
@@ -136,11 +173,22 @@ ejecuta. Leé `referencias/fuente-de-verdad.md` antes de seguir y anotá el repa
 **Si no nombra ninguna, no la elijas todavía ni la des por perdida:** anotalo y seguí. En el **paso 3**
 el caso base —el que no usa ninguna herramienta, que es la mayoría— va a Notion.
 
+**Y si te cuenta que están migrando de una a otra, anotá las dos y cuál es el destino.** La que
+nombra en la 6 va a ser la vieja, porque es la que el equipo todavía mira; la que se conecta en el
+paso 3 es la de destino.
+
 **La 3 y la 4 van pegadas y en ese orden, y no se reformulan.** La 3 pide **una semana concreta que ya
 pasó**, no una semana típica: "una semana normal" obliga a promediar y devuelve una generalidad. Y la
 4 sale **de la lista que él acaba de dar**, en plural. No le pidas el superlativo —"lo que *más* te
 come"— porque lo obliga a rankear antes de contestar, y lo que vuelve es *"y… todo"*. Enumerar les
 sale; abstraer, no.
+
+**Si te dice que esa semana no fue representativa** —estaba de viaje, era temporada baja, se le cayó
+un cliente—, **tenés una sola repregunta y es esta: *"Dale. ¿Y la última semana con carga fuerte?"***
+Otra semana concreta, no un promedio. **Nunca vuelvas a "una semana normal"**, que es lo que la
+regla de arriba acaba de descartar: la excepción no es reformular, es cambiar de semana. Y en el
+**paso 2, anotá de qué semana salió el inventario** — un diagnóstico armado sobre una semana rara y
+sin decirlo es un diagnóstico que la persona no va a reconocer, y no va a saber por qué.
 
 **La pregunta 7 es la más importante.** La respuesta es el diagnóstico, no un dato de color.
 
@@ -190,13 +238,26 @@ sigue el paso 3** —conectar la fuente de verdad—, no con una despedida.
 Con lo que devuelva, armá `~/.claude/eteros/diagnostico.md` que responda tres cosas:
 
 1. **Qué procesos existen hoy**, aunque no estén escritos. Sacalos de la respuesta 3 y 4.
-2. **Cuáles dependen de que la persona esté.** Esos son el cuello. **Y partilos en dos, porque no son
-   lo mismo y piden pasos opuestos:** los que **no tienen nada armado** —hay que construirlos— y los
-   que **ya tienen algo armado y él igual los termina haciendo** —esos no hay que construirlos, hay
-   que **entregarlos**—. Si no los separás quedan escritos iguales, y el segundo es el estado más
-   común del que ya lleva un tiempo adentro: la herramienta existe, funciona, y lo acelera a él solo.
-3. **Cuál es el 4%**: lo que solo puede hacer él y que además mueve el negocio. Todo lo demás es
-   candidato a delegarse.
+2. **Cuáles dependen de que la persona esté.** Esos son el cuello. **Y partilos en tres, porque no
+   son lo mismo y piden pasos opuestos:**
+   - los que **no tienen nada armado** — hay que **construirlos**;
+   - los que **ya tienen algo armado y él igual los termina haciendo** — esos no hay que
+     construirlos, hay que **entregarlos**. Es el estado más común del que ya lleva un tiempo
+     adentro: la herramienta existe, funciona, y lo acelera a él solo;
+   - los que **ya andan sin él** — esos se **chequean**. Preguntá dos cosas: **cuándo fue la última
+     vez que produjo algo, y quién se entera si un día no sale.** Un proceso que anda solo y que
+     nadie mira es el que se muere en silencio, y no aparece en ninguna lista de dolores porque
+     hasta ayer no dolía.
+
+   Si no los separás quedan escritos iguales y el plan sale mal para dos de los tres.
+3. **Cuál es su 4% de tareas**: lo que solo puede hacer él y que además mueve el negocio. Todo lo
+   demás es candidato a delegarse.
+
+   > **Ojo con el nombre.** "El 4%" también se usa, en el mismo método y a veces la misma tarde,
+   > para el **4% de clientes que hace el 64% de la facturación** (el Pareto de Pareto). Son dos
+   > cosas distintas: una es de **tareas**, la otra es de **clientes**. Si la persona ya escuchó la
+   > de clientes, **decí cuál de las dos estás usando** antes de usarla. Dos significados para el
+   > mismo término el mismo día es la regla 3 fallando en el vocabulario.
 
 Sumá una cuarta, que es la que mide el principio de dependencia cero: **si esta persona se toma dos
 semanas, ¿qué se frena?** Aplicalo al dueño y a cada persona del equipo que haya nombrado. Lo que se
@@ -235,8 +296,9 @@ cómo se comprueba y cómo se escribe el hueco. Lo esencial:
    Sin "es fácil, te guío".
 4. **Si la persona no quiere dar el acceso, es hueco a la primera y no se insiste.** Con su motivo
    propio, que no es el del botón. Un límite puesto por la persona se acepta, no se negocia.
-5. **Si hace falta abrir una cuenta, decilo antes** y contalo como costo: es lo único de toda la
-   instalación que no es apretar un botón. Y si es Notion, la primera línea es que es gratis.
+5. **Si hace falta abrir una cuenta, decilo antes** y contalo como costo: es la única parte del
+   sistema que no es apretar un botón. (El otro costo declarado son los prerequisitos de la máquina,
+   y ese se dice en el paso 0.) Y si es Notion, la primera línea es que es gratis.
 6. **Comprobalo leyendo algo real de la herramienta y mostráselo.** Que la persona diga que apretó el
    botón no es una conexión. Si no podés leer nada, no está conectado. Y si lo que leíste está vacío
    o viejo, **está conectado igual y se dice que está vacío**.
@@ -274,6 +336,12 @@ alguien—, **preguntá qué hace y a quién toca.** Es la pregunta que nadie le
 andando y el sistema arranca como si la máquina estuviera vacía. **Si lo que ya tiene le escribe a
 un cliente, le cambia un precio o le toca datos de gente, frená ahí y hacé los frenos sobre eso
 primero.** Lo que ya está corriendo no espera al paso 5.
+
+**Si la persona tiene activado «omitir permisos», decíselo acá, en una línea.** Es una recomendación
+que circula y es razonable, pero con eso activado **la app deja de preguntar y estos frenos pasan a
+ser la única barrera**: el diseño asumía dos preguntas y queda una. No es para asustarla — es para
+que la lista se escriba sabiendo cuánto pesa. *"Con eso activado, lo que no esté acá no te lo voy a
+preguntar. Miremos la lista con eso en mente."*
 
 **`frenos.md` es el dueño único.** Nunca copies un freno adentro de un objetivo.
 
@@ -372,6 +440,22 @@ para acá y los va a poder ver tu equipo también."*
 Copiá `plantillas/goal.md` y completalo con la persona. Elegí **un problema real y chico** del
 diagnóstico, no un ejemplo de juguete.
 
+**Cuál, si hay diez que sirven.** Es la pregunta real —*"me quedé corta a la hora de decidir por cuál
+empezar"*— y no se devuelve como pregunta: **se desempata, en este orden, y se dice en una línea por
+qué salió ese.**
+
+1. **Lo que ya andaba y se rompió.** Recuperar algo que la persona ya vio funcionar cuesta menos que
+   construir lo primero, y el resultado se reconoce solo.
+2. **El frente del paso 6 que no tiene ningún objetivo.** Si de las tres cosas grandes del año hay
+   una sin nada encima, esa.
+3. **El mejor ratio impacto/esfuerzo** de la matriz que dejó la Fase 3 del auditor.
+4. **El que ya tiene el dato en la fuente conectada.** Si el número se puede leer solo, la
+   verificación del punto 4 sale sola; si hay que cargarlo a mano, miente en tres semanas.
+
+**Y el que ya se abandonó dos o tres veces no se propone igual.** El paso 2 relevó eso a propósito. O
+se parte en algo más chico, o se cambia de proceso. Volver a proponerle el mismo arranque al que ya
+arrancó tres veces es la forma más rápida de que lo abandone en el mismo lugar.
+
 **Dónde vive, con la misma regla que el catálogo del paso 5:** en la fuente de verdad conectada, o
 en `fuente_del_sistema` si la del negocio quedó en hueco. **En el disco no**, salvo con el hueco
 entero, y ahí se dice que es provisorio. Un objetivo que solo existe en el disco de una persona es
@@ -430,6 +514,11 @@ Si `estado/goals.json` ya existe, no reinstales ni reconstruyas. Leé `README.md
 `estado/goals.json`, y seguí desde donde quedó. **Los tres existen porque el paso 8 los dejó: si
 alguno falta, esto no era OPERAR y volvés a la tabla de arriba.**
 
+**Salvo que la persona abra la sesión con algo que dejó de funcionar. Eso va primero, siempre.** Si
+lo primero que te dice es que algo se rompió, arrancar por los objetivos del año son veinte turnos
+antes de hablar de lo que vino a resolver, y para el turno veinte ya se fue. Atendé lo roto, y los
+chequeos de una sola vez que siguen quedan para cuando eso esté encaminado.
+
 **Lo primero, una sola vez:** mirá el frontmatter de `negocio.md`. Si `conexion` está en `pendiente` o
 vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **paso 3 de la instalación**
 —conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío, hacé el
@@ -447,6 +536,19 @@ escrito con qué se arranca aparte, en vez de encadenarlo. Está en
 empiece a construir sus propios skills para lo que su negocio necesita, en vez de usar solo los que
 vinieron. Cada skill propio que construya se anota en el catálogo con su forma y se engancha al
 objetivo o al loop que lo pedía.
+
+**Cuando algo que andaba deja de producir:** eso no es un objetivo nuevo, es **el objetivo que lo
+había cerrado, reabierto**. Abrir uno nuevo deja dos verdades sobre el mismo proceso y pierde la
+verificación que ya estaba escrita, que es justo la que acaba de fallar. Buscá cuál lo cerró y
+reabrilo.
+
+**Y una rutina que deja de correr tiene que avisar.** El silencio de algo automático se lee como
+"anduvo": nadie revisa lo que no molesta, y el día que te enterás es porque no llegó. Cada rutina
+lleva escrito en `plantillas/loop.md` **qué pasa si no corre** y **quién se entera**. Sin eso, el
+principio de mejora continua no se cumple: el sistema no levanta la mano solo, se apaga solo.
+
+**Si el control negativo pide apagar algo que está en producción, eso es un freno:** pará y
+preguntá. Comprobar que algo se rompe cuando tiene que romperse no vale romperlo de verdad sin aviso.
 
 **Al cerrar un objetivo:** corré la verificación que estaba escrita. Después el control negativo. Si
 el control negativo **no falla**, pará: el instrumento no discrimina y hay que arreglarlo antes de

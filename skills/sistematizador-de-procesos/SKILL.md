@@ -201,9 +201,9 @@ conectores MCP nativos disponibles:
 - **Si no hay conector nativo disponible o no se encuentra nada:** preguntá
   directamente:
 
-  > *"Para arrancar necesito dos cosas: (1) el reporte de auditoría de tu
-  > Semana 1, y (2) si ya hiciste la arquitectura de información de Semana 2A,
-  > el blueprint que quedó. Pegá lo que tengas — cualquier formato vale:
+  > *"Para arrancar necesito dos cosas: (1) el reporte de tu auditoría de
+  > procesos, y (2) si ya ordenaste dónde vive cada dato, el mapa que quedó
+  > de eso. Pegá lo que tengas — cualquier formato vale:
   > texto copiado, screenshot, PDF, o el link de Notion si lo tenés compartido.*
   >
   > *Si no hiciste ninguno de los dos, avisame y hacemos un relevamiento express
@@ -317,7 +317,7 @@ Los otros quedan anotados para la próxima iteración o para Semana 3/4.
 Validá con el participante:
 
 > *"OK, vamos por [proceso elegido]. Los otros [N] los dejamos anotados
-> y en Semana 3 evaluamos cuáles pueden pasar a Task scheduled con el
+> y más adelante evaluamos cuáles pueden pasar a correr solos con el
 > mismo skill base, o los atacamos con skills separados en iteraciones
 > próximas."*
 
@@ -508,7 +508,7 @@ En lenguaje no-técnico:
 > de esta semana' y Claude te guía paso a paso: te pide los inputs que
 > necesita, hace las validaciones, y te genera el output final listo.*
 >
-> *En Semana 3 vamos a hacer que esto corra solo en la cadencia que
+> *Más adelante vamos a hacer que esto corra solo en la cadencia que
 > corresponda, usando Claude Tasks. Pero el skill ya queda listo para
 > dispararlo a mano desde hoy.*
 >
@@ -821,8 +821,8 @@ ejecutás con un click.
 **Cierre:**
 
 > *"Listo. Tenés el proceso documentado, el skill operativo instalado,
-> los controles definidos, y el blueprint de Semana 3. Cuando lleguemos
-> a Semana 3, no vamos a aprender ninguna herramienta nueva ni a tocar
+> los controles definidos, y el plan de lo que puede correr solo. Cuando
+> lleguemos ahí no vamos a aprender ninguna herramienta nueva ni a tocar
 > nada técnico — vamos a configurar Tasks en Claude que disparen tu
 > skill en la cadencia que definimos ahora. Y listo. La operación se
 > vuelve una capa automática arriba tuyo."*

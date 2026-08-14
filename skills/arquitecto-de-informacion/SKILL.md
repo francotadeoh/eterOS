@@ -240,7 +240,7 @@ pieza.
 
 ### Antes de arrancar: decile esto al participante
 
-> *"Bien, bien, bien. Llegaste a Semana 2. Antes de sistematizar el proceso
+> *"Bien, bien, bien. Antes de sistematizar el proceso
 > prioritario, tenemos que responder una pregunta simple: ¿dónde vive cada
 > cosa de este proceso?*
 >
@@ -251,8 +251,8 @@ pieza.
 > cuál de los dos caminos aplica a vos.*
 >
 > *En 45-60 minutos vas a terminar con un blueprint que dice dónde vive
-> cada dato del proceso — listo para que el Sistematizador (Semana 2B) lo
-> use para armar el SOP y el skill operativo."*
+> cada dato del proceso — listo para armar con eso el paso a paso y el
+> asistente que lo ejecuta."*
 
 ---
 
@@ -641,7 +641,7 @@ Puntos candidatos a automatización (🤖):
 con el bloque completo. Así queda accesible para cuando arranque la Semana 2B.
 
 **Si no hay Notion:** copiá el bloque al final del chat con el título
-"👉 COPIÁ ESTO PARA PEGARLO EN LA PRÓXIMA SESIÓN DE SEMANA 2B". El
+"👉 COPIÁ ESTO PARA PEGARLO EN LA PRÓXIMA SESIÓN". El
 participante lo guarda donde quiera.
 
 ### Paso 3: Cerrar la sesión
@@ -649,7 +649,7 @@ participante lo guarda donde quiera.
 Decile al participante:
 
 > *"Listo. Tenés la arquitectura mapeada de tu proceso prioritario. En la
-> próxima sesión (Semana 2B), vamos a invocar el skill
+> próxima sesión vamos a invocar el skill
 > sistematizador-de-procesos que toma este blueprint y te entrega tres
 > cosas: (1) el SOP del proceso en 1 página, (2) los controles automáticos
 > que tienen que saltar solos, y (3) un skill operativo personalizado que

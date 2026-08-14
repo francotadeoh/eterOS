@@ -25,6 +25,7 @@ usan y dónde vive hoy la información operativa. Esa respuesta es la recomendac
 | usan varias y ninguna manda, pero el equipo mira alguna | la que tenga **lo que el equipo mira**, y se anota que hay dispersión |
 | usan varias y **el equipo no mira ninguna**: todo se lo preguntan al dueño | **Notion**, y se dice que las otras siguen donde están |
 | no usan ninguna: todo vive en la cabeza, en WhatsApp y en planillas sueltas | **Notion**, que es el caso base |
+| **están migrando de una a otra** | la de **DESTINO**. La vieja se anota como saliente y no se toca |
 
 **La tercera fila es la más común y la que más se confunde con la segunda.** Tener ocho herramientas
 no es tener una fuente de verdad: si lo que el equipo hace para saber cómo va el negocio es
@@ -37,6 +38,16 @@ alguien que ya se paralizó una vez mapeando.
 fila: la tiene, la abrió alguna vez, quedó a medias. Ahí adentro está su historia, y abrirle una
 segunda es dejarle nueve herramientas en vez de ocho. Se conecta la que tiene y se dice que arranca
 ordenándola.
+
+**Si hay una migración en curso, se conecta la de destino, no la que se está apagando.** Es la fila
+que más fácil se lee mal: hoy el equipo todavía mira la vieja, así que la pregunta 6 la nombra a
+ella, y conectarla es casarse con la que en dos meses no existe. Se anota la saliente como saliente
+y listo.
+
+**Y si el destino todavía está en construcción, no se ofrece una tercera.** Alguien que está
+migrando ya está pagando el costo de tener dos; proponerle abrir un Notion al lado es exactamente lo
+que vino a dejar de hacer. Se declara el hueco con ese motivo —*"están migrando, espero al destino"*—
+y se sigue. Se vuelve a ofrecer cuando la migración cierre.
 
 **No se propone cambiar de herramienta durante la instalación.** Migrar es un objetivo, no un paso de
 onboarding. Si la que usan es mala, eso sale del diagnóstico y se trabaja después.
@@ -140,8 +151,16 @@ instalación y hay que decirlo antes**, no descubrirlo en el medio.
 cierto y no se toca. Pero un alta no es ninguna de las dos cosas, así que no aparece en esa cuenta:
 si no se dice aparte, el número publicado describe una instalación más barata que la real.
 
+**Son dos los costos declarados, no uno**, y conviene tenerlos separados porque caen en momentos
+distintos: los **prerequisitos de la máquina** —Git, las herramientas de línea de comandos, elegir
+carpeta— se declaran en el **paso 0**, antes de preguntar nada; **el alta de cuenta** se declara acá,
+en el paso 3, y solo si hace falta. No los junten en la misma frase: el del paso 0 lo paga cualquiera
+que no tenga la máquina lista, y este lo paga solo el que no usa ninguna herramienta de gestión.
+
 - **Se avisa antes de empezar el paso:** *"Para esto hace falta abrir una cuenta de Notion, que es
-  gratis. Es lo único de toda la instalación que tenés que hacer vos por fuera de apretar un botón."*
+  gratis. Es la única parte del sistema que tenés que hacer vos por fuera de aprobar un permiso."*
+  **No digas "lo único de toda la instalación"** si en el paso 0 ya le declaraste que faltaba dejar
+  la máquina lista: serían dos cosas, y la segunda "única" le muestra que la primera no se contó.
 - **Si no quiere abrirla, es un hueco** con su motivo, igual que arriba. No se negocia y no se
   insiste.
 

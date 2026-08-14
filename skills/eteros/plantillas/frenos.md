@@ -7,6 +7,12 @@
 Un freno no se negocia, no se interpreta y no se saltea porque el resultado sería mejor. Se para y se
 pide OK.
 
+> **Si tenés activado «omitir permisos», estos frenos son la única barrera que te queda.**
+> Es una recomendación razonable —la app deja de preguntarte por cada cosa chica— pero cambia lo que
+> significa este archivo: el diseño asumía que había alguien preguntando dos veces, y ahora pregunta
+> una sola vez, acá. Con eso activado, **lo que no esté escrito en esta lista no te lo van a
+> preguntar.** Vale la pena mirarla de nuevo.
+
 ## Los frenos de este negocio
 
 Completar en el onboarding. Estos cuatro son el arranque razonable para casi cualquiera:

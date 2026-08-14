@@ -248,7 +248,7 @@ problema.
 
 Pedile el resumen del Blueprint:
 
-> *"Cuando terminaste Semana 2B con el sistematizador, tendría que
+> *"Cuando armaste tu asistente con el sistematizador, tendría que
 > haberte quedado un cuadro con candidatos a Task scheduled — momentos
 > del proceso que tienen sentido que se disparen solos. ¿Lo tenés a
 > mano? Pegámelo o resumímelo."*
@@ -533,9 +533,9 @@ Decile al participante, en estos términos o muy parecidos:
 > skill, cadencia, listo. 3 clics. Si te trabás, hablamos en el
 > próximo encuentro del Club."*
 >
-> *"En Semana 4 vamos a medir cuántas horas recuperaste y a diseñar el
+> *"Más adelante vamos a medir cuántas horas recuperaste y a diseñar el
 > ritmo operativo nuevo para que el cambio se sostenga. Acá termina la
-> capa de construcción del PYMEOS — lo que viene es operación."*
+> parte de construir — lo que viene es operar."*
 
 ---
 
