@@ -25,12 +25,17 @@ eterOS es la estructura mínima que arregla las dos cosas.
 ## La secuencia
 
 ```
-onboarding → auditoría → skills → objetivos → loops
+onboarding → auditoría → conectar → frenos → skills → objetivos → loops
 ```
 
 **Sin auditoría, los objetivos salen inventados.** Ese es el orden y no se saltea. Primero el
-sistema entiende tu negocio, después diagnostica dónde está parado, después arma o reusa las
-herramientas que hacen falta, después recibe tus objetivos, y recién ahí itera hasta cumplirlos.
+sistema entiende tu negocio, después diagnostica dónde está parado, después **se conecta a la
+herramienta donde tu equipo mira cómo va el negocio** y **te pregunta qué no querés que haga nunca
+sin avisarte**, después arma o reusa las herramientas que hacen falta, después recibe tus objetivos,
+y recién ahí itera hasta cumplirlos.
+
+**Conectar no se pospone para «cuando esté todo armado».** Un sistema que guarda el estado de tu
+negocio en tu disco deja a tu equipo afuera, que es el problema que vino a resolver.
 
 ## Las tres reglas
 
@@ -97,7 +102,10 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 2. Entre **una hora y media y dos horas y media** para la primera vez. El grueso se lo lleva la
    auditoría de procesos, que sola declara 45 a 90 minutos según el tamaño del negocio.
    **No hace falta hacerlo de una sentada:** si cerrás y volvés otro día, retoma donde quedaste.
-3. Nada más. No hay que instalar bases de datos ni contratar servicios.
+3. **Una cuenta gratis de Notion, solo si hoy no usás ninguna herramienta de gestión.** Es lo único
+   de toda la instalación que hacés vos por fuera de aprobar un permiso, y por eso va dicho acá y no
+   en el medio. Si ya usás Notion, Airtable, una planilla o un CRM, no hace falta: se conecta esa.
+4. Nada más. No hay que instalar bases de datos, escribir comandos ni contratar servicios.
 
 ### Los dos perfiles
 
@@ -139,11 +147,13 @@ pasa a ser tuyo.
 ├─ frenos.md        lo que el sistema NUNCA hace sin tu OK. Dueño único
 ├─ negocio.md       tu empresa, en las palabras del onboarding
 ├─ diagnostico.md   dónde está parado, salida de la auditoría
-├─ objetivos/       uno por archivo, con su verificación escrita antes
-├─ loops/           lo que se repite solo
-├─ procesos/        cada proceso con su forma: archivo, skill, rutina o agente
 └─ estado/          el estado de máquina, para que nada se pierda al cerrar la ventana
 ```
+
+**Tus objetivos y tu catálogo de procesos no quedan acá: quedan en la herramienta conectada**, que
+es la que mira tu equipo. Este disco guarda el criterio y el estado; el estado del negocio vive
+donde tu gente lo puede ver. Solo si la conexión quedó en hueco aparece un `procesos/catalogo.md`
+local, y el sistema te dice que es provisorio.
 
 ## Los frenos
 

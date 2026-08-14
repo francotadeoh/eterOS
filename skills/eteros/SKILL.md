@@ -372,6 +372,12 @@ para acá y los va a poder ver tu equipo también."*
 Copiá `plantillas/goal.md` y completalo con la persona. Elegí **un problema real y chico** del
 diagnóstico, no un ejemplo de juguete.
 
+**Dónde vive, con la misma regla que el catálogo del paso 5:** en la fuente de verdad conectada, o
+en `fuente_del_sistema` si la del negocio quedó en hueco. **En el disco no**, salvo con el hueco
+entero, y ahí se dice que es provisorio. Un objetivo que solo existe en el disco de una persona es
+la regla 3 fallando en el lugar más caro. Lo único que siempre queda en el disco es
+`estado/goals.json`, que es el estado de máquina, no el objetivo.
+
 **Y decí a qué número del paso 6 sirve.** Si no sirve a ninguno, marcalo `infraestructura` a
 propósito: construir el sistema es trabajo legítimo, lo que no es legítimo es no saber cuánto del
 trabajo es eso.
