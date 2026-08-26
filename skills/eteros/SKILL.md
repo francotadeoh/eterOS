@@ -399,6 +399,22 @@ presente y siempre va a dar cero.
 `congelada_el` lleno, no se pisa, no se refresca y no se regenera. Si hace falta una foto nueva se
 crea al lado, con fecha, y se dice que la comparación arranca de cero desde ahí. **Nunca encima.**
 
+**Antes de construir una forma nueva, mirá si ya existe hecha.** Lo más barato de mantener es lo
+que no escribiste. Hay dos kits abiertos que cubren dos procesos que aparecen en casi todos los
+negocios:
+
+| Si el proceso es | Ya está hecho | Qué trae |
+|---|---|---|
+| atender consultas por WhatsApp | `francotadeoh/kit-bot-whatsapp` | el asistente de WhatsApp, con su propia cuenta y su propio número |
+| pensar una decisión con el criterio de un referente | `francotadeoh/kit-clones-referentes` | seis referentes, una mesa que los cruza, y un lector de canales de YouTube |
+
+**Los instalás vos con `npx skills add <repo>`, no la persona.** El peaje técnico de la instalación
+sigue siendo cero: esto es trabajo del sistema, igual que copiar las plantillas.
+
+**Y si lo que existe no encaja, decilo y escribí la pieza.** Traer algo que hace el 70% y dejarlo a
+medias sale más caro que escribir lo que hace el 100%: el catálogo queda con una fila que nadie sabe
+si anda, y esa fila después entra al total de horas.
+
 **Antes de agregar una forma nueva, aplicá el filtro minimalista:** cada skill, rutina o agente que
 sumás es algo que después hay que mantener, explicar y arreglar. Si estás sumando una pieza,
 preguntá qué se saca a cambio. Se descentraliza sacando piezas, no sumando coordinadores.
@@ -530,6 +546,26 @@ la buena tapa el hueco; decir solo el hueco le esconde lo único que sí quedó 
 creado hace treinta segundos no tiene a nadie adentro: la frase es falsa siempre que se usa, y es
 falsa justo en la promesa que la persona vino a comprar. Un lugar compartido se comparte invitando,
 y eso todavía no pasó.
+
+### El cierre no es una despedida, es una corrida
+
+**Antes de decir "quedó instalado", revisá la instalación contra lo que el método promete.** Cinco
+cosas, y las cinco se miran, no se opinan:
+
+1. `negocio.md` con el frontmatter completo, y la conexión **conectada y comprobada** o el **hueco
+   declarado con motivo**.
+2. La **línea base congelada**, con `congelada_el`, y sin re-escribir encima.
+3. El **catálogo** con `Superficies`, `Calidad de las horas`, `Medido el` y `Estado`, y **ninguna
+   fila sin calidad**.
+4. Cada **objetivo abierto** con `sirve_a`.
+5. Si el catálogo tiene filas en `no se pudo medir`, **ningún total de horas publicado**.
+
+**Lo que falte se dice y se arregla acá, no después.** Una instalación a la que le falta una de las
+cinco no está cerrada: está sin terminar y con cara de terminada, y la persona se entera meses más
+tarde, el día que le pide al sistema un número que no puede sostener.
+
+**Y las cinco se miran sobre la carpeta de la instalación, no sobre lo que te acordás de la
+conversación.** Abrí los archivos. Una revisión de memoria aprueba siempre.
 
 ---
 

@@ -15,6 +15,10 @@
 # 2) Metadatos del repo
 !/.gitignore
 !/README.md
+# AGENTS.md es el punto de entrada del que EDITA el repo. Sin esta linea existe en el
+# disco y no esta en el repo, que es lo mismo que no existir.
+# (Ojo: gitignore no acepta comentarios al final de la linea del patron.)
+!/AGENTS.md
 
 # 3) El skill instalable, autocontenido
 !/skills/
