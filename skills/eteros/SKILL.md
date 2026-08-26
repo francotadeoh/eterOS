@@ -28,6 +28,31 @@ tres preguntas, cierra la ventana y vuelve a la semana. Si en esa vuelta arranc�
 borrás lo poco que había hecho y no vuelve más. Una instalación a medio terminar es el estado normal
 de este sistema, no una excepción.
 
+## Si lo que te piden es actualizar
+
+**Actualizar no es un modo, es una acción**, y por eso no está en la tabla de arriba: se pide en
+cualquier momento y después seguís en el modo que te toque. Aplica cuando dicen *"actualizá eterOS"*,
+*"actualizame el sistema"* o pegan el repo pidiendo la versión nueva.
+
+**Se actualiza el método. No se toca el negocio.**
+
+| Se reemplaza | No se toca, nunca |
+|---|---|
+| el skill instalado: los pasos, las plantillas nuevas y las referencias | **todo `~/.claude/eteros/`**: `frenos.md`, `negocio.md`, `diagnostico.md`, `procesos/`, `estado/` |
+
+**Esto es lo más importante de toda la actualización.** Del otro lado hay alguien que pasó dos horas
+contestando la auditoría. Pisarle `~/.claude/eteros/` le borra el sistema y no vuelve. Ante la duda
+sobre un archivo de ahí adentro: **no se toca.** Una plantilla nueva no reemplaza el archivo que la
+persona ya llenó; se usa de acá en adelante, para lo que todavía no existe.
+
+**Después de actualizar, contale qué hay de nuevo.** Leé `NOVEDADES.md` del repo y contale **solo la
+versión más nueva**, en tres a cinco líneas y en lo que ahora puede hacer. **Nada de arreglos,
+ajustes internos ni nombres de archivos**: si para contarlo tenés que nombrar una pieza del sistema,
+no se cuenta. Si `NOVEDADES.md` no se puede leer, decí que se actualizó y no inventes las novedades.
+
+**Cerrá diciéndole que su sistema quedó intacto**, en una línea: *"Tu auditoría, tus frenos y tus
+objetivos quedaron como estaban."* Es lo que la persona quiere saber y nunca pregunta.
+
 ## MODO RECONSTRUIR (no reinstales)
 
 **Regla:** no se pregunta lo que ya está escrito en algún lado.
@@ -310,6 +335,23 @@ cómo se comprueba y cómo se escribe el hueco. Lo esencial:
    o viejo, **está conectado igual y se dice que está vacío**.
 7. **Escribilo en `negocio.md` en la misma vuelta**, en el frontmatter: `conexion: conectada` con la
    fecha, o `conexion: hueco` con el motivo. **Nunca vacío, y nunca `conectada` sin haber leído.**
+
+**Y preguntá acá dos cosas más, en una sola vuelta:** *"¿Trabajás en más de una computadora?"* y
+*"¿Hay alguien más que tenga que ver esto o trabajar acá adentro?"*. Van en este paso y no en el
+onboarding porque recién acá tienen consecuencia: las dos se contestan con **la misma** conexión, y
+lo que cambia es lo que se escribe después.
+
+- **Si trabaja en más de una máquina**, decíselo derecho: *"Entonces no hay nada que copiar de una a
+  la otra. Las dos van a leer de acá."* En la segunda máquina **no se rehace el onboarding**: se
+  conecta esta misma herramienta y se reconstruye. Anotá `maquinas: varias`.
+- **Si además hay equipo**, la respuesta corta es que **el equipo no instala nada**: mira y trabaja
+  en la herramienta, que es donde el sistema escribe. Anotá `equipo_adentro: sí`.
+- **Los frenos son la excepción y se avisa en una línea**, sin alarmar: *"La lista de lo que no hago
+  sin preguntarte vive en cada computadora, para que funcione aunque se caiga internet. Si algún día
+  no coinciden, te aviso y decidís vos."* El detalle está en `referencias/fuente-de-verdad.md`.
+
+**Si contesta que no a las dos, no se insiste ni se explica nada de esto.** Es una pregunta, no una
+sección.
 
 **Con hueco, la instalación sigue.** Un hueco declarado es un resultado; un hueco tapado es el problema
 original con mejor cara.

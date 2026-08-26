@@ -7,6 +7,8 @@ conexion_comprobada:         # AAAA-MM-DD del día que leíste algo real de la h
 fuente_del_sistema:          # solo si conexion es "hueco" Y aceptó abrir una al lado. Van los dos o ninguno
 fuente_del_sistema_comprobada:   # AAAA-MM-DD. Se gana igual: leyendo algo real de ahí
 objetivos_del_negocio:       # dónde viven, en la fuente de verdad. Vacío = todavía no se escribieron
+maquinas: una                # una | varias. Con "varias" no se rehace el onboarding: se reconstruye
+equipo_adentro: no           # no | sí. "sí" = alguien más que el dueño mira o trabaja en la herramienta
 actualizado: AAAA-MM-DD
 ---
 
@@ -49,6 +51,21 @@ Una de dos, nunca vacío. Lo mismo que dice el frontmatter, en una frase:
 Ver `referencias/conectar-la-fuente-de-verdad.md`. **Decir "conectada" sin haber leído nada de la
 herramienta es el peor estado posible del sistema**: el hueco se ve y se trabaja; la mentira se
 descubre el día que el equipo no encuentra lo que el sistema dijo que guardó.
+
+## Quiénes entran, y desde dónde
+
+Dos líneas, salidas de las dos preguntas del paso 3.
+
+- **En cuántas computadoras trabaja.** Con más de una **no se rehace el onboarding en la segunda**:
+  se conecta esta misma herramienta y se reconstruye desde ahí. No hay nada que copiar de una máquina
+  a la otra, porque las dos leen del mismo lugar.
+- **Si hay alguien más además del dueño.** El equipo **no instala nada**: mira y trabaja en la
+  herramienta conectada. Si además alguien del equipo instala el sistema, hereda el negocio y el
+  diagnóstico, y **los frenos los confirma, no los escribe**.
+
+**Los frenos no se reconstruyen desde la herramienta**, a propósito: tienen que funcionar aunque la
+conexión no responda. Si algún día las listas de dos máquinas no coinciden, se dice y decide la
+persona; nunca se sincronizan en silencio. Ver `referencias/fuente-de-verdad.md`.
 
 ## A dónde va el negocio
 

@@ -19,6 +19,9 @@
 # disco y no esta en el repo, que es lo mismo que no existir.
 # (Ojo: gitignore no acepta comentarios al final de la linea del patron.)
 !/AGENTS.md
+# NOVEDADES.md es lo que el sistema le lee a la persona cuando actualiza. Si no esta
+# publicado, la instruccion de actualizar no tiene de donde sacar que contar.
+!/NOVEDADES.md
 
 # 3) El skill instalable, autocontenido
 !/skills/
