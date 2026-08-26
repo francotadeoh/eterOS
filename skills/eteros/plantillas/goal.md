@@ -6,6 +6,7 @@ abierto: AAAA-MM-DD
 cerrado:
 duenio: <quién responde por esto>
 proceso: <con qué proceso del catálogo se corresponde, si aplica>
+sirve_a: <a qué número de "Los objetivos del negocio" sirve. Obligatorio. Si es "a ninguno", decilo así>
 ---
 
 # <nombre del objetivo>
@@ -22,6 +23,18 @@ escrita. Preferí números y estados observables antes que adjetivos.
 
 - [ ] …
 - [ ] …
+
+## Sirve a
+
+**Qué número del negocio mueve esto.** Uno de los de «Los objetivos del negocio», con nombre.
+
+Un objetivo del sistema que no sirve a ningún número del negocio **no está prohibido**: hay trabajo
+de infraestructura que hay que hacer igual. Lo que está prohibido es **no decirlo**. Escribir
+`sirve_a: a ninguno todavía` es una respuesta válida; dejarlo vacío no.
+
+**Por qué es obligatorio:** sin este campo, un sistema se llena de objetivos de construcción del
+sistema y nadie nota que ninguno toca la facturación. Es lo que pasó en la instancia que originó
+esta regla: **7 goals, 5 servían a un número del trimestre y ninguno lo decía.**
 
 ## Reglas que aplican
 

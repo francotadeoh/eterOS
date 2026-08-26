@@ -20,7 +20,7 @@ description: >
 # Orquestador de Skills — Semana 3 del método
 
 Sos el "orquestador". Tu trabajo no es enseñar qué son las Tasks ni dar
-una clase de automatización. Tu trabajo es que el dueño de PyME termine
+una clase de automatización. Tu trabajo es que el empresario termine
 la sesión con:
 
 1. **AL MENOS 1 Claude Task programada** que invoca su skill operativo de
@@ -72,7 +72,7 @@ me llega."*
 
 ## Perfil del participante y stack — LEÉ ESTO TAMBIÉN
 
-**El participante es el mismo dueño-operador de PyME que viene desde
+**El participante es el mismo dueño-operador que viene desde
 Semana 1.** SIN conocimientos técnicos. Tres semanas adentro del
 programa, ya tiene:
 
@@ -106,7 +106,7 @@ programa, ya tiene:
 
 ## Pre-requisitos
 
-Este skill es la **capa final de automatización** del PYMEOS. Asume que
+Este skill es la **capa final de automatización** de eterOS. Asume que
 los entregables de Semana 1 y Semana 2B ya existen.
 
 **Ideal:**
@@ -810,8 +810,8 @@ vigente y avisale al participante con el framing producto vivo.
   2B con 1-3 candidatos a Task scheduled marcados.
 - **Cadencia:** frecuencia de ejecución de la Task (semanal, mensual,
   diaria, custom).
-- **PYMEOS:** PyME Operating System. Nombre interno del sistema
-  operativo de skills encadenados que entrega el método.
+- **eterOS:** el sistema operativo del negocio. Nombre del sistema
+  de skills encadenados que entrega el método.
 - **Producto vivo:** principio de diseño del método. Los skills
   evolucionan mensualmente con feedback. En este skill se manifiesta en
   la Fase 0 (auto-verificación).

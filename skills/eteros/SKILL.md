@@ -137,7 +137,7 @@ retomar. Empezar el onboarding sobre una máquina que no puede guardar nada es p
 
 Preguntá: **"¿Cuánta gente trabaja hoy en tu negocio, contándote?"**
 
-- **1 a 15** → perfil `pyme`
+- **1 a 15** → perfil `basico`
 - **más de 15** → ofrecé el perfil `empresa` y confirmá.
 - **entre 6 y 15, y además ya tiene procesos escritos que alguien usa** → ofrecé `empresa` y confirmá.
   **Las dos cosas juntas.** Tener roles no alcanza: cualquier negocio de diez personas tiene roles, y
@@ -228,8 +228,14 @@ lo necesitaba.
 propio criterio. **Pero no lo largues desde el principio: pasale lo que acabás de escribir en
 `negocio.md` y arrancalo por su Fase 2.** Su Fase 1 vuelve a preguntar casi todo lo que la persona
 te contó hace veinte minutos, y encima con la forma promediada que el paso 1 descarta. De su Fase 1
-falta una sola cosa: **cuántas horas por semana se le van en cosas que debería estar haciendo otro.**
+falta una sola cosa: **cuántas horas se le van en cosas que debería estar haciendo otro.**
 Preguntá esa, y seguí.
+
+**Pero preguntala fechada, no en abstracto.** *"¿Cuántas horas por semana te lleva?"* devuelve la
+duración que la persona **planificó**, no la que **gastó**, y las dos casi nunca coinciden. Preguntá
+por **un mes concreto que ya terminó**: *"El mes pasado, ¿cuántas veces hiciste esto y cuánto te
+llevó cada vez?"*. Multiplicá vos. **Si no se acuerda, eso es `no se pudo medir`, no un promedio
+inventado** — y ese estado es el que después impide publicar un total falso.
 
 **Corré sus fases 2 y 3, y cortá antes de su sección «Cierre de la auditoría».** Ese cierre despide
 la sesión, y acá recién vamos por el paso 2 de 8. **Este paso termina con una línea que dice que
@@ -359,6 +365,12 @@ Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en 
 Regla que resuelve casi todo: **si lo dispara el calendario es rutina; si lo dispara una persona es
 skill; si lo hace una persona es archivo; si necesita criterio propio sostenido es agente.**
 
+**Cada proceso del mapa es una fila del catálogo, y la fila tiene esquema.** Está en
+`sistematizador-de-procesos`, sección «La fila del catálogo». Las columnas no son opcionales:
+`Superficies`, `Calidad de las horas` y `Medido el` son lo único que separa un total de una
+impresión, y `Estado` es lo que impide mezclar horas trabajadas con horas planificadas. **Una fila
+sin `Calidad de las horas` no entra al catálogo.**
+
 **Para escribir cada proceso, activá `sistematizador-de-procesos`.** Si al hacerlo aparece que la
 información del negocio está desordenada y no se puede sistematizar encima, pasá antes por
 `arquitecto-de-informacion`. Si ya está ordenada, salteálo.
@@ -373,6 +385,19 @@ objetivos"*. Mandarlo al disco después de eso es incumplir en el paso 5 lo que 
 
 **Solo con el hueco entero** —sin segunda fuente— el catálogo va a
 `~/.claude/eteros/procesos/catalogo.md` y se dice que es provisorio.
+
+### El paso 5 termina congelando la foto
+
+**No cierres este paso sin la línea base.** Copiá `plantillas/linea-base.md` y llenala con el
+catálogo tal como quedó hoy: las filas, sus horas, su calidad y su fecha.
+
+**Sin una línea base congelada no hay horas devueltas que contar.** Y tiene que estar **congelada**,
+no calculada al vuelo: un "antes" que se regenera cuando cambia el catálogo es un espejo del
+presente y siempre va a dar cero.
+
+**Lo que escribe la línea base se niega a re-escribirla.** Si `linea-base.md` ya existe con
+`congelada_el` lleno, no se pisa, no se refresca y no se regenera. Si hace falta una foto nueva se
+crea al lado, con fecha, y se dice que la comparación arranca de cero desde ahí. **Nunca encima.**
 
 **Antes de agregar una forma nueva, aplicá el filtro minimalista:** cada skill, rutina o agente que
 sumás es algo que después hay que mantener, explicar y arreglar. Si estás sumando una pieza,
@@ -475,7 +500,7 @@ Un objetivo sin las cuatro partes **no es un objetivo, es un deseo**. Rechazalo 
    **control negativo**: contra qué escenario malo tiene que fallar.
 
 **Acá es donde más se traba, y casi siempre por culpa tuya, no de la persona.** Si le pedís un
-comando, un dueño de PyME no tiene ninguno y el objetivo se muere ahí. Una verificación no es un
+comando, un empresario no tiene ninguno y el objetivo se muere ahí. Una verificación no es un
 comando: es cualquier cosa que se haga en vez de opinarse, que pueda fallar, y cuyo resultado dos
 personas no puedan discutir. Abrir una página a las 9 y ver si el número está cumple las tres.
 

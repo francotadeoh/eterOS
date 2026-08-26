@@ -1,5 +1,5 @@
 ---
-perfil: pyme                 # pyme | empresa
+perfil: basico               # basico | empresa
 fuente_de_verdad: disco      # disco | <nombre de la herramienta donde vive el estado del negocio>
 conexion: pendiente          # conectada | hueco | pendiente | no-aplica
 conexion_motivo:             # obligatorio si conexion es "hueco": por qué no entró con un botón

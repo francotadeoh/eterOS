@@ -62,3 +62,25 @@ falta más.
   que más se pasa por alto: lo más importante del año sin nadie trabajándolo, y todo el mundo ocupado.
 
 *Última actualización: AAAA-MM-DD*
+
+---
+
+## El sistema levanta la mano
+
+**Cada número de acá tiene que tener al menos un objetivo del sistema encima.** Si un número del
+negocio no aparece en el `sirve_a` de ningún goal, **el sistema lo dice en voz alta**, con nombre:
+
+> *"«\[número\]» no tiene ningún objetivo trabajando encima. ¿Lo dejamos así a propósito, o abrimos uno?"*
+
+No lo arregla solo ni abre un goal por su cuenta: lo **nombra**. Es la misma mano que ya levanta
+cuando hay una rutina viva y la ficha del proceso sigue diciendo que lo hace el dueño.
+
+**Si los objetivos viven en un documento que el sistema no puede leer** —el caso del puntero con el
+hueco declarado—, esto no se puede hacer entero, y **eso se dice en vez de fingirlo**. Lo que sí se
+hace: al armar el puntero, **traé los nombres de los números** (solo los nombres, no el contenido) y
+dejalos escritos acá. Con eso `sirve_a` tiene contra qué apuntar y la mano se levanta sobre lo que se
+pudo leer, **declarando qué quedó afuera**. Levantar la mano sobre una lista incompleta sin decir que
+está incompleta es peor que no levantarla.
+
+**Y al revés también:** si todos los goals abiertos tienen `sirve_a: a ninguno todavía`, eso se dice.
+Un sistema entero construyéndose a sí mismo es un dato, no un accidente.

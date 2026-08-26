@@ -18,7 +18,7 @@ y ver si el número del día está ahí las cumple las tres, sin escribir una l�
 
 ## Los cuatro moldes
 
-Casi todo objetivo de una PyME entra en uno de estos. Elegí el que se parezca y completá lo que está
+Casi todo objetivo de una empresa entra en uno de estos. Elegí el que se parezca y completá lo que está
 entre corchetes.
 
 ### 1 · El número aparece solo
@@ -81,6 +81,55 @@ sistema apagado. El cero vale solamente si al lado hay un número mayor a cero d
 
 ---
 
+### 5 · Las horas devueltas
+
+> **Listo cuando:** \[qué proceso\] pasó de \[horas del mes medido\] a \[horas nuevas\] **y** la
+> causa declarada es *cambió de manos*, *cambió de forma* o *se eliminó*, con fecha, contra una línea
+> base congelada el \[fecha\].
+
+Sirve para lo único que el sistema promete de verdad: devolver horas.
+
+**Lo que lo hace bueno:** que la causa sea parte del *listo*, no un comentario al costado.
+
+> **Una hora cuenta como devuelta solo si el proceso cambió de manos o de forma, con fecha.
+> No si el número cambió.**
+
+Sin esa cláusula, cada error de estimación se convierte en una victoria. El caso que lo obliga: el
+soporte del Club pasó de 10 h/mes a 0,5 y un contador ingenuo habría anunciado 9,5 horas
+recuperadas. **La estimación estaba mal por un factor de 20 y el proceso nunca cambió de manos.**
+
+**Control negativo:** **bajale las horas a una fila sin cambiarle el ejecutor ni la forma.** El
+medidor tiene que decir que **no** cuenta como devuelta. Si la cuenta igual, no está midiendo horas
+devueltas: está midiendo que alguien editó un número.
+
+**Segundo control, el de la línea base:** **volvé a generar el "antes".** Si el sistema lo deja
+re-escribir, todas las horas devueltas van a dar cero para siempre, porque el antes se mueve con el
+después. Tiene que negarse.
+
+---
+
+## Los tres estados de todo agregador, y por qué el tercero gana
+
+Cualquier cosa que junte resultados de varias fuentes —un gate, un medidor, un total de horas, un
+tablero— tiene **tres** estados, no dos:
+
+| Estado | Qué significa | Exit code |
+|---|---|---|
+| **limpio** | miré todo y no encontré nada | `0` |
+| **encontré algo** | miré todo y encontré esto | `1` |
+| **no pude medir** | **no pude mirar** una parte | `2` |
+
+**El tercero es el que se disfraza de buena noticia.** Un agregador que no pudo leer una fuente y
+sale con `0` está diciendo *"está todo bien"* cuando lo honesto es *"no vi"*. Nadie revisa un verde.
+
+**En el exit code, el `2` pisa al `1` y al `0`.** No es el máximo, no es el último: **gana siempre**.
+Si una sola fuente de veinte no se pudo leer, el resultado del conjunto es `2`, aunque las otras
+diecinueve estén limpias.
+
+**Y se aplica igual sin exit codes.** Un total de horas donde una fila está en *no se pudo medir*
+**no se publica como número**: se publica el rango y se dice qué falta. Un número que nadie puede
+reproducir hace más daño que no tener número, porque se cita después.
+
 ## Cómo se elige el molde
 
 | Si el objetivo es | Molde |
@@ -89,6 +138,7 @@ sistema apagado. El cero vale solamente si al lado hay un número mayor a cero d
 | que se produzca algo con cierta frecuencia | **2 · La pieza aparece sola** |
 | que algo salga sin que estés en el medio | **3 · Salió sin vos** |
 | que dejen de necesitarte para algo | **4 · El cero** |
+| que un proceso te devuelva horas | **5 · Las horas devueltas** |
 
 Si el objetivo no entra en ninguno, lo más probable es que sea **dos objetivos mezclados**. Partilo.
 

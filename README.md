@@ -116,14 +116,14 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 
 Es **un solo sistema** con dos profundidades. El onboarding te pregunta y elige por vos:
 
-| | **PyME** | **Empresa / avanzado** |
+| | **Básico** | **Empresa / avanzado** |
 |---|---|---|
 | Para quién | dueño que es el cuello de botella de su propio negocio | equipo con procesos ya escritos |
 | Onboarding | 7 preguntas, sin jerga | completo, con inventario de sistemas |
 | Objetivos a la vez | **uno** | varios, con loops encima |
 | Primer entregable | la auditoría y un objetivo andando | la auditoría, el catálogo de procesos y los loops |
 
-Si dudás, empezá en PyME. Subir de perfil después es una conversación, no una reinstalación.
+Si dudás, empezá en Básico. Subir de perfil después es una conversación, no una reinstalación.
 
 ---
 
