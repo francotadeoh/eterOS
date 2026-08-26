@@ -16,7 +16,9 @@ Qué podés hacer ahora que antes no. La versión de arriba es la última.
 la herramienta donde ya vive el negocio. No tienen que instalar nada ni aprender nada nuevo.
 
 **Podés trabajar desde más de una computadora.** No hay que copiar nada de una a la otra ni acordarse
-de cuál era la buena: las dos leen del mismo lugar. En la segunda no se rehace el onboarding.
+de cuál era la buena: las dos leen del mismo lugar. En la segunda no se rehace el onboarding. Y si
+algún día la lista de lo que el sistema no hace sin preguntarte no coincide entre las dos, te avisa y
+decidís vos.
 
 **El sistema te trae herramientas ya hechas en vez de fabricarlas.** Cuando aparece un proceso que ya
 está resuelto, lo instala en lugar de armarlo de cero: el criterio de seis referentes para pensar una

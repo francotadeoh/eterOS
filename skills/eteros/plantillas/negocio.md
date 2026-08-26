@@ -9,6 +9,8 @@ fuente_del_sistema_comprobada:   # AAAA-MM-DD. Se gana igual: leyendo algo real 
 objetivos_del_negocio:       # dónde viven, en la fuente de verdad. Vacío = todavía no se escribieron
 maquinas: una                # una | varias. Con "varias" no se rehace el onboarding: se reconstruye
 equipo_adentro: no           # no | sí. "sí" = alguien más que el dueño mira o trabaja en la herramienta
+frenos_copia:                # solo con "varias" o "sí": dónde quedó la copia de referencia. Vacío = no hay
+frenos_copia_fecha:          # AAAA-MM-DD. Sin fecha, la copia no sirve para comparar
 actualizado: AAAA-MM-DD
 ---
 

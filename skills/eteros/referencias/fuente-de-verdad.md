@@ -76,10 +76,20 @@ poder leer algo por internet, no es una barrera: es una barrera con horario.
 Pero **dos máquinas con frenos distintos es peor que no tener frenos**, porque la persona cree que
 tiene una lista y tiene dos. Entonces:
 
-1. La fuente de verdad guarda **una copia de referencia con fecha**. De referencia, no dueña.
-2. Al arrancar, **se comparan**.
-3. **Si difieren, se dice y se pregunta.** Nunca se sincroniza en silencio y nunca gana el más nuevo.
-   Un freno que aparece o desaparece solo es exactamente lo que la lista vino a impedir.
+1. La fuente de verdad guarda **una copia de referencia con fecha**. De referencia, no dueña. La
+   escribe el **paso 4**, y solo si `maquinas: varias` o `equipo_adentro: sí`.
+2. Al arrancar, **se comparan**. Lo hace MODO OPERAR, **cada sesión**, no una sola vez.
+3. **Si difieren, se dice y se pregunta.** Nunca se sincroniza en silencio y nunca gana el más nuevo:
+   una lista más reciente no es una lista más correcta. Un freno que aparece o desaparece solo es
+   exactamente lo que la lista vino a impedir.
+4. **Mientras la persona no decide, frenan las dos juntas: la suma, no la intersección.** Un freno que
+   está en una sola lista frena igual. **Ante ambigüedad sobre qué se puede tocar, se frena de más** —
+   es la única dirección en la que equivocarse sale barato.
+5. **Cuando decide, se escriben las dos puntas en el mismo turno.** Si se escribe una sola, la próxima
+   sesión encuentra la misma diferencia y el aviso se vuelve ruido.
+
+**Y no poder leer la copia no es que coinciden: es que no se pudo mirar.** Se dice. Un chequeo que no
+corrió y se calla es peor que no tenerlo, porque ocupa el lugar del que sí habría avisado.
 
 ### Cuando entra el equipo
 

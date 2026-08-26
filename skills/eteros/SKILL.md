@@ -393,6 +393,27 @@ preguntar. Miremos la lista con eso en mente."*
 
 **`frenos.md` es el dueño único.** Nunca copies un freno adentro de un objetivo.
 
+### Si hay más de una máquina o hay equipo, la copia de referencia
+
+**Solo si en `negocio.md` quedó `maquinas: varias` o `equipo_adentro: sí`.** Con una sola máquina y
+sin equipo esto no se hace, no se nombra y no se explica: es trabajo y ruido sobre un problema que esa
+persona no tiene.
+
+Cuando el archivo esté completo, **subí la lista a la fuente de verdad como documento nuevo**, con la
+fecha y el nombre de la máquina donde se escribió. Y anotá en el frontmatter de `negocio.md`:
+
+```yaml
+frenos_copia: <dónde quedó, en la fuente de verdad>
+frenos_copia_fecha: AAAA-MM-DD
+```
+
+**Es copia de referencia, no dueña.** El dueño sigue siendo `frenos.md` en el disco de cada máquina,
+porque un freno tiene que funcionar cuando la conexión no responde. Esta copia existe **para poder
+comparar**, no para mandar. Si no podés escribirla, **no inventes el campo**: dejalo vacío y decilo.
+
+**Y decile para qué es, en una línea:** *"Te dejo la lista también en \<la herramienta\>, así si
+algún día no coincide con la de tu otra computadora te puedo avisar."*
+
 ## Paso 5 · Formas
 
 Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`:
@@ -627,6 +648,36 @@ vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **
 —conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío, hacé el
 **paso 6** —los objetivos del negocio—, **haya conexión o haya hueco**: con hueco se hacen igual y
 quedan donde la persona ya escribe. Los dos son de una sola vez, no de cada vuelta.
+
+**Si `maquinas` o `equipo_adentro` no están en el frontmatter, preguntá una sola vez.** Le pasa a todo
+el que instaló antes de que estos campos existieran, y **es justo el que más lo necesita**: ya está
+operando, ya tiene frenos escritos, y si trabaja en dos computadoras hoy tiene dos listas sin saberlo.
+Las mismas dos preguntas del paso 3, en una vuelta, y las anotás. Si contesta que no a las dos, queda
+`maquinas: una` y no se vuelve a preguntar nunca.
+
+**Y al arrancar, compará los frenos. Esto sí es de cada sesión, no de una sola vez.** Corre **solo**
+si `negocio.md` tiene `maquinas: varias` o `equipo_adentro: sí`. Con una sola máquina no se hace nada
+y no se nombra.
+
+**Si corresponde y `frenos_copia` está vacía, subila ahora** —es el paso 4, que este no llegó a
+hacer— y seguí. No le pidas que reinstale por esto.
+
+1. **Leé la copia de referencia** de la fuente de verdad y compará con `frenos.md` de esta máquina.
+2. **Si coinciden, seguí sin decir nada.** Avisar que todo está bien cada vez que abre una sesión
+   entrena a ignorar el aviso, y el día que importe va a pasar de largo igual que los otros.
+3. **Si difieren, decilo antes de hacer cualquier otra cosa** y mostrá **las dos listas** con su fecha
+   y su máquina. **No elijas vos, y no gane el más nuevo:** una lista más reciente no es una lista más
+   correcta, y "se sincronizó solo" es exactamente lo que esta lista vino a impedir.
+4. **Mientras la persona no decida, mandan las dos juntas: se frena por la suma, no por la
+   intersección.** Un freno que está en una sola de las dos **frena igual**. Ante ambigüedad sobre qué
+   se puede tocar, se frena de más. Decíselo: *"Hasta que me digas, te voy a preguntar por las cosas
+   de las dos listas."*
+5. **Cuando decida, escribí las dos puntas en el mismo turno**: `frenos.md` de esta máquina y la copia
+   de referencia, con fecha nueva. Si solo escribís una, la próxima sesión vuelve a encontrar la misma
+   diferencia y el aviso se vuelve ruido.
+
+**Si no podés leer la copia, no es que coinciden: es que no pudiste mirar.** Decilo en una línea y
+seguí. Un chequeo que no pudo correr y se calla es peor que no tenerlo.
 
 **Al cargar un objetivo nuevo:** el **paso 7** de la instalación. Siempre las cuatro partes, más a qué
 número del negocio sirve.

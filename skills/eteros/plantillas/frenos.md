@@ -4,6 +4,14 @@
 > frenos **propios**, y hereda estos por referencia. Dos copias de un freno son dos verdades sobre
 > qué se puede tocar, que es el peor lugar posible para tener ambigüedad.
 
+> **Este archivo vive en el disco, y es a propósito.** Un freno tiene que funcionar cuando la
+> conexión no responde; si dependiera de leer algo por internet, sería una barrera con horario.
+>
+> **Si trabajás en más de una computadora, o si entró tu equipo**, hay además una copia en tu
+> herramienta —de referencia, no dueña— y las listas se comparan al arrancar. Si algún día no
+> coinciden, se te avisa y decidís vos: no gana la más nueva. **Mientras tanto frenan las dos
+> juntas.** Ante la duda sobre qué se puede tocar, se frena de más.
+
 Un freno no se negocia, no se interpreta y no se saltea porque el resultado sería mejor. Se para y se
 pide OK.
 
