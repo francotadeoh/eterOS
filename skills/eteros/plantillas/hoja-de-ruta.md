@@ -1,6 +1,6 @@
 ---
 camino: emprender      # emprender. Las instalaciones de Empresarios no escriben este archivo
-fase: A1               # A1 adentro · A2 diferencial · A3 público · A4 primer camino · B · C · D · E · F · graduada
+fase: A1               # A1 adentro · A2 diferencial · A3 público · A4 primer camino · B tu negocio · sistema · graduada
 empezado: AAAA-MM-DD
 actualizado: AAAA-MM-DD
 ---
@@ -23,8 +23,11 @@ actualizado: AAAA-MM-DD
 ## Después, tu sistema
 
 - [ ] Tu negocio, escrito en tus palabras
+- [ ] Tu semana real: cuántas horas tenés y qué vas a hacer todas las semanas
 - [ ] Conectado a la herramienta donde vas a llevar todo
 - [ ] Lo que el sistema nunca hace sin tu ok
+- [ ] Tu equipo: lo que el sistema hace por vos, empezando por una sola cosa
+- [ ] A dónde querés llegar en un año, con números
 - [ ] Tu primer objetivo andando: probar tu primera oferta con gente real
 
 ## Cuando ya cobrás

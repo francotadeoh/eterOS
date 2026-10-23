@@ -57,9 +57,9 @@ objetivos quedaron como estaban."* Es lo que la persona quiere saber y nunca pre
 
 **Regla:** no se pregunta lo que ya está escrito en algún lado.
 
-**Si existe `hoja-de-ruta.md` con `camino: emprender`, no sigas esta lista: la regla de retomar es la
-de `referencias/caminos.md`.** Ese camino no pasa por los pasos 1, 2, 5 ni 6, y esta tabla lo
-mandaría a una auditoría de un negocio que todavía no existe.
+**Si existe `hoja-de-ruta.md` con `camino: emprender`, mirá primero su `fase` en
+`referencias/caminos.md`.** Mientras la persona está en el autoconocimiento, esta lista no aplica: la
+mandaría a un onboarding de un negocio que todavía no existe. Desde `fase: sistema` en adelante, sí.
 
 1. **Mirá qué hay.** Listá los archivos de `~/.claude/eteros/` y leelos. `frenos.md`, `README.md`,
    `procesos/`, `estado/goals.json`, lo que sea que exista.
@@ -261,6 +261,9 @@ lo necesitaba.
 
 **No se saltea. Sin auditoría los objetivos salen inventados.**
 
+**En el camino Emprender este paso es la auditoría de tu semana**, y está en
+`referencias/tu-semana.md`: no hay negocio que auditar todavía. Lo que sigue es para Empresarios.
+
 **Activá `auditor-de-procesos-pyme` acá.** Es el skill que hace este paso; no lo reemplaces por tu
 propio criterio. **Pero no lo largues desde el principio: pasale lo que acabás de escribir en
 `negocio.md` y arrancalo por su Fase 2.** Su Fase 1 vuelve a preguntar casi todo lo que la persona
@@ -428,7 +431,9 @@ algún día no coincide con la de tu otra computadora te puedo avisar."*
 
 ## Paso 5 · Formas
 
-Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`:
+Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`.
+**En el camino Emprender los procesos son las tareas de todas las semanas, se ordenan en cuatro roles
+y se arma uno solo**: leé antes `referencias/equipo-de-una-persona.md`.
 
 | Forma | Cuándo |
 |---|---|
@@ -626,8 +631,7 @@ y eso todavía no pasó.
 ### El cierre no es una despedida, es una corrida
 
 **Antes de decir "quedó instalado", revisá la instalación contra lo que el método promete.** Cinco
-cosas, y las cinco se miran, no se opinan. **En el camino Emprender aplican dos**, y cuáles y cómo se
-dicen las otras tres está en `referencias/caminos.md`:
+cosas, y las cinco se miran, no se opinan, en los dos caminos:
 
 1. `negocio.md` con el frontmatter completo, y la conexión **conectada y comprobada** o el **hueco
    declarado con motivo**.

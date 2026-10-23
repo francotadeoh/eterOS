@@ -20,6 +20,10 @@ qué, cómo funciona tu energía y una charla para encontrar lo que eso no muest
 más que a vos, tres personas reales a las que podrías ayudar, y una forma de empezar a cobrar que se
 prueba con gente antes de construirla.
 
+**Y después te arma el sistema para hacerlo sin equipo.** Mira tu semana real, conecta la
+herramienta donde vas a llevar todo, y empieza por la única cosa que necesitás para conseguir tus
+primeros clientes: saber a quién le ofreciste y a quién volver a escribirle.
+
 **Lo podés usar sin instalar el resto.** El tramo de encontrar tu diferencial funciona solo, y si
 después instalás eterOS, arranca desde lo que ya escribiste.
 

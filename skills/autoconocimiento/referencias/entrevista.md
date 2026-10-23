@@ -57,7 +57,7 @@ preguntar donde hay huecos o donde algo no cierra, no para volver a preguntar lo
 20. ¿Qué te hizo falta para dar el paso que diste, o el que todavía no diste?
 21. ¿Conocés hoy a alguien que esté como estabas vos?
 
-### Para cerrar
+**Para cerrar:**
 
 22. De todo lo que hablamos hoy, ¿qué te sorprendió escucharte decir?
 23. ¿Qué pregunta te tendría que haber hecho y no te hice?

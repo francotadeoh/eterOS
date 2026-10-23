@@ -47,18 +47,25 @@ hacer?"*. Ordenar es Empresarios. Encontrar es Emprender.
 
 ## La hoja de ruta de Emprender
 
-| Etapa | Qué se hace | Quién lo hace |
-|---|---|---|
-| **A · Autoconocimiento** | Las cuatro fases: adentro, diferencial, público y primer camino | el skill `autoconocimiento` |
-| **B · Tu negocio, escrito** | Se arma `negocio.md` desde lo que dejó la etapa A, sin volver a preguntar | este método |
-| **C · Conectar** | El paso 3, igual que en Empresarios | este método |
-| **D · Frenos** | El paso 4, con un freno más ya cargado | este método |
-| **E · Tu primer objetivo** | El paso 7, con el objetivo que dejó escrito `primera-oferta.md` | este método |
-| **F · Cierre** | El paso 8, con lo que no aplica dicho en voz alta | este método |
+**Emprender corre los mismos ocho pasos que Empresarios. Cambian dos y se adaptan otros dos.**
 
-**Los pasos 2, 5 y 6 de Empresarios no aplican todavía.** No hay un negocio que auditar, ni procesos
-que mapear, ni un año de facturación sobre el que poner números. Se saltean a propósito y se dice.
-Cuando la persona ya cobra y quiere ordenar lo que armó, pasa a Empresarios (abajo) y ahí entran.
+| Etapa | En Empresarios es | En Emprender | Quién lo hace |
+|---|---|---|---|
+| **A · Autoconocimiento** | el paso 1, el onboarding | las cuatro fases: adentro, diferencial, público y primer camino | el skill `autoconocimiento` |
+| **B · Tu negocio, escrito** | el final del paso 1 | se arma `negocio.md` desde lo que dejó la etapa A, sin volver a preguntar | este método |
+| **Paso 2** | la auditoría del negocio | **la auditoría de tu semana**: `referencias/tu-semana.md` | este método |
+| **Paso 3** | conectar | igual | este método |
+| **Paso 4** | frenos | igual, con un freno más ya cargado | este método |
+| **Paso 5** | las formas de cada proceso | **tu equipo, siendo una persona**: `referencias/equipo-de-una-persona.md` | este método |
+| **Paso 6** | los objetivos del negocio | igual, con el molde de abajo | este método |
+| **Paso 7** | el primer objetivo | **ya viene escrito** de `primera-oferta.md` | este método |
+| **Paso 8** | el cierre | igual, con las cinco revisiones | este método |
+
+**Al cerrar cada paso, tildá su línea en `hoja-de-ruta.md`.** Es lo que la persona mira para saber
+dónde está, y una hoja de ruta que no se mueve es una que deja de mirar.
+
+**Sin la etapa A, el diferencial sale inventado, y sin el paso 2 las horas también.** Ninguno de los
+dos se saltea, igual que la auditoría en Empresarios.
 
 ### A · Autoconocimiento
 
@@ -78,14 +85,15 @@ llenalo **leyendo** `~/.claude/autoconocimiento/`, no preguntando:
 |---|---|
 | A qué se dedica | `primera-oferta.md` · qué ofrecés |
 | A quién le vende, y qué problema le resuelve | `publico.md` |
-| Qué hizo el dueño la semana pasada | `primera-oferta.md` · tus horas reales |
+| Qué hizo el dueño la semana pasada | `primera-oferta.md` · tus horas reales. El paso 2 lo afina |
 | Lo que preferiría no estar haciendo | `entrevista.md` · lo que te saca energía |
 | Herramientas y fuente de verdad | **se pregunta**: es lo único que no está escrito |
-| Qué se rompe si no está | **no aplica todavía**: escribilo así |
+| Qué se rompe si no está | **casi todo, y está bien**: el paso 2 dice qué podría seguir solo |
 
 Mostráselo para que lo corrija. Marcá `[FALTA]` lo que no pudiste deducir y preguntá solo eso.
+Cuando quede, poné `fase: sistema` en `hoja-de-ruta.md` y seguí con el paso 2.
 
-### D · El freno que ya viene cargado
+### Paso 4 · El freno que ya viene cargado
 
 Además de los que arme la persona, `frenos.md` de Emprender arranca con este, y se lo decís en una
 línea:
@@ -93,31 +101,32 @@ línea:
 > **Nunca te recomiendo renunciar, dejar un ingreso ni poner plata tuya.** Te puedo mostrar números y
 > qué implica cada opción; la decisión es tuya y te la pregunto.
 
-### E · El primer objetivo
+### Paso 6 · El molde para un proyecto que arranca
+
+Las tres preguntas son las mismas. **La primera casi nunca sale como número de facturación**, porque
+el proyecto todavía no factura: ofrecé este molde y que corrija.
+
+> *"¿Sería algo como: en un año, mi proyecto me deja X por mes con Y clientes, y le dedico Z horas
+> por semana?"*
+
+Las tres cosas grandes van a tener *"yo"* como responsable tres veces. Está bien: anotalo así.
+
+### Paso 7 · El primer objetivo
 
 **Ya está escrito**: es el de `primera-oferta.md`, con sus cuatro partes. Pasalo a `plantillas/goal.md`
-sin reescribirlo y llevalo a la fuente de verdad, con la misma regla del paso 7. En `sirve_a`
-escribí `primera-oferta`: en Emprender todavía no hay números del año, y el objetivo sirve a probar
-la primera oferta.
-
-### F · El cierre
-
-El paso 8 se corre igual. De las cinco revisiones, en Emprender **aplican la 1 y la 4**. La 2 (línea
-base), la 3 (catálogo) y la 5 (total de horas) **no aplican todavía** porque salen del paso 5, que no
-corrió. **Decilo así, en una línea:** una revisión que no se corrió y no se nombra parece aprobada.
+sin reescribirlo y llevalo a la fuente de verdad, con la misma regla del paso 7. En `sirve_a` va el
+número del paso 6 al que sirve: casi siempre el de clientes.
 
 ## La regla de retomar en Emprender
 
-**Si existe `hoja-de-ruta.md` con `camino: emprender`, esta tabla reemplaza a la de RECONSTRUIR.**
+**Si existe `hoja-de-ruta.md` con `camino: emprender`, primero mirá su `fase`:**
 
-| Lo que hay | Sigue |
+| `fase` | Sigue |
 |---|---|
-| `hoja-de-ruta.md` con `fase` menor a `B` | **A** — el skill `autoconocimiento`, que sabe en qué fase quedó |
-| `fase: B` y no existe `negocio.md` | **B** |
-| `negocio.md`, con `conexion` en `pendiente` o vacía | **C** — el paso 3 |
-| `negocio.md`, con `conexion` en `conectada` o `hueco`, y sin `frenos.md` | **D** — el paso 4 |
-| `frenos.md` | **E** — el paso 7 |
-| `estado/goals.json` | ya no es RECONSTRUIR: es **OPERAR** |
+| `A1` a `A4` | **A** — el skill `autoconocimiento`, que sabe en qué fase quedó |
+| `B` | **B** — armar `negocio.md` |
+| `sistema` | **la tabla de RECONSTRUIR, tal cual**, desde `negocio.md` para abajo. El paso 2 es la auditoría de tu semana y el 5 es tu equipo, pero los rastros que dejan son los mismos archivos |
+| `graduada` | ya pasó a Empresarios: la tabla de RECONSTRUIR, tal cual |
 
 ## Cómo se pasa de camino
 
@@ -125,8 +134,10 @@ corrió. **Decilo así, en una línea:** una revisión que no se corrió y no se
 
 **De Emprender a Empresarios** cuando la persona ya cobró, cerró su primer objetivo y lo que quiere
 ahora es ordenar lo que armó para que no dependa de ella. Cambiá `camino` en `negocio.md` a
-`empresarios`, marcá `fase: graduada` en `hoja-de-ruta.md` y corré los pasos que no corrieron: el 2
-(la auditoría, ahora de un negocio real), el 5 y el 6. **Lo que ya está escrito no se vuelve a
+`empresarios`, marcá `fase: graduada` en `hoja-de-ruta.md` y corré el paso 2 de Empresarios: la
+auditoría, ahora de un negocio que existe. El diagnóstico nuevo va al lado del anterior, con fecha,
+nunca encima. Lo demás ya está: el catálogo, la línea base y los
+objetivos tienen el mismo formato en los dos caminos. **Lo que ya está escrito no se vuelve a
 preguntar.**
 
 ## Qué NO cambia entre caminos
@@ -136,4 +147,4 @@ preguntar.**
 - Que los frenos tienen dueño único y no se copian.
 - Que el sistema no publica ni le escribe a nadie por su cuenta.
 - Que sin diagnóstico los objetivos salen inventados. En Emprender el diagnóstico es el
-  autoconocimiento: por eso la etapa A no se saltea.
+  autoconocimiento más la auditoría de la semana: por eso ninguno de los dos se saltea.

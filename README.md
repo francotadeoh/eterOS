@@ -136,6 +136,7 @@ lo que contestes, va por uno de estos caminos:
 | Para quién | todavía no emprendiste, trabajás en relación de dependencia o estás dando los primeros pasos | ya tenés un negocio y sos el cuello de botella |
 | Arranca con | encontrar tu diferencial: lo que sabés, lo que te mueve, cómo funciona tu energía | una auditoría de cómo funciona tu negocio hoy |
 | Primer entregable | tu diferencial, a quién vas a ayudar y tu primera oferta, probándose con gente real | la auditoría y un objetivo andando |
+| Después | tu sistema para hacerlo sin equipo: lo que el sistema hace por vos en contenido, ventas, entrega y administración, empezando por una sola cosa | frenos, procesos, objetivos y loops |
 
 Cuando el que arrancó por Emprender ya cobra, pasa a Empresarios **sin reinstalar nada**. Un tercer
 camino, para áreas de empresas grandes, está en preparación.
