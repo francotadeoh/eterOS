@@ -30,18 +30,38 @@ pagó.** No hay build, no hay tests unitarios, no hay runtime. El producto es la
 
 ## Antes de tocar nada
 
+Hay dos verificaciones, y cuál corrés depende de dónde estás parado:
+
 ```bash
-_build/verificar.sh
+verificar/verificar.sh      # la pública: la tiene cualquiera que clone, y GitHub la corre en cada PR
+_build/verificar.sh         # la privada: solo en la máquina del dueño del repo (ver abajo)
 ```
 
-Corre los gates —hoy nueve— cada uno en corrida normal y con `--controles`, y devuelve **un** estado.
+**La pública** mira lo que se puede mirar sin datos de nadie: referencias rotas (links y rutas a
+archivos que no están publicados, permisos del `.gitignore` para cosas que no existen), formato de
+los skills (frontmatter, `name` igual a la carpeta, `description` dentro del largo) y de
+`NOVEDADES.md`, y contradicciones entre archivos (un título que dice "las tres reglas" y enumera
+cuatro, un resumen que cambia el título de lo que resume, "recorre 8 pasos" contra los pasos que
+tiene el método). Corre en cada PR desde `.github/workflows/verificar.yml`: **un PR en rojo no se
+mergea.** Si clonaste desde GitHub, esta es la única que tenés, y alcanza para editar.
+
+**La privada** corre los gates de `_build/` —hoy nueve—, que miran cosas que la pública no puede:
+instancias reales, la jerga del programa, el sistema vivo de esta máquina.
+
+Las dos corren cada gate en corrida normal y con `--controles`, y devuelven **un** estado.
 
 **Si falla, pará.** No arregles encima de un rojo: primero se entiende qué mide el gate que se puso
 en rojo. Un gate rojo antes de que empieces es un problema que ya estaba, y meterle un cambio arriba
 mezcla tu error con el que ya había.
 
-Los gates se descubren solos: cualquier `_build/V<n>-*.py` entra. Uno nuevo no se puede olvidar de
-agregar, uno borrado no deja un nombre colgado.
+Los gates se descubren solos: cualquier `_build/V<n>-*.py` entra, y en la pública cualquier
+`verificar/gates/*.py` que no empiece con `_`. Uno nuevo no se puede olvidar de agregar, uno borrado
+no deja un nombre colgado.
+
+**Un gate público nuevo** va en `verificar/gates/`, usa `_comun.py` y trae su lista de `CONTROLES`
+contra la instancia sana de ejemplo que arma `_comun.py`: el caso sano tiene que dar `0` y cada caso
+malo su rojo. **Nunca lee nada fuera del repo publicado** —ni `_build/`, ni `~/.claude/`, ni datos de
+una empresa—: lo corre GitHub sobre un clon limpio, y lo lee cualquiera.
 
 **Y un gate puede declarar qué mide.** Si adentro dice `MIDE = "una instancia"`, su sujeto no es este
 repo sino **la instalación que le quedó a una persona**, y en el agregado corren solo sus controles.
@@ -67,9 +87,11 @@ pudo leer una fuente y sale con `0` dice *"está todo bien"* cuando lo honesto e
 revisa un verde**. Está escrito en `skills/eteros/referencias/verificaciones.md`, que es el dueño
 único de la regla.
 
-El agregador tiene su propio control negativo, y se corre a mano sobre una copia del repo:
+Cada agregador tiene su propio control negativo. El de la pública corre solo en cada PR (arma gates
+de mentira en una carpeta temporal); el de la privada se corre a mano sobre una copia del repo:
 
 ```bash
+verificar/control-negativo-verificar.sh
 _build/control-negativo-verificar.sh
 ```
 
@@ -87,10 +109,14 @@ _build/control-negativo-verificar.sh
 | `skills/autoconocimiento/` | la etapa A del camino Emprender. **Funciona también suelto**, sin eterOS instalado: escribe en `~/.claude/autoconocimiento/`, nunca en `~/.claude/eteros/` |
 | `skills/auditor-de-procesos-pyme/` | el paso 2. Lo activa el método |
 | `skills/sistematizador-de-procesos/`<br>`skills/arquitecto-de-informacion/`<br>`skills/orquestador-de-skills/` | corren **después** del cierre. Ojo con el freno 3 |
-| `_build/V<n>-*.py` | los gates. Cada uno trae sus controles negativos con `--controles` |
+| `verificar/verificar.sh` | **la verificación pública.** Corre `verificar/gates/*.py` y devuelve un estado |
+| `verificar/gates/` | los gates públicos (`referencias`, `formato`, `contradicciones`) y `_comun.py`, lo que comparten |
+| `verificar/control-negativo-verificar.sh` | el control negativo del agregador público |
+| `.github/workflows/verificar.yml` | corre los dos de arriba en cada PR y en cada push a `main` |
+| `_build/V<n>-*.py` | los gates privados. Cada uno trae sus controles negativos con `--controles` |
 | `_build/V8-instalacion-de-una-persona.py` | el único que mira **una instalación de una persona**, no el repo. Se engancha en el paso 8 |
 | `_build/control-negativo-verificar.sh` | el control negativo del agregador. Se corre a mano, sobre una copia |
-| `_build/verificar.sh` | corre todos y devuelve un estado |
+| `_build/verificar.sh` | corre todos los privados y devuelve un estado |
 | `_build/RUNBOOK.md`, `_build/INVENTARIO.md` | cómo se construyó esto |
 | `~/.claude/eteros/DEUDA-DE-PRODUCTO.md` | **el dueño único de la deuda.** Fuera del repo, a propósito: tiene notas de operación que no van a un repo público |
 | `~/.claude/eteros/GOAL-*.md` | los GOAL de cada sesión de trabajo sobre el repo |
@@ -102,7 +128,7 @@ _build/control-negativo-verificar.sh
 El `.gitignore` es **whitelist**: ignora todo (`/*`) y habilita a mano lo que sí es framework
 genérico. Por eso `_build/` —los gates, el runbook, el inventario— **no está publicado**: tiene IDs,
 nombres y números reales de empresas concretas. Si clonaste esto desde GitHub, **no tenés los
-gates**: tenés el método.
+gates privados**: tenés el método y la verificación pública de `verificar/`.
 
 **Consecuencia práctica, y muerde:** un archivo nuevo en la raíz **no entra al repo solo**. Lo
 escribís, `git status` no lo muestra, y parece que no pasó nada. Si agregás uno que tiene que
@@ -157,7 +183,8 @@ determinístico y no falla contra un caso malo conocido. Un gate es un `.py` con
    mirando solo el archivo que se tocaba, mientras otro archivo lo contradecía.
 3. **Corré su verificación y su control negativo.**
 4. **Anotalo en `DEUDA-DE-PRODUCTO.md` en el mismo turno en que lo cerrás.**
-5. **Cerrá la vuelta solo con `_build/verificar.sh` en verde.**
+5. **Cerrá la vuelta solo con `verificar/verificar.sh` en verde** (y `_build/verificar.sh`, si
+   estás en la máquina del dueño). Con un PR, el verde de GitHub es el mismo que el tuyo.
 
 **No arregles de paso.** Lo que aparezca y no sea del objetivo de la sesión va a la deuda.
 
