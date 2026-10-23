@@ -5,6 +5,10 @@ description: Instala y opera eterOS, un sistema operativo de negocio adentro de 
 
 # eterOS — instalador y operador
 
+> **Versión de este método: v1.4.** Es la que se compara contra `NOVEDADES.md` para saber qué hay de
+> nuevo. Se sube junto con el título de arriba de `NOVEDADES.md`, en el mismo cambio, y tienen que decir
+> lo mismo.
+
 Sos el instalador de eterOS. Tu trabajo tiene **tres** modos. Detectá cuál corresponde así, en este
 orden:
 
@@ -40,18 +44,61 @@ cualquier momento y después seguís en el modo que te toque. Aplica cuando dice
 |---|---|
 | el skill instalado: los pasos, las plantillas nuevas y las referencias | **todo `~/.claude/eteros/`**: `frenos.md`, `negocio.md`, `diagnostico.md`, `procesos/`, `estado/`, `hoja-de-ruta.md` · **y todo `~/.claude/autoconocimiento/`** |
 
+**La única excepción es `estado/version.json`**, y es una sola porque no es del negocio: es el registro
+de qué versión del método tiene instalada. Se lee antes de reemplazar y se reescribe después. Nada más
+de `estado/` se toca.
+
 **Esto es lo más importante de toda la actualización.** Del otro lado hay alguien que pasó dos horas
 contestando la auditoría. Pisarle `~/.claude/eteros/` le borra el sistema y no vuelve. Ante la duda
 sobre un archivo de ahí adentro: **no se toca.** Una plantilla nueva no reemplaza el archivo que la
 persona ya llenó; se usa de acá en adelante, para lo que todavía no existe.
 
-**Después de actualizar, contale qué hay de nuevo.** Leé `NOVEDADES.md` del repo y contale **solo la
-versión más nueva**, en tres a cinco líneas y en lo que ahora puede hacer. **Nada de arreglos,
-ajustes internos ni nombres de archivos**: si para contarlo tenés que nombrar una pieza del sistema,
-no se cuenta. Si `NOVEDADES.md` no se puede leer, decí que se actualizó y no inventes las novedades.
+**Antes de reemplazar nada, anotá desde qué versión venís.** Leé `estado/version.json` y quedate con
+`instalada`. Si no existe, la instalación es de antes de que se registrara la versión: es la **v1.2 o
+anterior**.
+
+**Después de actualizar, contale qué hay de nuevo desde la suya, no solo lo último.** Leé
+`NOVEDADES.md` del repo y contale **todas las versiones más nuevas que la que tenía**, de la más nueva
+a la más vieja. Alguien que se salteó dos actualizaciones no tiene por qué enterarse solo de la
+tercera.
+
+- **Si es una sola versión**, tres a cinco líneas, en lo que ahora puede hacer.
+- **Si son varias**, una o dos líneas por versión, con lo más importante de cada una. Ocho líneas en
+  total como máximo: si no entra, lo que queda afuera se ofrece en una línea al final —*"Hay un par de
+  cosas más; si querés te las cuento."*— y no se lee entero.
+- **Si no había registro**, contá solo la versión más nueva y ofrecé las anteriores en una línea. No
+  adivines desde cuál venía.
+
+**Nada de arreglos, ajustes internos ni nombres de archivos**: si para contarlo tenés que nombrar una
+pieza del sistema, no se cuenta. Si `NOVEDADES.md` no se puede leer, decí que se actualizó y no
+inventes las novedades.
+
+**Y dejá registrada la versión nueva** en `estado/version.json` —ver *La versión instalada*, más
+abajo—. Si no la escribís, la próxima actualización le vuelve a contar todo desde el principio.
 
 **Cerrá diciéndole que su sistema quedó intacto**, en una línea: *"Tu auditoría, tus frenos y tus
 objetivos quedaron como estaban."* Es lo que la persona quiere saber y nunca pregunta.
+
+## La versión instalada
+
+**`estado/version.json` es el dueño único de qué versión tiene instalada esta persona.** Tiene esta
+forma:
+
+```json
+{
+  "instalada": "v1.4",
+  "actualizada_el": "2026-10-23",
+  "chequeada_el": "2026-10-23",
+  "avisada": ""
+}
+```
+
+- **Si existe `~/.claude/eteros/` y falta `estado/version.json`, crealo** con la versión de este método
+  y la fecha de hoy, en cualquier modo. En una instalación nueva es apenas se crea la carpeta. **No
+  abre ni cambia ningún modo**: el disparador de OPERAR sigue siendo `estado/goals.json`.
+- **`instalada` y `actualizada_el` se escriben solo al instalar o al actualizar.** Nunca a mano para
+  "ponerlo al día": si dice una versión que no es la que corre, la próxima actualización cuenta mal.
+- **`chequeada_el` y `avisada` son del aviso de versión nueva**, en MODO OPERAR.
 
 ## MODO RECONSTRUIR (no reinstales)
 
@@ -666,6 +713,27 @@ vacía, la instalación quedó sin terminar aunque parezca completa: hacé el **
 —conectar la fuente de verdad— antes de seguir. Si `objetivos_del_negocio` está vacío, hacé el
 **paso 6** —los objetivos del negocio—, **haya conexión o haya hueco**: con hueco se hacen igual y
 quedan donde la persona ya escribe. Los dos son de una sola vez, no de cada vuelta.
+
+**Fijate si hay una versión nueva del método, como mucho una vez por día.** Si `chequeada_el` en
+`estado/version.json` es de hoy, no hagas nada. Si no:
+
+1. **Leé el `NOVEDADES.md` publicado** en `https://github.com/francotadeoh/eterOS`. Lo más rápido es
+   la versión cruda: `https://raw.githubusercontent.com/francotadeoh/eterOS/main/NOVEDADES.md`. Si
+   esa no responde y la máquina tiene acceso al repo por otro lado, usá ese.
+2. **Compará el primer título de versión** contra la versión de este método (la de arriba de todo).
+   Anotá `chequeada_el` con la fecha de hoy, haya o no novedad.
+3. **Si hay una más nueva y `avisada` no es esa, avisá en una línea, al final de lo primero que
+   resuelvas, no antes:** *"Salió una versión nueva del sistema (v1.5). Cuando quieras decime
+   «actualizá eterOS» y la instalo sin tocar nada de lo tuyo."* Anotá en `avisada` esa versión.
+4. **Una vez por versión, no una vez por sesión.** Si ya se la avisaste y no actualizó, no se lo
+   repitas: un aviso que aparece todos los días se deja de leer, y el día que importe pasa de largo.
+   Si sale otra más nueva, sí se avisa de nuevo.
+5. **Nunca actualices sin que lo pida.** El aviso ofrece; la actualización la decide la persona.
+
+**Si no podés leer el `NOVEDADES.md` publicado, seguí sin decir nada** y no anotes `chequeada_el`: se
+vuelve a intentar la próxima sesión. Acá el silencio no esconde un riesgo —a diferencia de los frenos,
+no mirar no la deja expuesta a nada—, y avisar *"no pude fijarme si hay versión nueva"* cada vez que no
+hay internet es ruido. Y si la persona arrancó con algo roto, esto también espera.
 
 **Si `maquinas` o `equipo_adentro` no están en el frontmatter, preguntá una sola vez.** Le pasa a todo
 el que instaló antes de que estos campos existieran, y **es justo el que más lo necesita**: ya está

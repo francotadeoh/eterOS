@@ -25,7 +25,8 @@ que guarda el estado en un disco deja al equipo afuera. Ese orden no se saltea.
 ├─ frenos.md        lo que nunca se hace sin OK. DUEÑO ÚNICO: no se copia a los objetivos
 ├─ negocio.md       la empresa, en las palabras del dueño
 ├─ diagnostico.md   dónde está parada
-└─ estado/          estado de máquina, para que nada se pierda al cerrar la ventana
+└─ estado/          estado de máquina, para que nada se pierda al cerrar la ventana.
+                    Incluye qué versión del sistema tenés instalada
 ```
 
 **Los objetivos y el catálogo de procesos no están acá: viven en la herramienta conectada**, que es

@@ -29,6 +29,16 @@ después instalás eterOS, arranca desde lo que ya escribiste.
 
 ---
 
+## v1.3 — octubre 2026
+
+**Te avisa cuando hay una versión nueva.** No tenés que acordarte de revisar: cuando sale una, te lo
+dice una sola vez, en una línea, y la instalás cuando quieras. Si no le decís nada, no te lo repite.
+
+**Al actualizar te cuenta todo lo que cambió desde la tuya.** Si te salteaste un par de
+actualizaciones, te enterás de lo de todas, no solo de la última.
+
+---
+
 ## v1.2 — agosto 2026
 
 **Tu equipo puede entrar al sistema.** Vos seguís operando desde Claude Code y tu equipo trabaja en
