@@ -82,6 +82,8 @@ _build/control-negativo-verificar.sh
 | `skills/eteros/SKILL.md` | **el método.** Los 8 pasos, MODO RECONSTRUIR y MODO OPERAR |
 | `skills/eteros/plantillas/` | los archivos que se copian **a la máquina de la persona** |
 | `skills/eteros/referencias/` | el criterio que el método consulta. Un tema, un dueño |
+| `skills/eteros/referencias/caminos.md` | **el dueño único de la regla de camino**: Emprender, Empresarios, Corporativo. La hoja de ruta de Emprender y su regla de retomar viven ahí |
+| `skills/autoconocimiento/` | la etapa A del camino Emprender. **Funciona también suelto**, sin eterOS instalado: escribe en `~/.claude/autoconocimiento/`, nunca en `~/.claude/eteros/` |
 | `skills/auditor-de-procesos-pyme/` | el paso 2. Lo activa el método |
 | `skills/sistematizador-de-procesos/`<br>`skills/arquitecto-de-informacion/`<br>`skills/orquestador-de-skills/` | corren **después** del cierre. Ojo con el freno 3 |
 | `_build/V<n>-*.py` | los gates. Cada uno trae sus controles negativos con `--controles` |

@@ -1,4 +1,5 @@
 ---
+camino: empresarios          # empresarios | emprender. Vacío = empresarios. Ver referencias/caminos.md
 perfil: basico               # basico | empresa
 fuente_de_verdad: disco      # disco | <nombre de la herramienta donde vive el estado del negocio>
 conexion: pendiente          # conectada | hueco | pendiente | no-aplica
