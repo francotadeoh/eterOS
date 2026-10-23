@@ -1,5 +1,9 @@
 # Los dos perfiles
 
+> **Los perfiles son del camino Empresarios.** El camino se elige antes, en el paso 0, y la regla está
+> en `caminos.md`. Emprender arranca siempre en `basico` y no usa esta tabla hasta que pasa a
+> Empresarios.
+
 **Es un solo sistema.** Los perfiles cambian cuántas preguntas hace el onboarding y cuántos objetivos
 se abren a la vez. No cambian las tres reglas, ni la estructura, ni los frenos.
 

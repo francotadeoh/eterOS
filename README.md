@@ -9,6 +9,9 @@ llegar, y **frena solo** en lo que no puede decidir por vos.
 **A dónde va:** un equipo chico que rinde como uno gigante, y que sigue funcionando cuando vos no
 estás.
 
+**Y si todavía no tenés negocio, también es para vos.** Hay un camino para el que está por emprender:
+arranca por encontrar qué negocio sale de vos, y después te arma el sistema para hacerlo sin equipo.
+
 ---
 
 ## El problema que resuelve
@@ -123,7 +126,33 @@ objetivos quedan como estaban. Al terminar te cuenta qué podés hacer ahora que
    medio. Si ya usás Notion, Airtable, una planilla o un CRM, no hace falta: se conecta esa.
 5. Nada más. No hay que instalar bases de datos, escribir comandos ni contratar servicios.
 
-### Los dos perfiles
+### Los caminos
+
+Lo primero que te pregunta es si ya tenés un negocio funcionando o estás por arrancar el tuyo. Según
+lo que contestes, va por uno de estos caminos:
+
+| | **Emprender** | **Empresarios** |
+|---|---|---|
+| Para quién | todavía no emprendiste, trabajás en relación de dependencia o estás dando los primeros pasos | ya tenés un negocio y sos el cuello de botella |
+| Arranca con | encontrar tu diferencial: lo que sabés, lo que te mueve, cómo funciona tu energía | una auditoría de cómo funciona tu negocio hoy |
+| Primer entregable | tu diferencial, a quién vas a ayudar y tu primera oferta, probándose con gente real | la auditoría y un objetivo andando |
+| Después | tu sistema para hacerlo sin equipo: lo que el sistema hace por vos en contenido, ventas, entrega y administración, empezando por una sola cosa | frenos, procesos, objetivos y loops |
+
+Cuando el que arrancó por Emprender ya cobra, pasa a Empresarios **sin reinstalar nada**. Un tercer
+camino, para áreas de empresas grandes, está en preparación.
+
+### Encontrar tu diferencial, sin instalar el resto
+
+El primer tramo de Emprender también funciona solo. **Copiá esta línea y pegásela a Claude Code:**
+
+> Instalá solo el skill de autoconocimiento desde este repo y acompañame a encontrar mi diferencial:
+> https://github.com/francotadeoh/eterOS
+
+Te acompaña por cuatro conversaciones cortas —lo que sabés hacer, para qué, cómo funciona tu energía y
+una charla para encontrar lo que esas tres no vieron— y termina en tu diferencial, a quién querés
+ayudar y tu primera forma de generar ingresos. Si después instalás eterOS, arranca desde ahí.
+
+### Los dos perfiles de Empresarios
 
 Es **un solo sistema** con dos profundidades. El onboarding te pregunta y elige por vos:
 
@@ -149,6 +178,7 @@ momento.** No te los tira todos juntos el primer día.
 | **Arquitecto de información** | solo si tu información está tan desordenada que no se puede sistematizar encima |
 | **Sistematizador de procesos** | al escribir cada proceso, para sacarlo de tu cabeza |
 | **Orquestador de skills** | cuando cerraste tu primer objetivo, para que empieces a **construir los tuyos** |
+| **Autoconocimiento** | solo si vas por Emprender, antes de todo: para encontrar qué negocio sale de vos |
 
 Ese último es el que cierra el círculo. Hasta ahí usaste herramientas que ya existían; a partir de
 ahí construís las propias, para lo que tu negocio necesita y nadie más, y las enganchás a tus
@@ -160,11 +190,15 @@ pasa a ser tuyo.
 ```
 ~/.claude/eteros/
 ├─ README.md        el punto de entrada
+├─ hoja-de-ruta.md  solo en Emprender: dónde estás y qué sigue
 ├─ frenos.md        lo que el sistema NUNCA hace sin tu OK. Dueño único
 ├─ negocio.md       tu empresa, en las palabras del onboarding
 ├─ diagnostico.md   dónde está parado, salida de la auditoría
 └─ estado/          el estado de máquina, para que nada se pierda al cerrar la ventana
 ```
+
+Si vas por Emprender, lo que escribiste sobre vos queda aparte, en `~/.claude/autoconocimiento/`, y
+nunca sale de tu computadora.
 
 **Tus objetivos y tu catálogo de procesos no quedan acá: quedan en la herramienta conectada**, que
 es la que mira tu equipo. Este disco guarda el criterio y el estado; el estado del negocio vive

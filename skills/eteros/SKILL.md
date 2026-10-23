@@ -1,6 +1,6 @@
 ---
 name: eteros
-description: Instala y opera eterOS, un sistema operativo de negocio adentro de Claude Code. Usar cuando alguien quiera armar el sistema de su empresa, hacer una auditoría de sus procesos, cargar un objetivo de negocio y que el sistema itere hasta cumplirlo, decidir qué automatizar, o cuando comparta el repo de eterOS y pida ayuda para instalarlo. También activar con "armá el sistema de mi negocio", "instalá eterOS", "auditá mis procesos", "quiero que esto funcione sin mí", "soy el cuello de botella", "cargá este objetivo", "no puedo delegar".
+description: Instala y opera eterOS, un sistema operativo de negocio adentro de Claude Code. Usar cuando alguien quiera armar el sistema de su empresa, hacer una auditoría de sus procesos, cargar un objetivo de negocio y que el sistema itere hasta cumplirlo, decidir qué automatizar, encontrar qué negocio armar si todavía no emprendió, o cuando comparta el repo de eterOS y pida ayuda para instalarlo. También activar con "armá el sistema de mi negocio", "instalá eterOS", "auditá mis procesos", "quiero que esto funcione sin mí", "soy el cuello de botella", "cargá este objetivo", "no puedo delegar".
 ---
 
 # eterOS — instalador y operador
@@ -38,7 +38,7 @@ cualquier momento y después seguís en el modo que te toque. Aplica cuando dice
 
 | Se reemplaza | No se toca, nunca |
 |---|---|
-| el skill instalado: los pasos, las plantillas nuevas y las referencias | **todo `~/.claude/eteros/`**: `frenos.md`, `negocio.md`, `diagnostico.md`, `procesos/`, `estado/` |
+| el skill instalado: los pasos, las plantillas nuevas y las referencias | **todo `~/.claude/eteros/`**: `frenos.md`, `negocio.md`, `diagnostico.md`, `procesos/`, `estado/`, `hoja-de-ruta.md` · **y todo `~/.claude/autoconocimiento/`** |
 
 **Esto es lo más importante de toda la actualización.** Del otro lado hay alguien que pasó dos horas
 contestando la auditoría. Pisarle `~/.claude/eteros/` le borra el sistema y no vuelve. Ante la duda
@@ -56,6 +56,10 @@ objetivos quedaron como estaban."* Es lo que la persona quiere saber y nunca pre
 ## MODO RECONSTRUIR (no reinstales)
 
 **Regla:** no se pregunta lo que ya está escrito en algún lado.
+
+**Si existe `hoja-de-ruta.md` con `camino: emprender`, mirá primero su `fase` en
+`referencias/caminos.md`.** Mientras la persona está en el autoconocimiento, esta lista no aplica: la
+mandaría a un onboarding de un negocio que todavía no existe. Desde `fase: sistema` en adelante, sí.
 
 1. **Mirá qué hay.** Listá los archivos de `~/.claude/eteros/` y leelos. `frenos.md`, `README.md`,
    `procesos/`, `estado/goals.json`, lo que sea que exista.
@@ -140,7 +144,7 @@ siete cosas.
 
 # MODO INSTALAR
 
-## Paso 0 · Elegir profundidad (una sola pregunta)
+## Paso 0 · Elegir el camino y la profundidad
 
 **Antes de preguntar nada, mirá si la máquina está lista, y decilo vos.** Instalar cuesta *0 comandos
 y 0 archivos editados* **una vez que esto anda** — y eso sigue siendo cierto. Pero llegar hasta acá
@@ -159,6 +163,13 @@ preguntes— y si falta algo, decilo así, en una línea y sin dramatizar:
 
 **Si dice que ahora no, es un hueco declarado y la instalación no arranca:** se anota y se ofrece
 retomar. Empezar el onboarding sobre una máquina que no puede guardar nada es peor que no empezar.
+
+**Primero, el camino.** Leé `referencias/caminos.md`, que es el dueño de la regla, y hacé su
+pregunta: **"¿Hoy tenés un negocio funcionando, o estás por arrancar el tuyo?"**
+
+- **Emprender** → copiá `plantillas/hoja-de-ruta.md` a `~/.claude/eteros/hoja-de-ruta.md` y seguí la
+  hoja de ruta de `caminos.md`. **El resto de este paso y el paso 1 no aplican.**
+- **Empresarios** → seguí acá abajo, con la pregunta que elige el perfil.
 
 Preguntá: **"¿Cuánta gente trabaja hoy en tu negocio, contándote?"**
 
@@ -231,6 +242,7 @@ tirarlos antes de tiempo es la forma más rápida de que la persona se pierda.
 
 | Skill | Cuándo lo activás | Para qué |
 |---|---|---|
+| `autoconocimiento` | **Solo en el camino Emprender**, antes de todo lo demás | Encuentra el diferencial de la persona, a quién quiere ayudar y su primera oferta. Ver `referencias/caminos.md` |
 | `auditor-de-procesos-pyme` | **Paso 2**, la auditoría | Diagnostica dónde está parado el negocio y qué depende de que el dueño esté |
 | `arquitecto-de-informacion` | Después del paso 2, **solo si hace falta** | Ordena la información antes de sistematizar. Si ya está ordenada, se saltea |
 | `sistematizador-de-procesos` | **Paso 5**, al escribir cada proceso | Convierte lo que hoy vive en la cabeza del dueño en un proceso que otro puede seguir |
@@ -248,6 +260,9 @@ lo necesitaba.
 ## Paso 2 · Auditoría
 
 **No se saltea. Sin auditoría los objetivos salen inventados.**
+
+**En el camino Emprender este paso es la auditoría de tu semana**, y está en
+`referencias/tu-semana.md`: no hay negocio que auditar todavía. Lo que sigue es para Empresarios.
 
 **Activá `auditor-de-procesos-pyme` acá.** Es el skill que hace este paso; no lo reemplaces por tu
 propio criterio. **Pero no lo largues desde el principio: pasale lo que acabás de escribir en
@@ -416,7 +431,9 @@ algún día no coincide con la de tu otra computadora te puedo avisar."*
 
 ## Paso 5 · Formas
 
-Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`:
+Para cada proceso del diagnóstico, decidí qué forma toma. Está explicado en `referencias/formas.md`.
+**En el camino Emprender los procesos son las tareas de todas las semanas, se ordenan en cuatro roles
+y se arma uno solo**: leé antes `referencias/equipo-de-una-persona.md`.
 
 | Forma | Cuándo |
 |---|---|
@@ -542,7 +559,8 @@ para acá y los va a poder ver tu equipo también."*
 ## Paso 7 · El primer objetivo
 
 Copiá `plantillas/goal.md` y completalo con la persona. Elegí **un problema real y chico** del
-diagnóstico, no un ejemplo de juguete.
+diagnóstico, no un ejemplo de juguete. **En el camino Emprender no se elige: el objetivo ya viene
+escrito** de la primera oferta, y cómo se carga está en `referencias/caminos.md`.
 
 **Cuál, si hay diez que sirven.** Es la pregunta real —*"me quedé corta a la hora de decidir por cuál
 empezar"*— y no se devuelve como pregunta: **se desempata, en este orden, y se dice en una línea por
@@ -613,7 +631,7 @@ y eso todavía no pasó.
 ### El cierre no es una despedida, es una corrida
 
 **Antes de decir "quedó instalado", revisá la instalación contra lo que el método promete.** Cinco
-cosas, y las cinco se miran, no se opinan:
+cosas, y las cinco se miran, no se opinan, en los dos caminos:
 
 1. `negocio.md` con el frontmatter completo, y la conexión **conectada y comprobada** o el **hueco
    declarado con motivo**.
