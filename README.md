@@ -103,12 +103,14 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 
 **Copiá esta línea:**
 
-> Actualizá eterOS desde este repo y contame las novedades:
-> https://github.com/francotadeoh/eterOS
+> Actualizá eterOS desde este repo, siguiendo cómo dice que se actualiza la versión nueva, y contame
+> las novedades: https://github.com/francotadeoh/eterOS
 
 **Tu sistema no se toca.** Se actualiza el método; tu auditoría, tus frenos, tus procesos y tus
-objetivos quedan como estaban. Al terminar te cuenta qué podés hacer ahora que antes no —está en
-[`NOVEDADES.md`](NOVEDADES.md).
+objetivos quedan como estaban. Al terminar te cuenta qué podés hacer ahora que antes no **desde la
+versión que tenías**, aunque te hayas salteado alguna —está en [`NOVEDADES.md`](NOVEDADES.md).
+
+Y no hace falta que vengas a fijarte: cuando sale una versión nueva, el sistema te avisa.
 
 ### Qué necesitás
 

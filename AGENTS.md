@@ -163,6 +163,16 @@ determinístico y no falla contra un caso malo conocido. Un gate es un `.py` con
 
 ---
 
+## Sacar una versión
+
+**Una versión son dos líneas que dicen lo mismo, en el mismo commit:** el título de arriba de
+`NOVEDADES.md` (`## v1.4 — octubre 2026`) y la línea *"Versión de este método"* al principio de
+`skills/eteros/SKILL.md`. El aviso de versión nueva compara la segunda de cada instalación contra la
+primera publicada: si subís una y no la otra, o el aviso no salta nunca, o salta para siempre.
+
+**Cuidado con el orden de push:** apenas `NOVEDADES.md` llega a `main`, las instalaciones empiezan a
+avisar. No publiques el título de una versión que todavía no está en `main` entera.
+
 ## Dos cosas de la letra
 
 **Se dice "empresarios", nunca "PyME".** Única excepción: citas textuales de otros. Grepealo antes
