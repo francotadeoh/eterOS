@@ -16,7 +16,7 @@ y ver si el número del día está ahí las cumple las tres, sin escribir una l�
 
 ---
 
-## Los cuatro moldes
+## Los cinco moldes
 
 Casi todo objetivo de una empresa entra en uno de estos. Elegí el que se parezca y completá lo que está
 entre corchetes.

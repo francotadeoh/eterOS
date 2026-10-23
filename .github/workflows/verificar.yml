@@ -1,0 +1,21 @@
+# Corre la verificación pública en cada PR y en cada push a main.
+# Es la misma que corrés a mano con verificar/verificar.sh: si acá da rojo, allá también.
+name: Verificar
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Correr los gates y sus controles negativos
+        run: bash verificar/verificar.sh
+      - name: Control negativo del agregador
+        run: bash verificar/control-negativo-verificar.sh

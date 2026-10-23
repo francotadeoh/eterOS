@@ -23,6 +23,11 @@
 # publicado, la instruccion de actualizar no tiene de donde sacar que contar.
 !/NOVEDADES.md
 
+# La verificación pública: la que puede correr quien clona, y la que corre GitHub en cada PR.
+# Solo chequeos genéricos sobre lo publicado: nada de _build/ ni datos de nadie.
+!/verificar/
+!/.github/
+
 # 3) El skill instalable, autocontenido
 !/skills/
 !/skills/eteros/
@@ -42,3 +47,7 @@
 !/skills/sistematizador-de-procesos/
 !/skills/orquestador-de-skills/
 !/skills/autoconocimiento/
+
+# Lo que Python deja al correr los gates. Va al final para que pise los ! de arriba.
+__pycache__/
+*.pyc

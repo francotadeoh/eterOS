@@ -648,12 +648,12 @@ comando, un empresario no tiene ninguno y el objetivo se muere ahí. Una verific
 comando: es cualquier cosa que se haga en vez de opinarse, que pueda fallar, y cuyo resultado dos
 personas no puedan discutir. Abrir una página a las 9 y ver si el número está cumple las tres.
 
-**Leé `referencias/verificaciones.md` antes de este paso.** Trae los cuatro moldes que cubren casi
-todo (el número aparece solo · la pieza aparece sola · salió sin vos · el cero), cada uno con su
-control negativo en la misma clave: apagalo y mirá que se rompa.
+**Leé `referencias/verificaciones.md` antes de este paso.** Trae los cinco moldes que cubren casi
+todo (el número aparece solo · la pieza aparece sola · salió sin vos · el cero · las horas devueltas),
+cada uno con su control negativo en la misma clave: apagalo y mirá que se rompa.
 
 Si aun así no sale ninguna, **eso es la señal de que el objetivo está mal planteado**. No lo dejes
-pasar con un "revisar que esté bien". Pero antes de rechazárselo, ofrecé los cuatro moldes: rechazar
+pasar con un "revisar que esté bien". Pero antes de rechazárselo, ofrecé los cinco moldes: rechazar
 el objetivo de alguien que ya está trabado es la forma más rápida de perderlo.
 
 ## Paso 8 · Cerrar la instalación

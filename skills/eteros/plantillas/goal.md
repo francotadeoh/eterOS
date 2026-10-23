@@ -58,7 +58,7 @@ verificarlo.
 
 No tiene por qué ser un comando. Sirve igual *"abrir tal página a las 9 y ver si el número del día
 está, sin que lo haya puesto yo"*, siempre que se haga en vez de opinarse, pueda fallar, y dos
-personas no puedan discutir el resultado. Los cuatro moldes están en `referencias/verificaciones.md`.
+personas no puedan discutir el resultado. Los cinco moldes están en `referencias/verificaciones.md`.
 
 ```
 # el comando exacto, si lo hay
