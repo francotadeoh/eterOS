@@ -5,7 +5,7 @@ description: Instala y opera eterOS, un sistema operativo de negocio adentro de 
 
 # eterOS — instalador y operador
 
-> **Versión de este método: v1.4.** Es la que se compara contra `NOVEDADES.md` para saber qué hay de
+> **Versión de este método: v1.5.** Es la que se compara contra `NOVEDADES.md` para saber qué hay de
 > nuevo. Se sube junto con el título de arriba de `NOVEDADES.md`, en el mismo cambio, y tienen que decir
 > lo mismo.
 
@@ -37,6 +37,11 @@ de este sistema, no una excepción.
 **Actualizar no es un modo, es una acción**, y por eso no está en la tabla de arriba: se pide en
 cualquier momento y después seguís en el modo que te toque. Aplica cuando dicen *"actualizá eterOS"*,
 *"actualizame el sistema"* o pegan el repo pidiendo la versión nueva.
+
+**Da lo mismo si la versión nueva llega por el repo o en un archivo (.zip).** Si la persona dice que
+bajó un archivo nuevo, buscalo donde dice (casi siempre en Descargas), descomprimilo en una carpeta
+temporal y tomá de ahí el skill y `NOVEDADES.md`. Todo lo de abajo vale igual: se reemplaza el
+método, no se toca el negocio.
 
 **Se actualiza el método. No se toca el negocio.**
 
@@ -210,6 +215,10 @@ preguntes— y si falta algo, decilo así, en una línea y sin dramatizar:
 
 **Si dice que ahora no, es un hueco declarado y la instalación no arranca:** se anota y se ofrece
 retomar. Empezar el onboarding sobre una máquina que no puede guardar nada es peor que no empezar.
+
+**Si la persona pegó un bloque que empieza con `=== AUDITORÍA PARA ETEROS ===`, ya trae el
+diagnóstico.** Leé `referencias/viene-de-una-auditoria.md` y seguí desde ahí: no se le vuelve a
+preguntar lo que ya contestó.
 
 **Primero, el camino.** Leé `referencias/caminos.md`, que es el dueño de la regla, y hacé su
 pregunta: **"¿Hoy tenés un negocio funcionando, o estás por arrancar el tuyo?"**
@@ -729,6 +738,9 @@ quedan donde la persona ya escribe. Los dos son de una sola vez, no de cada vuel
    repitas: un aviso que aparece todos los días se deja de leer, y el día que importe pasa de largo.
    Si sale otra más nueva, sí se avisa de nuevo.
 5. **Nunca actualices sin que lo pida.** El aviso ofrece; la actualización la decide la persona.
+
+**Si la persona instaló desde un archivo y el repo no se puede leer, es lo esperado**: la versión
+nueva le llega por otro lado, junto con el archivo nuevo. Vale lo de abajo.
 
 **Si no podés leer el `NOVEDADES.md` publicado, seguí sin decir nada** y no anotes `chequeada_el`: se
 vuelve a intentar la próxima sesión. Acá el silencio no esconde un riesgo —a diferencia de los frenos,

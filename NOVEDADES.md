@@ -10,6 +10,17 @@ Qué podés hacer ahora que antes no. La versión de arriba es la última.
 
 ---
 
+## v1.5 — noviembre 2026
+
+**Lo podés instalar desde un archivo, sin GitHub.** Si te llegó eterOS como un archivo, lo bajás, le
+pegás una línea a Claude Code y listo. Las versiones nuevas también te pueden llegar así.
+
+**Si ya hiciste una auditoría de tu negocio antes, arranca desde ahí.** Pegás el resumen que te dieron
+y el sistema no te vuelve a preguntar lo que ya contestaste: confirma lo que hay y va directo a tu
+primer proceso.
+
+---
+
 ## v1.4 — octubre 2026
 
 **Si todavía no emprendiste, ahora hay un camino para vos.** El sistema te pregunta si ya tenés un
