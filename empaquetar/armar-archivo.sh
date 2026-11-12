@@ -9,8 +9,8 @@ raiz="$(cd "$(dirname "$0")/.." && pwd)"
 salida="${1:-$raiz}"
 cd "$raiz"
 
-version="$(grep -m1 -o 'Versión de este método: v[0-9.]*' skills/eteros/SKILL.md | sed 's/.*: //')"
-novedades="$(grep -m1 -o '^## v[0-9.]*' NOVEDADES.md | sed 's/## //')"
+version="$(grep -m1 -oE 'Versión de este método: v[0-9]+(\.[0-9]+)*' skills/eteros/SKILL.md | sed 's/.*: //')"
+novedades="$(grep -m1 -oE '^## v[0-9]+(\.[0-9]+)*' NOVEDADES.md | sed 's/## //')"
 if [ -z "$version" ] || [ "$version" != "$novedades" ]; then
   echo "ROJO: la versión del skill ($version) no coincide con NOVEDADES.md ($novedades)." >&2
   exit 1
