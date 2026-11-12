@@ -28,6 +28,11 @@
 !/verificar/
 !/.github/
 
+# El empaquetado: arma el .zip que se entrega sin GitHub. Solo el script y lo que va adentro.
+!/empaquetar/
+!/empaquetar/armar-archivo.sh
+!/empaquetar/INSTALAR.md
+
 # 3) El skill instalable, autocontenido
 !/skills/
 !/skills/eteros/

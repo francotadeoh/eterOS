@@ -99,12 +99,24 @@ Eso es todo. A partir de ahí te va a hacer preguntas sobre tu empresa, una por 
 > 💡 **Atajo técnico** (opcional): `npx skills add francotadeoh/eterOS` y después decile a Claude
 > *"armá el eterOS de mi negocio"*.
 
+### Si te llegó como archivo
+
+Bajá el archivo (queda en **Descargas**), abrí Claude Code y **pegale esta línea:**
+
+> Instalá eterOS desde el archivo que bajé a Descargas y guiame para armar el sistema de mi negocio.
+
+Si antes hiciste una auditoría de tu negocio y te dieron un resumen para pegar, pegalo en el mismo
+mensaje: arranca desde ahí y no te vuelve a preguntar lo que ya contestaste.
+
 ### Si ya lo tenés instalado y querés la versión nueva
 
 **Copiá esta línea:**
 
 > Actualizá eterOS desde este repo, siguiendo cómo dice que se actualiza la versión nueva, y contame
 > las novedades: https://github.com/francotadeoh/eterOS
+
+Si la versión nueva te llegó como archivo: *"Actualizá eterOS desde el archivo nuevo que bajé a
+Descargas y contame las novedades."*
 
 **Tu sistema no se toca.** Se actualiza el método; tu auditoría, tus frenos, tus procesos y tus
 objetivos quedan como estaban. Al terminar te cuenta qué podés hacer ahora que antes no **desde la
