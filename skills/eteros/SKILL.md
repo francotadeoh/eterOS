@@ -5,7 +5,7 @@ description: Instala y opera eterOS, un sistema operativo de negocio adentro de 
 
 # eterOS — instalador y operador
 
-> **Versión de este método: v1.4.** Es la que se compara contra `NOVEDADES.md` para saber qué hay de
+> **Versión de este método: v1.5.** Es la que se compara contra `NOVEDADES.md` para saber qué hay de
 > nuevo. Se sube junto con el título de arriba de `NOVEDADES.md`, en el mismo cambio, y tienen que decir
 > lo mismo.
 
@@ -799,6 +799,11 @@ un resultado. Buscá la causa o dejá el objetivo abierto.
 
 **Al tocar un freno:** pará y preguntá. Sin excepciones, sin interpretaciones, aunque el resultado
 fuese mejor.
+
+**Cómo pedís los OK.** Un dueño que recibe preguntas sueltas todo el día termina aprobando sin leer.
+Juntalas en una tanda, ordenadas por lo que más urge, cada una con sus opciones, qué pasa con cada una
+y cuál recomendás. Lo que se puede deshacer y no toca un freno no se pregunta: lo hacés, lo anotás y
+lo contás en la tanda. Y lo que el dueño ya respondió en otro lado no se le vuelve a preguntar.
 
 **Al tocar el estado del negocio:** si hay una fuente de verdad externa, **leé de ahí y escribí ahí
 en el mismo turno**. Nunca guardes en disco un dato que define el estado del negocio: el equipo no

@@ -10,6 +10,20 @@ Qué podés hacer ahora que antes no. La versión de arriba es la última.
 
 ---
 
+## v1.5 — diciembre 2026
+
+**Si usás Claude en varios frentes, las decisiones ya no se pierden entre uno y otro.** Un mapa de
+proyectos y una bitácora compartida: lo que decidís en ventas le llega a contenido sin contarlo dos
+veces.
+
+**El sistema te pide los OK de una sola vez.** Una tanda ordenada por urgencia, cada pregunta con sus
+opciones y lo que te recomienda. Lo que se puede deshacer lo hace solo y te lo cuenta.
+
+**Si tenés equipo, te ayuda a elegir tu mano derecha.** Al cerrar el primer objetivo te propone quién
+puede empujar la implementación con vos, para que el sistema no dependa solo de tu tiempo.
+
+---
+
 ## v1.4 — octubre 2026
 
 **Si todavía no emprendiste, ahora hay un camino para vos.** El sistema te pregunta si ya tenés un

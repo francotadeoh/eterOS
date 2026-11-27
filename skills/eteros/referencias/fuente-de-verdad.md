@@ -105,6 +105,21 @@ Y el contrato de datos gana una fila: **quién escribe qué, desde dónde**. Dos
 sistema escribiendo sobre el mismo campo es la regla 3 fallando, y no se nota hasta que un número
 cambia sin que nadie lo haya cambiado.
 
+## Cuando tenés varios proyectos abiertos
+
+Si trabajás con Claude en más de un frente (contenido, ventas, el producto), cada proyecto termina
+decidiendo cosas que le cambian el trabajo a otro. Si eso queda en la conversación donde se decidió,
+el otro proyecto sigue trabajando con lo viejo.
+
+Dos piezas en la fuente de verdad lo resuelven. **Un mapa de proyectos:** una tabla con cada
+proyecto, qué define, dónde está su fuente vigente y la fecha en que se actualizó. **Una bitácora
+entre proyectos:** una fila por cada cambio que afecta a otro proyecto, con qué cambió, dónde quedó el
+detalle, qué tiene que hacer el otro y quién ya lo asimiló.
+
+La regla es una sola: **nada queda en un hilo.** Al arrancar, se leen el mapa y las filas de las
+últimas dos semanas que todavía no asimilaste. Al decidir algo durable, se escribe en la fuente
+vigente en ese momento, y si toca a otro proyecto, se suma la fila.
+
 ## El error que hay que evitar
 
 **Mantener una copia local de una lista cuyo dueño es la herramienta.** Es cómodo el primer día y
