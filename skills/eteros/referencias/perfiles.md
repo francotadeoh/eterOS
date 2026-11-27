@@ -29,6 +29,13 @@ Abrir cinco objetivos el primer día es la forma más confiable de que no se cie
 Es una conversación, no una reinstalación. Cuando alguien de perfil básico cerró su primer objetivo y
 pide el segundo, ya está listo. Cambiá el perfil en `negocio.md` y seguí.
 
+## La mano derecha de la implementación
+
+Si hay equipo, el dueño no puede ser el único que empuja el sistema: es el mismo cuello de botella que
+el sistema viene a sacar. Al cerrar el primer objetivo, preguntale quién del equipo podría dedicarle
+la mitad de su tiempo a seguir la implementación. No es un puesto nuevo: es alguien que ya está, que
+aprende el sistema y que trae los trabados.
+
 ## Qué NO cambia entre perfiles
 
 - Las tres reglas.
